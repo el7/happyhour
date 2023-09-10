@@ -19,7 +19,6 @@ for (var i = 0; i < data.Restaurants.length; i++) {
 	targetDiv.appendChild(contentRestaurantName);
 
 	addToDisplayBizHours();
-
 	addToDisplaySpecials();
 }
 
@@ -41,11 +40,7 @@ function addToDisplayDeals () {
 		targetDiv.appendChild(contentDealValue);
 		targetDiv.appendChild(contentDealName);
 		targetDiv.appendChild(contentDealNote);
-
 	}
-
-
-
 }
 
 
