@@ -1,0 +1,31 @@
+{
+	"Restaurants":[{
+            "Name": "",
+            "Address": "",
+			"Phone": "",
+            "Hours":[{
+				"DayOfWeek":0,
+				"Open":"2023-01-01T00:00:00.000Z",
+				"Close":""
+			}],
+			"Attributes": [{
+				"Name": ""
+			}],
+            "Specials": [{
+                "Name": "",
+				"Note": "",
+                "Days": [{
+                    "DayOfWeek": 0,
+                    "StartTime": "",
+                    "EndTime": ""
+                }],
+                "Details": [{
+                    "Name": "",
+                    "DealValue": 1,
+                    "DealModifier": "-",
+                    "DealNote": "",
+                    "DealType": ""
+                }]
+            }]
+    }]
+}

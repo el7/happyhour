@@ -1,0 +1,1646 @@
+{
+    "Restaurants": [
+        {
+            "Name": "McMenamins: John Barleycorns",
+            "Address": "14610 SW Sequoia Pkwy, Tigard, OR 97223",
+            "Phone": "",
+            "Hours": [
+                {
+                    "DayOfWeek": 0,
+                    "Open": "2023-01-01T19:00:00.000Z",
+                    "Close": "2023-01-01T08:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 1,
+                    "Open": "2023-01-01T19:00:00.000Z",
+                    "Close": "2023-01-01T08:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 2,
+                    "Open": "2023-01-01T19:00:00.000Z",
+                    "Close": "2023-01-01T08:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 3,
+                    "Open": "2023-01-01T19:00:00.000Z",
+                    "Close": "2023-01-01T09:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 4,
+                    "Open": "2023-01-01T19:00:00.000Z",
+                    "Close": "2023-01-01T09:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 5,
+                    "Open": "2023-01-01T19:00:00.000Z",
+                    "Close": "2023-01-01T09:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 6,
+                    "Open": "2023-01-01T19:00:00.000Z",
+                    "Close": "2023-01-01T09:00:00.000Z"
+                }
+            ],
+            "Attributes": [
+                {
+                    "Name": ""
+                }
+            ],
+            "Specials": [
+                {
+                    "Name": "Happy Hour",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 0,
+                            "StartTime": "2023-01-01T22:00:00.000Z",
+                            "EndTime": "2023-01-01T01:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 0,
+                            "StartTime": "2023-01-01T05:00:00.000Z",
+                            "EndTime": "close"
+                        },
+                        {
+                            "DayOfWeek": 1,
+                            "StartTime": "2023-01-01T22:00:00.000Z",
+                            "EndTime": "2023-01-01T01:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 1,
+                            "StartTime": "2023-01-01T05:00:00.000Z",
+                            "EndTime": "close"
+                        },
+                        {
+                            "DayOfWeek": 2,
+                            "StartTime": "2023-01-01T22:00:00.000Z",
+                            "EndTime": "2023-01-01T01:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 2,
+                            "StartTime": "2023-01-01T05:00:00.000Z",
+                            "EndTime": "close"
+                        },
+                        {
+                            "DayOfWeek": 3,
+                            "StartTime": "2023-01-01T22:00:00.000Z",
+                            "EndTime": "2023-01-01T01:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 3,
+                            "StartTime": "2023-01-01T05:00:00.000Z",
+                            "EndTime": "close"
+                        },
+                        {
+                            "DayOfWeek": 4,
+                            "StartTime": "2023-01-01T22:00:00.000Z",
+                            "EndTime": "2023-01-01T01:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 4,
+                            "StartTime": "2023-01-01T05:00:00.000Z",
+                            "EndTime": "close"
+                        },
+                        {
+                            "DayOfWeek": 5,
+                            "StartTime": "2023-01-01T22:00:00.000Z",
+                            "EndTime": "2023-01-01T01:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 5,
+                            "StartTime": "2023-01-01T05:00:00.000Z",
+                            "EndTime": "close"
+                        },
+                        {
+                            "DayOfWeek": 6,
+                            "StartTime": "2023-01-01T22:00:00.000Z",
+                            "EndTime": "2023-01-01T01:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 6,
+                            "StartTime": "2023-01-01T05:00:00.000Z",
+                            "EndTime": "close"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "McMenamins Ales",
+                            "DealValue": 1,
+                            "DealModifier": "-",
+                            "DealNote": "Pint",
+                            "DealType": "Drink"
+                        },
+                        {
+                            "Name": "Edgefield Hard Cider",
+                            "DealValue": 1,
+                            "DealModifier": "-",
+                            "DealNote": "Pint",
+                            "DealType": "Drink"
+                        },
+                        {
+                            "Name": "Edgefield Wines",
+                            "DealValue": 1,
+                            "DealModifier": "-",
+                            "DealNote": "Glass",
+                            "DealType": "Drink"
+                        },
+                        {
+                            "Name": "Half Pub Green Salad",
+                            "DealValue": 5,
+                            "DealModifier": "=",
+                            "DealNote": "",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "Well Drinks",
+                            "DealValue": 1,
+                            "DealModifier": "-",
+                            "DealNote": ""
+                        },
+                        {
+                            "Name": "Red or White Wine Flight",
+                            "DealValue": 1,
+                            "DealModifier": "-",
+                            "DealNote": "three samples"
+                        },
+                        {
+                            "Name": "Brewery Flight",
+                            "DealValue": 1,
+                            "DealModifier": "-",
+                            "DealNote": "six samples"
+                        },
+                        {
+                            "Name": "Cider Flight",
+                            "DealValue": 1,
+                            "DealModifier": "-",
+                            "DealNote": "three samples"
+                        },
+                        {
+                            "Name": "Distillery Fight",
+                            "DealValue": 2,
+                            "DealModifier": "-",
+                            "DealNote": "three samples"
+                        },
+                        {
+                            "Name": "Edgefield Wines",
+                            "DealValue": 5,
+                            "DealModifier": "-",
+                            "DealNote": "bottle"
+                        },
+                        {
+                            "Name": "Half Pub Green Salad",
+                            "DealValue": 5,
+                            "DealModifier": "=",
+                            "DealNote": ""
+                        },
+                        {
+                            "Name": "Small Cajun Tots",
+                            "DealValue": 5.50,
+                            "DealModifier": "=",
+                            "DealNote": ""
+                        },
+                        {
+                            "Name": "Small Cajun Tots",
+                            "DealValue": 5.50,
+                            "DealModifier": "=",
+                            "DealNote": ""
+                        },
+                        {
+                            "Name": "Half Hail! Cesar Salad",
+                            "DealValue": 7.25,
+                            "DealModifier": "=",
+                            "DealNote": ""
+                        },
+                        {
+                            "Name": "Cheeseburger Slider Trio",
+                            "DealValue": 9.25,
+                            "DealModifier": "=",
+                            "DealNote": ""
+                        },
+                        {
+                            "Name": "Small Hummus",
+                            "DealValue": 9.25,
+                            "DealModifier": "=",
+                            "DealNote": ""
+                        },
+                        {
+                            "Name": "Cheeseburger & Cajun Tots",
+                            "DealValue": 13.50,
+                            "DealModifier": "=",
+                            "DealNote": "beef or Hammerhead patty, add bacon $1"
+                        },
+                        {
+                            "Name": "Mystic 18 Burger & Fries",
+                            "DealValue": 14,
+                            "DealModifier": "=",
+                            "DealNote": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Seasonal Specials",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 0,
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        },
+                        {
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        },
+                        {
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        },
+                        {
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        },
+                        {
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        },
+                        {
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        },
+                        {
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "Shakedown Street Fries",
+                            "DealValue": 10.25,
+                            "DealModifier": "=",
+                            "DealNote": "Garlic oil, Parmesan, Parsley",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "RUBY’S BREWER SALAD",
+                            "DealValue": 12,
+                            "DealModifier": "=",
+                            "DealNote": "mixed lettuces, goat cheese, fresh raspberries, hazelnuts, Ruby-raspberry vinaigrette",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "HOGSHEAD BBQ SALMON BURGER",
+                            "DealValue": 18,
+                            "DealModifier": "=",
+                            "DealNote": "wild-caught salmon patty basted with Hogshead-mustard BBQ sauce, grilled onions, avocado & spicy tartar sauce on a bun with your choice of fries or tots",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "GAUCHO STEAK SOFT TACOS",
+                            "DealValue": 22.75,
+                            "DealModifier": "=",
+                            "DealNote": "grilled peppers & onion, asada mojo shaved ribeye, jicama-radish curtido, chimichurri sauce, onion, cilantro & jalapeño with ranchero-spiced tortilla chips",
+                            "DealType": "Food"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Three Mermaids Public House",
+            "Address": "18041 SW Lower Boones Ferry Rd #1b, Tigard, OR 97224",
+            "Phone": "",
+            "Hours": [
+                {
+                    "DayOfWeek": 0,
+                    "Open": "2023-01-01T19:00:00.000Z",
+                    "Close": "2023-01-01T05:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 1,
+                    "Open": "2023-01-01T19:00:00.000Z",
+                    "Close": "2023-01-01T06:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 2,
+                    "Open": "2023-01-01T19:00:00.000Z",
+                    "Close": "2023-01-01T06:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 3,
+                    "Open": "2023-01-01T19:00:00.000Z",
+                    "Close": "2023-01-01T06:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 4,
+                    "Open": "2023-01-01T19:00:00.000Z",
+                    "Close": "2023-01-01T06:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 5,
+                    "Open": "2023-01-01T19:00:00.000Z",
+                    "Close": "2023-01-01T06:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 6,
+                    "Open": "2023-01-01T19:00:00.000Z",
+                    "Close": "2023-01-01T06:00:00.000Z"
+                }
+            ],
+            "Attributes": [
+                {
+                    "Name": ""
+                }
+            ],
+            "Specials": [
+                {
+                    "Name": "Happy Hour",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 0,
+                            "StartTime": "2023-01-01T23:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 1,
+                            "StartTime": "2023-01-01T23:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 2,
+                            "StartTime": "2023-01-01T23:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 3,
+                            "StartTime": "2023-01-01T23:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 4,
+                            "StartTime": "2023-01-01T23:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 5,
+                            "StartTime": "2023-01-01T23:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 6,
+                            "StartTime": "2023-01-01T23:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "$1 off pints, wine by the glass & well drinks",
+                            "DealValue": 1,
+                            "DealModifier": "-",
+                            "DealNote": "",
+                            "DealType": "Drink"
+                        },
+                        {
+                            "Name": "$2 off specialty cocktails",
+                            "DealValue": 2,
+                            "DealModifier": "-",
+                            "DealNote": "",
+                            "DealType": "Drink"
+                        },
+                        {
+                            "Name": "Discounted appetizers",
+                            "DealValue": 0,
+                            "DealModifier": "-",
+                            "DealNote": "",
+                            "DealType": "Food"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Monday Night Bingo/Trivia",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 1,
+                            "StartTime": "2023-01-01T03:00:00.000Z",
+                            "EndTime": "close"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "Monday Night Bingo/Trivia",
+                            "DealValue": 0,
+                            "DealModifier": "",
+                            "DealNote": "",
+                            "DealType": "Event"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Taco Tuesday",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 2,
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "Enjoy two tacos, your choice of house-smoked pork or house-made chicken Tinga. Served with chips and salsa for only $10!",
+                            "DealValue": 10,
+                            "DealModifier": "=",
+                            "DealNote": "",
+                            "DealType": "Food"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Wednesday Trivia Night",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 3,
+                            "StartTime": "2023-01-01T03:00:00.000Z",
+                            "EndTime": "close"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "Last Call Trivia Night",
+                            "DealValue": 0,
+                            "DealModifier": "",
+                            "DealNote": "Join us for Last Call Trivia Night at 7pm. Win Three Mermaids gift cards!",
+                            "DealType": "Event"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Wine Down Wednesday",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 3,
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "10% Off All Wines and Ciders",
+                            "DealValue": 10,
+                            "DealModifier": "%",
+                            "DealNote": "",
+                            "DealType": "Drink"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Thirsty Thursday",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 4,
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "10% Off All Growler Fills",
+                            "DealValue": 10,
+                            "DealModifier": "%",
+                            "DealNote": "",
+                            "DealType": "Drink"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Friday: $5 Pints",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 5,
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "$5 Pints",
+                            "DealValue": 5,
+                            "DealModifier": "=",
+                            "DealNote": "",
+                            "DealType": "Drink"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Sunday Breakfast",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 0,
+                            "StartTime": "2023-01-01T19:00:00.000Z",
+                            "EndTime": "2023-01-01T22:00:00.000Z"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "Sunday Breakfast",
+                            "DealValue": 0,
+                            "DealModifier": "",
+                            "DealNote": "",
+                            "DealType": "Event"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Military Discount",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 0,
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        },
+                        {
+                            "DayOfWeek": 1,
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        },
+                        {
+                            "DayOfWeek": 2,
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        },
+                        {
+                            "DayOfWeek": 3,
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        },
+                        {
+                            "DayOfWeek": 4,
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        },
+                        {
+                            "DayOfWeek": 5,
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        },
+                        {
+                            "DayOfWeek": 6,
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "Military Discount",
+                            "DealValue": 10,
+                            "DealModifier": "%",
+                            "DealNote": "Military and essential workers receive 10% off, everyday.",
+                            "DealType": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Thirsty Lion Gastropub: Tigard",
+            "Phone": "",
+            "Address": "10205 SW Washington Square Rd, Tigard, OR 97223",
+            "Hours": [
+                {
+                    "DayOfWeek": 0,
+                    "Open": "2023-01-01T19:00:00.000Z",
+                    "Close": "2023-01-01T04:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 1,
+                    "Open": "2023-01-01T19:00:00.000Z",
+                    "Close": "2023-01-01T04:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 2,
+                    "Open": "2023-01-01T19:00:00.000Z",
+                    "Close": "2023-01-01T04:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 3,
+                    "Open": "2023-01-01T19:00:00.000Z",
+                    "Close": "2023-01-01T04:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 4,
+                    "Open": "2023-01-01T19:00:00.000Z",
+                    "Close": "2023-01-01T04:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 5,
+                    "Open": "2023-01-01T19:00:00.000Z",
+                    "Close": "2023-01-01T04:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 6,
+                    "Open": "2023-01-01T19:00:00.000Z",
+                    "Close": "2023-01-01T04:00:00.000Z"
+                }
+            ],
+            "Attributes": [
+                {
+                    "Name": ""
+                }
+            ],
+            "Specials": [
+                {
+                    "Name": "Happy Hour",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 0,
+                            "StartTime": "2023-01-01T23:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 1,
+                            "StartTime": "2023-01-01T23:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 2,
+                            "StartTime": "2023-01-01T23:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 3,
+                            "StartTime": "2023-01-01T23:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 4,
+                            "StartTime": "2023-01-01T23:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 5,
+                            "StartTime": "2023-01-01T23:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 6,
+                            "StartTime": "2023-01-01T23:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 5,
+                            "StartTime": "2023-01-01T05:00:00.000Z",
+                            "EndTime": "2023-01-01T07:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 6,
+                            "StartTime": "2023-01-01T05:00:00.000Z",
+                            "EndTime": "2023-01-01T07:00:00.000Z"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "Premium Well",
+                            "DealValue": 7.95,
+                            "DealModifier": "=",
+                            "DealNote": "",
+                            "DealType": "Drink"
+                        },
+                        {
+                            "Name": "Discount on Draft Pints",
+                            "DealValue": 1,
+                            "DealModifier": "-",
+                            "DealNote": "",
+                            "DealType": "Drink"
+                        },
+                        {
+                            "Name": "Moscow Mule",
+                            "DealValue": 8.95,
+                            "DealModifier": "=",
+                            "DealNote": "New Amsterdam Vodka, ginger beer, lime juice, simple syrup and a wedge lime.",
+                            "DealType": "Drink"
+                        },
+                        {
+                            "Name": "Classic Mojito",
+                            "DealValue": 8.95,
+                            "DealModifier": "=",
+                            "DealNote": "Cruzan Light Rum, mint, lime, soda, Sprite and simple syrup.",
+                            "DealType": "Drink"
+                        },
+                        {
+                            "Name": "Burbon Old Fashioned",
+                            "DealValue": 9.95,
+                            "DealModifier": "=",
+                            "DealNote": "Evan Williams Bourbon, Angostura Bitters, soda, agave, orange and cherry.",
+                            "DealType": "Drink"
+                        },
+                        {
+                            "Name": "Thirsty Lion Margarita",
+                            "DealValue": 8.95,
+                            "DealModifier": "=",
+                            "DealNote": "Sauza Hacienda Tequila, sweet & sour, agave, muddled lime and triple sec.",
+                            "DealType": "Drink"
+                        },
+                        {
+                            "Name": "Raspberry Drop Martini",
+                            "DealValue": 9.95,
+                            "DealModifier": "=",
+                            "DealNote": "New Amsterdam Vodka, raspberry purée and lemonade.",
+                            "DealType": "Drink"
+                        },
+                        {
+                            "Name": "Creamy Queso Dip",
+                            "DealValue": 7.95,
+                            "DealModifier": "=",
+                            "DealNote": "Roasted jalapenos, onion, tomatoes, simmered with cheddar, jack and pepper jack. Served with white corn tortilla chips.",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "Garlic Sesame Esamame",
+                            "DealValue": 7.95,
+                            "DealModifier": "=",
+                            "DealNote": "Soybean pods sautéed with garlic sesame soy glaze.",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "Hand-Breaded Chicken Tenderloins",
+                            "DealValue": 8.95,
+                            "DealModifier": "=",
+                            "DealNote": "Served with Sriracha and peppercorn ranch dipping sauces.",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "Fresh Hand Cut Fries",
+                            "DealValue": 8.95,
+                            "DealModifier": "=",
+                            "DealNote": "Fresh cut and served with peppercorn ranch and Sriracha fry sauce.",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "Spicy Fried Cauliflower",
+                            "DealValue": 8.95,
+                            "DealModifier": "=",
+                            "DealNote": "Sesame tempura fried with spicy black bean hoisin sauce, toasted cashew, scallions, cilantro and Sriracha aioli.",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "Artichoke Spinach Dip",
+                            "DealValue": 8.95,
+                            "DealModifier": "=",
+                            "DealNote": "Reggiano cream, chopped artichokes, jalapenos and roasted garlic with melted white cheddar and corn tortilla chips.",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "Ahi Poke Stack",
+                            "DealValue": 9.95,
+                            "DealModifier": "=",
+                            "DealNote": "Ahi tuna marinated in soy, Sriracha chili, sweet onions, avocado, nori, scallions, sesame oil and Hawaiian sea salt. Layered with rice, soy ginger and Sriracha aioli with wonton chips.",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "CRISPY CALAMARI",
+                            "DealValue": 9.95,
+                            "DealModifier": "=",
+                            "DealNote": "Seasoned semolina flour, lightly fried, chili lime sauce and lemon thyme aioli.",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "GRILLED BURGER SLIDERS*",
+                            "DealValue": 9.95,
+                            "DealModifier": "=",
+                            "DealNote": "Beef sliders served with lettuce, tomato, cheddar, pickles and burger sauce.",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "OVEN BAKED SOFT PRETZEL",
+                            "DealValue": 9.95,
+                            "DealModifier": "=",
+                            "DealNote": "Giant pretzel with scratch made beer cheese, jalapeno jam and sweet mustard sauce.",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "BACON WRAPPED BBQ PRAWNS",
+                            "DealValue": 9.95,
+                            "DealModifier": "=",
+                            "DealNote": "With Black Butte BBQ sauce, sticky rice, soy glaze, julienne carrots and daikon radish.",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "CALIFORNIA ROLL",
+                            "DealValue": 9.95,
+                            "DealModifier": "=",
+                            "DealNote": "Crab, avocado, cucumber, sticky rice rolled in nori and sesame seeds.",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "GRILLED SALMON CAKES",
+                            "DealValue": 9.95,
+                            "DealModifier": "=",
+                            "DealNote": "Fresh salmon, celery and onions coated with panko bread crumbs and flat top grilled. Topped with Sriracha aioli, balsamic marinated tomatoes and arugula.",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "SPICY FRIED CHICKEN SLIDERS",
+                            "DealValue": 9.95,
+                            "DealModifier": "=",
+                            "DealNote": "Marinated with jalapeno and buttermilk, dusted in spicy flour, crispy-fried and topped with chipotle Napa slaw and dill pickles.",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "PORK CARNITAS TACOS",
+                            "DealValue": 9.95,
+                            "DealModifier": "=",
+                            "DealNote": "Slow roasted pork, roasted tomatillo salsa, chipotle Napa slaw, Cotija, pickled radish, and white corn tortillas.",
+                            "DealType": "Food"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "The Stockpot Broiler: Lounge",
+            "Phone": "",
+            "Address": "",
+            "Hours": [
+                {
+                    "DayOfWeek": 0,
+                    "Open": "2023-01-01T19:30:00.000Z",
+                    "Close": "2023-01-01T07:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 1,
+                    "Open": "2023-01-01T19:30:00.000Z",
+                    "Close": "2023-01-01T07:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 2,
+                    "Open": "2023-01-01T19:30:00.000Z",
+                    "Close": "2023-01-01T07:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 3,
+                    "Open": "2023-01-01T19:30:00.000Z",
+                    "Close": "2023-01-01T07:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 4,
+                    "Open": "2023-01-01T19:30:00.000Z",
+                    "Close": "2023-01-01T07:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 5,
+                    "Open": "2023-01-01T19:30:00.000Z",
+                    "Close": "2023-01-01T07:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 6,
+                    "Open": "2023-01-01T19:30:00.000Z",
+                    "Close": "2023-01-01T07:00:00.000Z"
+                }
+            ],
+            "Attributes": [
+                {
+                    "Name": ""
+                }
+            ],
+            "Specials": [
+                {
+                    "Name": "Happy Hour Food",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 0,
+                            "StartTime": "2023-01-01T00:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 1,
+                            "StartTime": "2023-01-01T23:00:00.000Z",
+                            "EndTime": "close"
+                        },
+                        {
+                            "DayOfWeek": 2,
+                            "StartTime": "2023-01-01T00:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 3,
+                            "StartTime": "2023-01-01T00:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 4,
+                            "StartTime": "2023-01-01T00:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 5,
+                            "StartTime": "2023-01-01T00:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 6,
+                            "StartTime": "2023-01-01T00:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "Tempura Onion Rings",
+                            "DealValue": 7.95,
+                            "DealModifier": "=",
+                            "DealNote": "With a Wasabi Aioli",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "Soft Pretzel",
+                            "DealValue": 7.95,
+                            "DealModifier": "=",
+                            "DealNote": "Blue Cheese Bacon Fondue",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "Rice Paper Salad Rolls",
+                            "DealValue": 7.95,
+                            "DealModifier": "=",
+                            "DealNote": "Asian Vegetables - Thai Peanut Sauce",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "Crispy Egg Rolls",
+                            "DealValue": 7.95,
+                            "DealModifier": "=",
+                            "DealNote": "Sweet Chili Sauce",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "Teriyaki Beef Tips",
+                            "DealValue": 8.95,
+                            "DealModifier": "=",
+                            "DealNote": "Fried Wontons",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "Classic Caesar Salad",
+                            "DealValue": 8.95,
+                            "DealModifier": "=",
+                            "DealNote": "Roasted Garlic Crostini",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "Iceberg Lettuce Wedge",
+                            "DealValue": 8.95,
+                            "DealModifier": "=",
+                            "DealNote": "Aged Gorgonzola Praline Bacon Spear",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "Sicilian Meatballs",
+                            "DealValue": 8.95,
+                            "DealModifier": "=",
+                            "DealNote": "San Marzano Tomatoes, Parmesan Cheese, Garlic Bread",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "Hog Wild Mac & Cheese",
+                            "DealValue": 10.95,
+                            "DealModifier": "=",
+                            "DealNote": "Slow Smoked Pulled Pork",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "Nachos Supreme",
+                            "DealValue": 10.95,
+                            "DealModifier": "=",
+                            "DealNote": "Classic Beef and Cheese, Tomatoes, Jalapenos, Guac and Sour Cream",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "Salmon Bites",
+                            "DealValue": 10.95,
+                            "DealModifier": "=",
+                            "DealNote": "Ginger Garlic Soy - Pineapple Salsa",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "Steakhouse Sandwich",
+                            "DealValue": 11.95,
+                            "DealModifier": "=",
+                            "DealNote": "Bistro Filet with Arugula, Crispy Fried Onions and Bacon Tomato Jam",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "Clams & Mussels",
+                            "DealValue": 11.95,
+                            "DealModifier": "=",
+                            "DealNote": "Steamed in Wine & Fresh Herbs",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "1/2 Pound Cheeseburger",
+                            "DealValue": 11.95,
+                            "DealModifier": "=",
+                            "DealNote": "Piled High with Lettuce, Tomato and Onion",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "Korean Steak Tacos",
+                            "DealValue": 11.95,
+                            "DealModifier": "=",
+                            "DealNote": "Sesame Ginger Slaw",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "Tempura Prawn Tacos",
+                            "DealValue": 11.95,
+                            "DealModifier": "=",
+                            "DealNote": "Wasabi Mayo",
+                            "DealType": "Food"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Happy Hour Drinks",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 1,
+                            "StartTime": "2023-01-01T00:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 2,
+                            "StartTime": "2023-01-01T00:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 3,
+                            "StartTime": "2023-01-01T00:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 4,
+                            "StartTime": "2023-01-01T00:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 5,
+                            "StartTime": "2023-01-01T00:00:00.000Z",
+                            "EndTime": "2023-01-01T02:00:00.000Z"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "Well Drinks",
+                            "DealValue": 7.75,
+                            "DealModifier": "=",
+                            "DealNote": "",
+                            "DealType": "Drink"
+                        },
+                        {
+                            "Name": "Domestic Draft",
+                            "DealValue": 5.75,
+                            "DealModifier": "=",
+                            "DealNote": "",
+                            "DealType": "Drink"
+                        },
+                        {
+                            "Name": "Micro Draft",
+                            "DealValue": 6.00,
+                            "DealModifier": "=",
+                            "DealNote": "",
+                            "DealType": "Drink"
+                        },
+                        {
+                            "Name": "Selected Wines",
+                            "DealValue": 8.50,
+                            "DealModifier": "=",
+                            "DealNote": "",
+                            "DealType": "Drink"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Ringo's Bar & Grill",
+            "Address": "3655 SW Hall Blvd, Beaverton, OR 97005",
+            "Phone": "",
+            "Hours": [
+                {
+                    "DayOfWeek": 0,
+                    "Open": "2023-01-01T18:00:00.000Z",
+                    "Close": "2023-01-01T10:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 1,
+                    "Open": "2023-01-01T18:00:00.000Z",
+                    "Close": "2023-01-01T10:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 2,
+                    "Open": "2023-01-01T18:00:00.000Z",
+                    "Close": "2023-01-01T10:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 3,
+                    "Open": "2023-01-01T18:00:00.000Z",
+                    "Close": "2023-01-01T10:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 4,
+                    "Open": "2023-01-01T18:00:00.000Z",
+                    "Close": "2023-01-01T10:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 5,
+                    "Open": "2023-01-01T18:00:00.000Z",
+                    "Close": "2023-01-01T10:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 6,
+                    "Open": "2023-01-01T18:00:00.000Z",
+                    "Close": "2023-01-01T10:00:00.000Z"
+                }
+            ],
+            "Attributes": [
+                {
+                    "Name": ""
+                }
+            ],
+            "Specials": [
+                {
+                    "Name": "Happy Hour",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 1,
+                            "StartTime": "2023-01-01T00:00:00.000Z",
+                            "EndTime": "2023-01-01T03:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 2,
+                            "StartTime": "2023-01-01T00:00:00.000Z",
+                            "EndTime": "2023-01-01T03:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 3,
+                            "StartTime": "2023-01-01T00:00:00.000Z",
+                            "EndTime": "2023-01-01T03:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 4,
+                            "StartTime": "2023-01-01T00:00:00.000Z",
+                            "EndTime": "2023-01-01T03:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 5,
+                            "StartTime": "2023-01-01T00:00:00.000Z",
+                            "EndTime": "2023-01-01T03:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 6,
+                            "StartTime": "2023-01-01T00:00:00.000Z",
+                            "EndTime": "2023-01-01T03:00:00.000Z"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "Discount on Large-Sized Appetizers",
+                            "DealValue": 2,
+                            "DealModifier": "-",
+                            "DealNote": "",
+                            "DealType": "Food"
+                        },
+                        {
+                            "Name": "Discount on Well Drinks and Draft Beers",
+                            "DealValue": 0.50,
+                            "DealModifier": "-",
+                            "DealNote": "",
+                            "DealType": "Drink"
+                        },
+                        {
+                            "Name": "Discount on Large Pitchers of Beer",
+                            "DealValue": 1.50,
+                            "DealModifier": "-",
+                            "DealNote": "",
+                            "DealType": "Drink"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Tapphoria",
+            "Address": "",
+            "Note": "",
+            "Hours": [
+                {
+                    "DayOfWeek": 0,
+                    "Open": "2023-01-01T21:00:00.000Z",
+                    "Close": "2023-01-01T05:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 1,
+                    "Open": "2023-01-01T22:00:00.000Z",
+                    "Close": "2023-01-01T06:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 2,
+                    "Open": "2023-01-01T22:00:00.000Z",
+                    "Close": "2023-01-01T06:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 3,
+                    "Open": "2023-01-01T22:00:00.000Z",
+                    "Close": "2023-01-01T06:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 4,
+                    "Open": "2023-01-01T22:00:00.000Z",
+                    "Close": "2023-01-01T06:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 5,
+                    "Open": "2023-01-01T20:00:00.000Z",
+                    "Close": "2023-01-01T06:00:00.000Z"
+                },
+                {
+                    "DayOfWeek": 6,
+                    "Open": "2023-01-01T22:00:00.000Z",
+                    "Close": "2023-01-01T06:00:00.000Z"
+                }
+            ],
+            "Specials": [
+                {
+                    "Name": "Pre-Happy Hour",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 1,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 2,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 3,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 4,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 5,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "Discount on 64oz Growler Fill",
+                            "DealValue": 2,
+                            "DealModifier": "-",
+                            "DealNote": "",
+                            "DealType": "Drink"
+                        },
+                        {
+                            "Name": "Discount on 32oz Growler Fill",
+                            "DealValue": 1,
+                            "DealModifier": "-",
+                            "DealNote": "",
+                            "DealType": "Drink"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Happy Hour",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 1,
+                            "StartTime": "2023-01-01T16:00:00.000Z",
+                            "EndTime": "2023-01-01T18:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 2,
+                            "StartTime": "2023-01-01T16:00:00.000Z",
+                            "EndTime": "2023-01-01T18:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 3,
+                            "StartTime": "2023-01-01T16:00:00.000Z",
+                            "EndTime": "2023-01-01T18:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 4,
+                            "StartTime": "2023-01-01T16:00:00.000Z",
+                            "EndTime": "2023-01-01T18:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 5,
+                            "StartTime": "2023-01-01T16:00:00.000Z",
+                            "EndTime": "2023-01-01T18:00:00.000Z"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "Discount on Pints of Beer",
+                            "DealValue": 1,
+                            "DealModifier": "-",
+                            "DealNote": "",
+                            "DealType": "Drink"
+                        },
+                        {
+                            "Name": "Food Specials (Pork Rinds, Pretzel Bites, Chips & Salsa, Kettle Chips w/Tap Sauce & Buffalo Dip",
+                            "DealValue": 0,
+                            "DealModifier": "=",
+                            "DealNote": "",
+                            "DealType": "Food"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Daily Special: Mike's Mon Deals",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 1,
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "Discount on Selected Pints of Beer",
+                            "DealValue": 0,
+                            "DealModifier": "=",
+                            "DealNote": "",
+                            "DealType": "Drink"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Daily Special: Tightwad Tuesday",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 2,
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "Discount on Beer, Cider, Seltzer, Kombucha 64oz fills.",
+                            "DealValue": 2,
+                            "DealModifier": "-",
+                            "DealNote": "Adult Coloring Book contest w/Prizes",
+                            "DealType": "Drink"
+                        },
+                        {
+                            "Name": "Discount on 32oz Growler Fill",
+                            "DealValue": 1,
+                            "DealModifier": "-",
+                            "DealNote": "",
+                            "DealType": "Drink"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Daily Special: Wine-O Wednesday",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 3,
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "Discount on all wine",
+                            "DealValue": 15,
+                            "DealModifier": "%",
+                            "DealNote": "Glass or growler",
+                            "DealType": "Drink"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Daily Special: Red Zone Thursday",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 4,
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "Discount on select items on tap",
+                            "DealValue": 0,
+                            "DealModifier": "=",
+                            "DealNote": "Listed as Ditigal Pour item with Red Zone signifier",
+                            "DealType": "Drink"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Daily Special: TGIF",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 5,
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "Surprise Discounts",
+                            "DealValue": 0,
+                            "DealModifier": "=",
+                            "DealNote": "Always a surprise! Discounts could be anything! Come by & check them out.",
+                            "DealType": "Multi"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Daily Special: Sunday Funday",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 0,
+                            "StartTime": "open",
+                            "EndTime": "close"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "Double FiveStar points on all To-Go beverages",
+                            "DealValue": 0,
+                            "DealModifier": "=",
+                            "DealNote": "Including growlers, bottles and/or cans",
+                            "DealType": "Drink"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Event Special: NFL Game ",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 1,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 2,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 3,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 4,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 5,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "Discount on 64oz Growler Fill",
+                            "DealValue": 2,
+                            "DealModifier": "-",
+                            "DealNote": "",
+                            "DealType": "Drink"
+                        },
+                        {
+                            "Name": "Discount on 32oz Growler Fill",
+                            "DealValue": 1,
+                            "DealModifier": "-",
+                            "DealNote": "",
+                            "DealType": "Drink"
+                        },
+                        {
+                            "Name": "Event Special: Blazer Game ",
+                            "Note": "",
+                            "Days": [
+                                {
+                                    "DayOfWeek": 1,
+                                    "StartTime": "2023-01-01T14:00:00.000Z",
+                                    "EndTime": "2023-01-01T16:00:00.000Z"
+                                },
+                                {
+                                    "DayOfWeek": 2,
+                                    "StartTime": "2023-01-01T14:00:00.000Z",
+                                    "EndTime": "2023-01-01T16:00:00.000Z"
+                                },
+                                {
+                                    "DayOfWeek": 3,
+                                    "StartTime": "2023-01-01T14:00:00.000Z",
+                                    "EndTime": "2023-01-01T16:00:00.000Z"
+                                },
+                                {
+                                    "DayOfWeek": 4,
+                                    "StartTime": "2023-01-01T14:00:00.000Z",
+                                    "EndTime": "2023-01-01T16:00:00.000Z"
+                                },
+                                {
+                                    "DayOfWeek": 5,
+                                    "StartTime": "2023-01-01T14:00:00.000Z",
+                                    "EndTime": "2023-01-01T16:00:00.000Z"
+                                }
+                            ],
+                            "Details": [
+                                {
+                                    "Name": "Discount on 64oz Growler Fill",
+                                    "DealValue": 2,
+                                    "DealModifier": "-",
+                                    "DealNote": "",
+                                    "DealType": "Drink"
+                                },
+                                {
+                                    "Name": "Discount on 32oz Growler Fill",
+                                    "DealValue": 1,
+                                    "DealModifier": "-",
+                                    "DealNote": "",
+                                    "DealType": "Drink"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Event Special: Soccer Game (Timbers, Thorns)",
+                            "Note": "",
+                            "Days": [
+                                {
+                                    "DayOfWeek": 1,
+                                    "StartTime": "2023-01-01T14:00:00.000Z",
+                                    "EndTime": "2023-01-01T16:00:00.000Z"
+                                },
+                                {
+                                    "DayOfWeek": 2,
+                                    "StartTime": "2023-01-01T14:00:00.000Z",
+                                    "EndTime": "2023-01-01T16:00:00.000Z"
+                                },
+                                {
+                                    "DayOfWeek": 3,
+                                    "StartTime": "2023-01-01T14:00:00.000Z",
+                                    "EndTime": "2023-01-01T16:00:00.000Z"
+                                },
+                                {
+                                    "DayOfWeek": 4,
+                                    "StartTime": "2023-01-01T14:00:00.000Z",
+                                    "EndTime": "2023-01-01T16:00:00.000Z"
+                                },
+                                {
+                                    "DayOfWeek": 5,
+                                    "StartTime": "2023-01-01T14:00:00.000Z",
+                                    "EndTime": "2023-01-01T16:00:00.000Z"
+                                }
+                            ],
+                            "Details": [
+                                {
+                                    "Name": "Discount on 64oz Growler Fill",
+                                    "DealValue": 2,
+                                    "DealModifier": "-",
+                                    "DealNote": "",
+                                    "DealType": "Drink"
+                                },
+                                {
+                                    "Name": "Discount on 32oz Growler Fill",
+                                    "DealValue": 1,
+                                    "DealModifier": "-",
+                                    "DealNote": "",
+                                    "DealType": "Drink"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
