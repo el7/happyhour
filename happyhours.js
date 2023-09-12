@@ -8,24 +8,29 @@ var datetimeNow = new Date();
 
 document.body.style = "white-space: pre;"
 
-/* iterate over biz */
+/* iterate over biz' */
 for (var i = 0; i < data.Restaurants.length; i++) {
 
 	var re = data.Restaurants[i];
 	var openTime = re.Open;
 	var closeTime = re.Close;
-	var contentRestaurantName = document.createTextNode("\n" + re.Name + "\n");
+	var contentRestaurantName = document.createTextNode("" + re.Name + "");
 
-	targetDiv.appendChild(contentRestaurantName);
+	// create div for restaurant
+	var divRestaurant = document.createElement("div");
+    divRestaurant.className = re.Id;
+    divRestaurant.style = "background-color: red;";
+    divRestaurant.style.width = "2px";
+    divRestaurant.style.height = "20px";
+    document.body.appendChild(divRestaurant); 
+	divRestaurant.appendChild(contentRestaurantName);
 
 	addToDisplayBizHours();
 	addToDisplaySpecials();
 }
 
-function addToDisplayDeals () {
+function addToDisplayDeals (sp) {
 
-	var contentSpecialName = document.createTextNode("\n> " + sp.Name + "\n");
-	targetDiv.appendChild(contentSpecialName);
 
 	/* iterate over deals for the special */
 	for (var l = 0; l < sp.Details.length; l++) {
@@ -58,7 +63,7 @@ function addToDisplayBizHours () {
 		if (datetimeNow.getDay() == re.Hours[iter_hours].DayOfWeek) {
 
 			var contentRestaurantHours = document.createTextNode(textRestaurantHours);
-			targetDiv.appendChild(contentRestaurantHours);
+			// targetDiv.appendChild(contentRestaurantHours);
 		}
 	}
 
@@ -69,33 +74,48 @@ function addToDisplaySpecials(){
 		for (var j = 0; j < re.Specials.length; j++) {
 
 			var sp = re.Specials[j];
-	
+
 			/* iterate over days/hours the special is active */
 			for (var k = 0; k < sp.Days.length; k++) {
 				var da = sp.Days[k];
-	
-				if (da.StartTime == "open") da.StartTime = openTime;
-				if (da.EndTime == "close") da.EndTime = closeTime;
+
+				if (da.DayOfWeek != datetimeNow.getDay()) break; // might break
+				if (da.StartTime == "open") da.StartTime = openTime; // prob going to break
+				if (da.EndTime == "close") da.EndTime = closeTime; // prob going to break
 	
 				var datetimeDealStart = new Date(da.StartTime);
 				var datetimeDealEnd = new Date(da.EndTime);
 	
-				/* check if this deal is active // WORKS */
-				if (datetimeNow.getHours() >= datetimeDealStart.getHours() && datetimeNow.getHours() <= datetimeDealEnd.getHours()) {
-	
+				/* check if this deal is active */
+				if (datetimeNow.getHours() >= datetimeDealStart.getHours() 
+					&& datetimeNow.getHours() <= datetimeDealEnd.getHours()) {
 					dealActive = true;
 	
 				} else {
-	
 					dealActive = false;
 				}
 			}
 	
 			/* if deal active, add to div */
 			if (dealActive == true) {
-	
-				addToDisplayDeals();
-	
+
+				console.log("special active");
+				// create div for restaurant
+				var divSpecial = document.createElement("div");
+				divSpecial.className = sp.Id;
+				divSpecial.style = "background-color: blue;";
+				divSpecial.style.width = "1px";
+				divSpecial.style.height = "10px";
+				document.body.appendChild(divSpecial); 
+
+
+				var contentSpecialName = document.createTextNode("\n> " + sp.Name + "\n");
+				// targetDiv.appendChild(contentSpecialName);	
+				divSpecial.appendChild(contentSpecialName);
+				addToDisplayDeals(sp);	
+
+			} else {
+				console.log("special not active");
 			}
 		}
 }
