@@ -1585,9 +1585,59 @@
                     ]
                 },
                 {
-                    "Name": "Event Special: NFL Game ",
+                    "Name": "Event Special: NFL Game",
                     "Note": "",
                     "Id": "0S22",
+                    "Days": [
+                        {
+                            "DayOfWeek": 1,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 2,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 3,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 4,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 5,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "Discount on 64oz Growler Fill",
+                            "DealValue": 2,
+                            "DealModifier": "-",
+                            "DealNote": "",
+                            "DealType": "Drink",
+                            "Id": ""
+                        },
+                        {
+                            "Name": "Discount on 32oz Growler Fill",
+                            "DealValue": 1,
+                            "DealModifier": "-",
+                            "DealNote": "",
+                            "DealType": "Drink",
+                            "Id": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Event Special: Blazer Game ",
+                    "Note": "",
+                    "Id": "",
                     "Days": [
                         {
                             "DayOfWeek": 1,
@@ -1629,100 +1679,53 @@
                             "DealModifier": "-",
                             "DealNote": "",
                             "DealType": "Drink"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Event Special: Soccer Game (Timbers, Thorns)",
+                    "Note": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 1,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
                         },
                         {
-                            "Name": "Event Special: Blazer Game ",
-                            "Note": "",
-                            "Days": [
-                                {
-                                    "DayOfWeek": 1,
-                                    "StartTime": "2023-01-01T14:00:00.000Z",
-                                    "EndTime": "2023-01-01T16:00:00.000Z"
-                                },
-                                {
-                                    "DayOfWeek": 2,
-                                    "StartTime": "2023-01-01T14:00:00.000Z",
-                                    "EndTime": "2023-01-01T16:00:00.000Z"
-                                },
-                                {
-                                    "DayOfWeek": 3,
-                                    "StartTime": "2023-01-01T14:00:00.000Z",
-                                    "EndTime": "2023-01-01T16:00:00.000Z"
-                                },
-                                {
-                                    "DayOfWeek": 4,
-                                    "StartTime": "2023-01-01T14:00:00.000Z",
-                                    "EndTime": "2023-01-01T16:00:00.000Z"
-                                },
-                                {
-                                    "DayOfWeek": 5,
-                                    "StartTime": "2023-01-01T14:00:00.000Z",
-                                    "EndTime": "2023-01-01T16:00:00.000Z"
-                                }
-                            ],
-                            "Details": [
-                                {
-                                    "Name": "Discount on 64oz Growler Fill",
-                                    "DealValue": 2,
-                                    "DealModifier": "-",
-                                    "DealNote": "",
-                                    "DealType": "Drink"
-                                },
-                                {
-                                    "Name": "Discount on 32oz Growler Fill",
-                                    "DealValue": 1,
-                                    "DealModifier": "-",
-                                    "DealNote": "",
-                                    "DealType": "Drink"
-                                }
-                            ]
+                            "DayOfWeek": 2,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
                         },
                         {
-                            "Name": "Event Special: Soccer Game (Timbers, Thorns)",
-                            "Note": "",
-                            "Days": [
-                                {
-                                    "DayOfWeek": 1,
-                                    "StartTime": "2023-01-01T14:00:00.000Z",
-                                    "EndTime": "2023-01-01T16:00:00.000Z"
-                                },
-                                {
-                                    "DayOfWeek": 2,
-                                    "StartTime": "2023-01-01T14:00:00.000Z",
-                                    "EndTime": "2023-01-01T16:00:00.000Z"
-                                },
-                                {
-                                    "DayOfWeek": 3,
-                                    "StartTime": "2023-01-01T14:00:00.000Z",
-                                    "EndTime": "2023-01-01T16:00:00.000Z"
-                                },
-                                {
-                                    "DayOfWeek": 4,
-                                    "StartTime": "2023-01-01T14:00:00.000Z",
-                                    "EndTime": "2023-01-01T16:00:00.000Z"
-                                },
-                                {
-                                    "DayOfWeek": 5,
-                                    "StartTime": "2023-01-01T14:00:00.000Z",
-                                    "EndTime": "2023-01-01T16:00:00.000Z"
-                                }
-                            ],
-                            "Details": [
-                                {
-                                    "Name": "Discount on 64oz Growler Fill",
-                                    "DealValue": 2,
-                                    "DealModifier": "-",
-                                    "DealNote": "",
-                                    "DealType": "Drink"
-                                },
-                                {
-                                    "Name": "Discount on 32oz Growler Fill",
-                                    "DealValue": 1,
-                                    "DealModifier": "-",
-                                    "DealNote": "",
-                                    "DealType": "Drink"
-                                }
-                            ]
+                            "DayOfWeek": 3,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 4,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 5,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "Discount on 64oz Growler Fill",
+                            "DealValue": 2,
+                            "DealModifier": "-",
+                            "DealNote": "",
+                            "DealType": "Drink"
+                        },
+                        {
+                            "Name": "Discount on 32oz Growler Fill",
+                            "DealValue": 1,
+                            "DealModifier": "-",
+                            "DealNote": "",
+                            "DealType": "Drink"
                         }
                     ]
                 }

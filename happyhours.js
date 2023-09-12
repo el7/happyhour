@@ -41,15 +41,16 @@ function addToDisplayDeals (sp) {
 		var de = sp.Details[l];
 
 		var divDeal = document.createElement("div");
-		divDeal.classList.add(de.Id, "deal");
+		// divDeal.classList.add(de.Id, "deal");
+		divDeal.classList.add("deal");
 		divDeal.style = "background-color: green;";
 		divDeal.style.width = "1px";
 		divDeal.style.height = "20px";
 		document.body.appendChild(divDeal); 
 
-		var contentDealName = document.createTextNode("- " + de.Name + ": ");
-		var contentDealValue = document.createTextNode(de.DealValue + " ");
 		var contentDealModifier = document.createTextNode(de.DealModifier);
+		var contentDealValue = document.createTextNode(de.DealValue + " ");
+		var contentDealName = document.createTextNode("| " + de.Name + ": ");
 		var contentDealNote = document.createTextNode("(" + de.DealNote + ")\n");
 		divDeal.appendChild(contentDealModifier);
 		divDeal.appendChild(contentDealValue);
