@@ -4,7 +4,11 @@ import data from './happyhours.json' assert { type: 'json' };
 /* create variables */
 var dealActive = false;
 var targetDiv = document.getElementById('container-hh-result');
-var datetimeNow = new Date();
+
+
+//var datetimeNow = new Date();
+
+var datetimeNow = new Date("2023-09-11T15:00:00.000Z");
 
 document.body.style = "white-space: pre;"
 
@@ -18,7 +22,7 @@ for (var i = 0; i < data.Restaurants.length; i++) {
 
 	// create div for restaurant
 	var divRestaurant = document.createElement("div");
-    divRestaurant.className = re.Id;
+    divRestaurant.classList.add(re.Id, "restaurant");
     divRestaurant.style = "background-color: red;";
     divRestaurant.style.width = "2px";
     divRestaurant.style.height = "20px";
@@ -31,25 +35,34 @@ for (var i = 0; i < data.Restaurants.length; i++) {
 
 function addToDisplayDeals (sp) {
 
-
 	/* iterate over deals for the special */
 	for (var l = 0; l < sp.Details.length; l++) {
 
 		var de = sp.Details[l];
+
+		var divDeal = document.createElement("div");
+		divDeal.classList.add(de.Id, "deal");
+		divDeal.style = "background-color: green;";
+		divDeal.style.width = "1px";
+		divDeal.style.height = "20px";
+		document.body.appendChild(divDeal); 
+
 		var contentDealName = document.createTextNode("- " + de.Name + ": ");
 		var contentDealValue = document.createTextNode(de.DealValue + " ");
 		var contentDealModifier = document.createTextNode(de.DealModifier);
 		var contentDealNote = document.createTextNode("(" + de.DealNote + ")\n");
-
-		targetDiv.appendChild(contentDealModifier);
-		targetDiv.appendChild(contentDealValue);
-		targetDiv.appendChild(contentDealName);
-		targetDiv.appendChild(contentDealNote);
+		divDeal.appendChild(contentDealModifier);
+		divDeal.appendChild(contentDealValue);
+		divDeal.appendChild(contentDealName);
+		divDeal.appendChild(contentDealNote);
+		
 	}
 }
 
 
 function addToDisplayBizHours () {
+
+
 
 	/* iterate over biz hours info */
 	for (var iter_hours = 0; iter_hours < re.Hours.length; iter_hours++) {
@@ -105,11 +118,11 @@ function addToDisplaySpecials(){
 				divSpecial.className = sp.Id;
 				divSpecial.style = "background-color: blue;";
 				divSpecial.style.width = "1px";
-				divSpecial.style.height = "10px";
+				divSpecial.style.height = "30px";
 				document.body.appendChild(divSpecial); 
 
 
-				var contentSpecialName = document.createTextNode("\n> " + sp.Name + "\n");
+				var contentSpecialName = document.createTextNode("> " + sp.Name);
 				// targetDiv.appendChild(contentSpecialName);	
 				divSpecial.appendChild(contentSpecialName);
 				addToDisplayDeals(sp);	
