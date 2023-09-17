@@ -2937,6 +2937,343 @@
 					"Id": ""
                 }]
             }]
+	    },
+        {
+            "Name": "Bull Mountain Bar & Grill",
+            "Address": "13727 SW Pacific Hwy, Tigard, OR 97223",
+			"Phone": "+15034433888",
+			"Website": "https://bull-mountain-bar-grill.business.site/",
+			"Id": "0R13",
+            "Hours":[{
+				"DayOfWeek":0,
+				"Open":"2023-01-01T23:00:00.000Z",
+				"Close":"2023-01-01T07:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":1,
+				"Open":"2023-01-01T23:00:00.000Z",
+				"Close":"2023-01-01T08:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":2,
+				"Open":"2023-01-01T23:00:00.000Z",
+				"Close":"2023-01-01T08:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":3,
+				"Open":"2023-01-01T23:00:00.000Z",
+				"Close":"2023-01-01T08:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":4,
+				"Open":"2023-01-01T23:00:00.000Z",
+				"Close":"2023-01-01T08:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":5,
+				"Open":"2023-01-01T23:00:00.000Z",
+				"Close":"2023-01-01T09:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":6,
+				"Open":"2023-01-01T23:00:00.000Z",
+				"Close":"2023-01-01T09:00:00.000Z",
+				"Id":""
+			}],
+			"Attributes": [{
+				"Name": "",
+				"Id": ""
+			}],
+            "Specials": [{
+                "Name": "Late Night Menu",
+				"Note": "",
+				"Id": "",
+                "datetimeSpecialLastConfirmed": "2023-01-01T00:00:00.000Z",
+                "Days": [{
+                    "DayOfWeek": 0,
+                    "StartTime": "2023-01-01T05:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 1,
+                    "StartTime": "2023-01-01T05:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 2,
+                    "StartTime": "2023-01-01T05:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 3,
+                    "StartTime": "2023-01-01T05:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 4,
+                    "StartTime": "2023-01-01T05:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 5,
+                    "StartTime": "2023-01-01T05:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 6,
+                    "StartTime": "2023-01-01T05:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                }],
+                "Details": [{
+                    "Name": "Black & Tan Onion Rings",
+                    "DealValue": 7,
+                    "DealModifier": "=",
+                    "DealNote": "Drizzled with balsamic ale reduction",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Fried Pickle Spears",
+                    "DealValue": 7,
+                    "DealModifier": "=",
+                    "DealNote": "Ranch or Bull sauce",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Mozzarella Sticks",
+                    "DealValue": 7,
+                    "DealModifier": "=",
+                    "DealNote": "W/ Marinara or Ranch",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Chicken Wings",
+                    "DealValue": 9,
+                    "DealModifier": "=",
+                    "DealNote": "Buffalo, BBQ, Honey Garlic, No-Bull Dry Rub. With Ranch or Blue Cheese",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Mini Corn Dogs",
+                    "DealValue": 7,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Jalapeno Cheese Bites",
+                    "DealValue": 8,
+                    "DealModifier": "=",
+                    "DealNote": "W/ Bull Sauce",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Basket of Fries or Tots",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Sweet Fries",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "2 Piece Fish & Chips",
+                    "DealValue": 10,
+                    "DealModifier": "=",
+                    "DealNote": "House made tartar",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "2 Piece Chicken Tenders w/ Fries or Tots",
+                    "DealValue": 7,
+                    "DealModifier": "=",
+                    "DealNote": "Ranch, BBQ, Honey Mustard, Honey Garlic or Buffalo.",
+                    "DealType": "Food",
+					"Id": ""
+                }]
+            },
+            {
+                "Name": "Happy Hour",
+				"Note": "",
+				"Id": "",
+                "datetimeSpecialLastConfirmed": "2018-03-01T00:00:00.000Z",
+                "Days": [{
+                    "DayOfWeek": 1,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 2,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 3,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 4,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 5,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                }],
+                "Details": [{
+                    "Name": "Potato Skins",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "House made potato skins w/ bacon, cheese, tomatoes and chives",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Margarita Flatbread",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "Pesto, tomatoes & mozzarella",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Triple 'S' Flatbread",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "Steak, mushrooms & swiss cheese",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Bufy the Flatbread Slayer",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "Crispy buffalo chicken, cheddar, bleu cheese crumbles, green onion",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Two Sliders w/ Fries or Tots",
+                    "DealValue": 7,
+                    "DealModifier": "=",
+                    "DealNote": "Corned beef, burger, pork, or chicken",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "2 Pork Tacos",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "Corn tortilla, house smoked pork, cabbage, cilantro and lime",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Half Pork Nachos",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "House smoked pork, melted jack and cheddar cheese, jalapeno, black olvies and chives.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Hummus Plate",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "Hummus, flatbread, cured onions, cucumbers, tomatoes",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Side Salad, Side Caesar or Caprese Salad",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "Tomatoes, cucumber, red onion, croutons and your choice of dressing",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Cajun Steak Bites",
+                    "DealValue": 7,
+                    "DealModifier": "=",
+                    "DealNote": "6oz sirloin bites grilled with Cajun seasoning",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Basket of Fries/Tots/Sweet Fries",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "Add chili & cheese $3",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Two Piece Chicken Tenders w/ Fries or Tots",
+                    "DealValue": 7,
+                    "DealModifier": "=",
+                    "DealNote": "Ranch, BBQ, Honey Mustard, Honey Garlic or Buffalo",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Cheese Quesadilla",
+                    "DealValue": 4,
+                    "DealModifier": "=",
+                    "DealNote": "Salsa & Sour Cream",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Chips & Salsa",
+                    "DealValue": 4,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Beer, Well Drinks, House Wine",
+                    "DealValue": 0.50,
+                    "DealModifier": "-",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                }]
+            }]
 	    }
     ]
 }
