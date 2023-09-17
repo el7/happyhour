@@ -1,9 +1,9 @@
 {
     "Restaurants": [
         {
-            "Name": "McMenamins: John Barleycorn",
+            "Name": "McMenamins: John Barleycorns",
             "Address": "14610 SW Sequoia Pkwy, Tigard, OR 97223",
-            "Phone": "",
+            "Phone": "+5036842688",
             "Id": "0R1",
             "Hours": [
                 {
@@ -58,7 +58,7 @@
             "Specials": [
                 {
                     "Name": "Happy Hour",
-                    "Note": "",
+                    "Note": "Minimum drink purchase of 3.75 per person, no substitutions, additions or to go orders",
                     "Id":"0S1",
                     "Days": [
                         {
@@ -184,13 +184,15 @@
                             "DealValue": 1,
                             "DealModifier": "-",
                             "DealNote": "",
+                            "DealType": "Drink",
                             "Id":""
                         },
                         {
                             "Name": "Red or White Wine Flight",
                             "DealValue": 1,
                             "DealModifier": "-",
-                            "DealNote": "three samples",
+                            "DealNote": "Three samples",
+                            "DealType": "Drink",
                             "Id":""
                         },
                         {
@@ -198,13 +200,15 @@
                             "DealValue": 1,
                             "DealModifier": "-",
                             "DealNote": "six samples",
+                            "DealType": "Drink",
                             "Id":""
                         },
                         {
                             "Name": "Cider Flight",
                             "DealValue": 1,
                             "DealModifier": "-",
-                            "DealNote": "three samples",
+                            "DealNote": "Three samples",
+                            "DealType": "Drink",
                             "Id":""
                         },
                         {
@@ -212,6 +216,7 @@
                             "DealValue": 2,
                             "DealModifier": "-",
                             "DealNote": "three samples",
+                            "DealType": "Drink",
                             "Id":""
                         },
                         {
@@ -219,6 +224,7 @@
                             "DealValue": 5,
                             "DealModifier": "-",
                             "DealNote": "bottle",
+                            "DealType": "Drink",
                             "Id":""
                         },
                         {
@@ -226,6 +232,7 @@
                             "DealValue": 5,
                             "DealModifier": "=",
                             "DealNote": "",
+                            "DealType": "Food",
                             "Id":""
                         },
                         {
@@ -233,13 +240,7 @@
                             "DealValue": 5.50,
                             "DealModifier": "=",
                             "DealNote": "",
-                            "Id":""
-                        },
-                        {
-                            "Name": "Small Cajun Tots",
-                            "DealValue": 5.50,
-                            "DealModifier": "=",
-                            "DealNote": "",
+                            "DealType": "Food",
                             "Id":""
                         },
                         {
@@ -247,6 +248,7 @@
                             "DealValue": 7.25,
                             "DealModifier": "=",
                             "DealNote": "",
+                            "DealType": "Food",
                             "Id":""
                         },
                         {
@@ -254,6 +256,7 @@
                             "DealValue": 9.25,
                             "DealModifier": "=",
                             "DealNote": "",
+                            "DealType": "Food",
                             "Id":""
                         },
                         {
@@ -261,6 +264,7 @@
                             "DealValue": 9.25,
                             "DealModifier": "=",
                             "DealNote": "",
+                            "DealType": "Food",
                             "Id":""
                         },
                         {
@@ -268,6 +272,7 @@
                             "DealValue": 13.50,
                             "DealModifier": "=",
                             "DealNote": "beef or Hammerhead patty, add bacon $1",
+                            "DealType": "Food",
                             "Id":""
                         },
                         {
@@ -275,88 +280,6 @@
                             "DealValue": 14,
                             "DealModifier": "=",
                             "DealNote": "",
-                            "Id":""
-                        }
-                    ]
-                },
-                {
-                    "Name": "Seasonal Specials",
-                    "Note": "",
-                    "Id":"0S2",
-                    "Days": [
-                        {
-                            "DayOfWeek": 0,
-                            "StartTime": "open",
-                            "EndTime": "close",
-                            "Id":""
-                        },
-                        {
-                            "DayOfWeek": 0,
-                            "StartTime": "open",
-                            "EndTime": "close",
-                            "Id":""
-                        },
-                        {
-                            "DayOfWeek": 0,
-                            "StartTime": "open",
-                            "EndTime": "close",
-                            "Id":""
-                        },
-                        {
-                            "DayOfWeek": 0,
-                            "StartTime": "open",
-                            "EndTime": "close",
-                            "Id":""
-                        },
-                        {
-                            "DayOfWeek": 0,
-                            "StartTime": "open",
-                            "EndTime": "close",
-                            "Id":""
-                        },
-                        {
-                            "DayOfWeek": 0,
-                            "StartTime": "open",
-                            "EndTime": "close",
-                            "Id":""
-                        },
-                        {
-                            "DayOfWeek": 0,
-                            "StartTime": "open",
-                            "EndTime": "close",
-                            "Id":""
-                        }
-                    ],
-                    "Details": [
-                        {
-                            "Name": "Shakedown Street Fries",
-                            "DealValue": 10.25,
-                            "DealModifier": "=",
-                            "DealNote": "Garlic oil, Parmesan, Parsley",
-                            "DealType": "Food",
-                            "Id":""
-                        },
-                        {
-                            "Name": "RUBY’S BREWER SALAD",
-                            "DealValue": 12,
-                            "DealModifier": "=",
-                            "DealNote": "mixed lettuces, goat cheese, fresh raspberries, hazelnuts, Ruby-raspberry vinaigrette",
-                            "DealType": "Food",
-                            "Id":""
-                        },
-                        {
-                            "Name": "HOGSHEAD BBQ SALMON BURGER",
-                            "DealValue": 18,
-                            "DealModifier": "=",
-                            "DealNote": "wild-caught salmon patty basted with Hogshead-mustard BBQ sauce, grilled onions, avocado & spicy tartar sauce on a bun with your choice of fries or tots",
-                            "DealType": "Food",
-                            "Id":""
-                        },
-                        {
-                            "Name": "GAUCHO STEAK SOFT TACOS",
-                            "DealValue": 22.75,
-                            "DealModifier": "=",
-                            "DealNote": "grilled peppers & onion, asada mojo shaved ribeye, jicama-radish curtido, chimichurri sauce, onion, cilantro & jalapeño with ranchero-spiced tortilla chips",
                             "DealType": "Food",
                             "Id":""
                         }
@@ -367,7 +290,7 @@
         {
             "Name": "Three Mermaids Public House",
             "Address": "18041 SW Lower Boones Ferry Rd #1b, Tigard, OR 97224",
-            "Phone": "",
+            "Phone": "+5033525091",
             "Id": "0R2",
             "Hours": [
                 {
@@ -454,31 +377,34 @@
                     ],
                     "Details": [
                         {
-                            "Name": "$1 off pints, wine by the glass & well drinks",
+                            "Name": "Pints, wine by the glass & well drinks",
                             "DealValue": 1,
                             "DealModifier": "-",
                             "DealNote": "",
-                            "DealType": "Drink"
+                            "DealType": "Drink",
+                            "Id": ""                            
                         },
                         {
-                            "Name": "$2 off specialty cocktails",
+                            "Name": "Specialty cocktails",
                             "DealValue": 2,
                             "DealModifier": "-",
                             "DealNote": "",
-                            "DealType": "Drink"
+                            "DealType": "Drink",
+                            "Id": ""
                         },
                         {
                             "Name": "Discounted appetizers",
                             "DealValue": 0,
                             "DealModifier": "-",
                             "DealNote": "",
-                            "DealType": "Food"
+                            "DealType": "Food",
+                            "Id": ""
                         }
                     ]
                 },
                 {
-                    "Name": "Monday Night Bingo/Trivia",
-                    "Note": "",
+                    "Name": "Monday Night Bingo/Themed Trivia",
+                    "Note": "Join us every Monday night for alternating Bingo and themed Trivia by Stumptown Trivia & Bingo. Explore our specific trivia themes on our Events Calendar.",
                     "Id": "0S4",
                     "Days": [
                         {
@@ -489,7 +415,7 @@
                     ],
                     "Details": [
                         {
-                            "Name": "Monday Night Bingo/Trivia",
+                            "Name": "Monday Night Bingo/Themed Trivia",
                             "DealValue": 0,
                             "DealModifier": "",
                             "DealNote": "",
@@ -1288,21 +1214,21 @@
                     ],
                     "Details": [
                         {
-                            "Name": "Discount on Large-Sized Appetizers",
+                            "Name": "Large-Sized Appetizers",
                             "DealValue": 2,
                             "DealModifier": "-",
                             "DealNote": "",
                             "DealType": "Food"
                         },
                         {
-                            "Name": "Discount on Well Drinks and Draft Beers",
+                            "Name": "Well Drinks and Draft Beers",
                             "DealValue": 0.50,
                             "DealModifier": "-",
                             "DealNote": "",
                             "DealType": "Drink"
                         },
                         {
-                            "Name": "Discount on Large Pitchers of Beer",
+                            "Name": "Large Pitchers of Beer",
                             "DealValue": 1.50,
                             "DealModifier": "-",
                             "DealNote": "",
@@ -1762,7 +1688,7 @@
 				"Close":"2023-01-01T09:30:00.000Z"
 			},
             {
-				"DayOfWeek":5,
+				"DayOfWeek": 5,
 				"Open":"2023-01-01T19:00:00.000Z",
 				"Close":"2023-01-01T09:30:00.000Z"
 			},
@@ -1835,6 +1761,77 @@
                     "DealType": "Food"
                 }]
             }]
-        }
+        },
+        {
+            "Name": "Big Red's",
+            "Address": "11485 SW Scholls Ferry Rd, Beaverton, OR 97008",
+			"Phone": "+5035794292",
+			"Id": "",
+            "Hours":[{
+				"DayOfWeek":0,
+				"Open":"2023-01-01T00:00:00.000Z",
+				"Close":"2023-01-01T00:00:00.000Z",
+				"Id":""
+			}],
+			"Attributes": [{
+				"Name": "",
+				"Id": ""
+			}],
+            "Specials": [{
+                "Name": "Happy Hour",
+				"Note": "Beverage Purchase required, in the dining room. Not Available For Take Out",
+				"Id": "",
+                "Days": [{
+                    "DayOfWeek": 0,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 1,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 2,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 3,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 4,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 5,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 6,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                }],
+                "Details": [{
+                    "Name": "Deal?",
+                    "DealValue": 1,
+                    "DealModifier": "-",
+                    "DealNote": "Unknown",
+                    "DealType": "",
+					"Id": ""
+                }]
+            }]
+    }
     ]
 }

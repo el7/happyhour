@@ -5,10 +5,9 @@ import data from './happyhours.json' assert { type: 'json' };
 var dealActive = false;
 var targetDiv = document.getElementById('container-hh-result');
 
-
-//var datetimeNow = new Date();
-
-var datetimeNow = new Date("2023-09-11T15:00:00.000Z");
+var datetimeNow = new Date();
+//var datetimeNow = new Date("2023-09-11T15:00:00.000Z");
+console.log("Time now: " + datetimeNow);
 
 document.body.style = "white-space: pre;"
 
@@ -23,11 +22,14 @@ for (var i = 0; i < data.Restaurants.length; i++) {
 	// create div for restaurant
 	var divRestaurant = document.createElement("div");
     divRestaurant.classList.add(re.Id, "restaurant");
-    divRestaurant.style = "background-color: red;";
-    divRestaurant.style.width = "2px";
+    divRestaurant.style.backgroundColor = "red";
+    divRestaurant.style.width = "1px";
     divRestaurant.style.height = "20px";
-    document.body.appendChild(divRestaurant); 
+    divRestaurant.style.marginTop = "20px";
+	document.body.appendChild(divRestaurant); 
 	divRestaurant.appendChild(contentRestaurantName);
+
+	console.log(re.Name);
 
 	addToDisplayBizHours();
 	addToDisplaySpecials();
@@ -43,9 +45,10 @@ function addToDisplayDeals (sp) {
 		var divDeal = document.createElement("div");
 		// divDeal.classList.add(de.Id, "deal");
 		divDeal.classList.add("deal");
-		divDeal.style = "background-color: green;";
+		divDeal.style.backgroundColor = "green";
 		divDeal.style.width = "1px";
 		divDeal.style.height = "20px";
+		divDeal.style.marginLeft = "20px";
 		document.body.appendChild(divDeal); 
 
 		var contentDealModifier = document.createTextNode(de.DealModifier);
@@ -56,6 +59,8 @@ function addToDisplayDeals (sp) {
 		divDeal.appendChild(contentDealValue);
 		divDeal.appendChild(contentDealName);
 		divDeal.appendChild(contentDealNote);
+
+		console.log("Deal: " + de.Name);
 		
 	}
 }
@@ -88,18 +93,26 @@ function addToDisplaySpecials(){
 		for (var j = 0; j < re.Specials.length; j++) {
 
 			var sp = re.Specials[j];
+//			console.log("here2");
+
 
 			/* iterate over days/hours the special is active */
 			for (var k = 0; k < sp.Days.length; k++) {
+
 				var da = sp.Days[k];
 
-				if (da.DayOfWeek != datetimeNow.getDay()) break; // might break
 				if (da.StartTime == "open") da.StartTime = openTime; // prob going to break
 				if (da.EndTime == "close") da.EndTime = closeTime; // prob going to break
 	
 				var datetimeDealStart = new Date(da.StartTime);
 				var datetimeDealEnd = new Date(da.EndTime);
-	
+
+				console.log("here");
+
+				console.log("here");
+				console.log("Deal Start: " + da.StartTime);
+				console.log("Deal End: " + da.EndTime);
+
 				/* check if this deal is active */
 				if (datetimeNow.getHours() >= datetimeDealStart.getHours() 
 					&& datetimeNow.getHours() <= datetimeDealEnd.getHours()) {
@@ -117,13 +130,14 @@ function addToDisplaySpecials(){
 				// create div for restaurant
 				var divSpecial = document.createElement("div");
 				divSpecial.className = sp.Id;
-				divSpecial.style = "background-color: blue;";
+				divSpecial.style.backgroundColor = "blue";
 				divSpecial.style.width = "1px";
-				divSpecial.style.height = "30px";
+				divSpecial.style.height = "20px";
+				divSpecial.style.marginLeft = "10px";
 				document.body.appendChild(divSpecial); 
 
 
-				var contentSpecialName = document.createTextNode("> " + sp.Name);
+				var contentSpecialName = document.createTextNode(sp.Name);
 				// targetDiv.appendChild(contentSpecialName);	
 				divSpecial.appendChild(contentSpecialName);
 				addToDisplayDeals(sp);	
