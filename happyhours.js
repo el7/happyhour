@@ -49,7 +49,7 @@ function addToDisplayDeals (sp) {
 		// divDeal.classList.add(de.Id, "deal");
 		divDeal.classList.add("deal");
 		divDeal.style.backgroundColor = "green";
-		divDeal.style.width = "1px";
+		divDeal.style.width = "0px";
 		divDeal.style.height = "20px";
 		divDeal.style.marginLeft = "20px";
 		document.body.appendChild(divDeal); 
