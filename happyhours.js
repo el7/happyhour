@@ -14,9 +14,10 @@ document.body.style = "white-space: pre;"
 /* iterate over biz' */
 for (var i = 0; i < data.Restaurants.length; i++) {
 
+	console.log("here3");
 	var re = data.Restaurants[i];
-	var openTime = re.Open;
-	var closeTime = re.Close;
+	var openTime = re.Hours[datetimeNow.getDay()].Open;
+	var closeTime = re.Hours[datetimeNow.getDay()].Close;
 	var contentRestaurantName = document.createTextNode("" + re.Name + "");
 
 	// create div for restaurant
@@ -32,7 +33,7 @@ for (var i = 0; i < data.Restaurants.length; i++) {
 	console.log(re.Name);
 
 	addToDisplayBizHours();
-	addToDisplaySpecials();
+	addToDisplaySpecials(openTime, closeTime);
 }
 
 function addToDisplayDeals (sp) {
@@ -41,6 +42,8 @@ function addToDisplayDeals (sp) {
 	for (var l = 0; l < sp.Details.length; l++) {
 
 		var de = sp.Details[l];
+
+		console.log("Deal Name: " + de.Name);
 
 		var divDeal = document.createElement("div");
 		// divDeal.classList.add(de.Id, "deal");
@@ -88,13 +91,14 @@ function addToDisplayBizHours () {
 
 }
 
-function addToDisplaySpecials(){
+function addToDisplaySpecials(openTime, closeTime){
 		/* iterate over specials for the biz */
 		for (var j = 0; j < re.Specials.length; j++) {
 
 			var sp = re.Specials[j];
 //			console.log("here2");
 
+			console.log("Special Name: " + sp.Name);
 
 			/* iterate over days/hours the special is active */
 			for (var k = 0; k < sp.Days.length; k++) {
@@ -103,19 +107,18 @@ function addToDisplaySpecials(){
 
 				if (da.StartTime == "open") da.StartTime = openTime; // prob going to break
 				if (da.EndTime == "close") da.EndTime = closeTime; // prob going to break
-	
+
+				console.log("Special Start: " + da.StartTime);
+				console.log("Special End: " + da.EndTime);
+
 				var datetimeDealStart = new Date(da.StartTime);
 				var datetimeDealEnd = new Date(da.EndTime);
 
-				console.log("here");
-
-				console.log("here");
-				console.log("Deal Start: " + da.StartTime);
-				console.log("Deal End: " + da.EndTime);
 
 				/* check if this deal is active */
 				if (datetimeNow.getHours() >= datetimeDealStart.getHours() 
-					&& datetimeNow.getHours() <= datetimeDealEnd.getHours()) {
+					&& datetimeNow.getHours() <= datetimeDealEnd.getHours()
+					&& datetimeNow.getDay() == da.DayOfWeek) {
 					dealActive = true;
 	
 				} else {
