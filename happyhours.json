@@ -2658,6 +2658,285 @@
 					"Id": ""
                 }]
             }]
+	    },
+        {
+            "Name": "The Ridge Grill",
+            "Address": "12345 SW Horizon Blvd #61, Beaverton, OR 97007",
+			"Phone": "+15037477319",
+			"Website": "https://theridgepub.com/index.html",
+			"Id": "",
+            "Hours":[{
+				"DayOfWeek":0,
+				"Open":"2023-01-01T20:00:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":1,
+				"Open":"2023-01-01T22:00:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":2,
+				"Open":"2023-01-01T22:00:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":3,
+				"Open":"2023-01-01T22:00:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":4,
+				"Open":"2023-01-01T22:00:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":5,
+				"Open":"2023-01-01T20:00:00.000Z",
+				"Close":"2023-01-01T06:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":6,
+				"Open":"2023-01-01T20:00:00.000Z",
+				"Close":"2023-01-01T06:00:00.000Z",
+				"Id":""
+			}],
+			"Attributes": [{
+				"Name": "",
+				"Id": ""
+			}],
+            "Specials": [{
+                "Name": "Happy Hour",
+				"Note": "Dine in only. Minimum $3.75 drink purchase.",
+				"Id": "",
+                "datetimeSpecialLastConfirmed": "2023-01-01T00:00:00.000Z",
+                "Days": [{
+                    "DayOfWeek": 0,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 0,
+                    "StartTime": "2023-01-01T04:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 1,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 1,
+                    "StartTime": "2023-01-01T04:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },                
+                {
+                    "DayOfWeek": 2,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 2,
+                    "StartTime": "2023-01-01T04:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 3,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 3,
+                    "StartTime": "2023-01-01T04:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 4,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 4,
+                    "StartTime": "2023-01-01T04:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 5,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 5,
+                    "StartTime": "2023-01-01T04:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 6,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 6,
+                    "StartTime": "2023-01-01T04:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                }],
+                "Details": [{
+                    "Name": "Classic Ridge Burger",
+                    "DealValue": 9.5,
+                    "DealModifier": "=",
+                    "DealNote": "4 oz. Country Natural beef patty with lettuce, tomato, onion, pickles and your choice of cheese.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Melted Mozzarella Meatball Sliders",
+                    "DealValue": 9.5,
+                    "DealModifier": "=",
+                    "DealNote": "With Marinara",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Woodfired Pizza",
+                    "DealValue": 9.5,
+                    "DealModifier": "=",
+                    "DealNote": "Personal pizza made with our house sauce, fresh mozzarella and your choice of 3 toppings.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Pub Buffalo Mac & Cheese",
+                    "DealValue": 9.5,
+                    "DealModifier": "=",
+                    "DealNote": "Our cheesy creamy mac & cheese topped with grilled chicken tossed in our buffalo sauce & bleu cheese crumbles",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Hand Dipped Beer Battered Onion Rings",
+                    "DealValue": 9.5,
+                    "DealModifier": "=",
+                    "DealNote": "With Smoked Aioli",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Cajun Calamari",
+                    "DealValue": 9.5,
+                    "DealModifier": "=",
+                    "DealNote": "Crispy flash fried cajun spice calamari served with house cocktail sauce , smokey aioli & fresh lemon.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Braised Barbacoa Tacos",
+                    "DealValue": 9.5,
+                    "DealModifier": "=",
+                    "DealNote": "Two Barbacoa tacos served with fresh onion & cilantro with house tomatillo sauce on the side.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Grilled Chicken Quesadilla",
+                    "DealValue": 9.5,
+                    "DealModifier": "=",
+                    "DealNote": "Melty cheese topped with olives, tomato & green onion. Add Guac $3",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Half Dozen Ridge Wings",
+                    "DealValue": 8.5,
+                    "DealModifier": "=",
+                    "DealNote": "With your choice of Buffalo, Dragon, Thai Peanut or Habanero BBQ sauce.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Ridge Smoked Chicken Salad",
+                    "DealValue": 8.5,
+                    "DealModifier": "=",
+                    "DealNote": "Half portion of our signature smoked chicken salad with candied pecans, fresh pear & bleu cheese crumbles.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "House Made Hummus w/ House Woodfired Flatbread",
+                    "DealValue": 8.5,
+                    "DealModifier": "=",
+                    "DealNote": "Served with a side of carrots. ",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Asian Chicken Lo Mein",
+                    "DealValue": 8.5,
+                    "DealModifier": "=",
+                    "DealNote": "Soft noodles tossed wtih chicken & veggies. Try it with Prawns ... add $2",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Santa Fe Tostadas",
+                    "DealValue": 8.5,
+                    "DealModifier": "=",
+                    "DealNote": "Two crispy tostadas topped with smoked chicken, pepper jack cheese, jalapeno & red peppers. ",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Crispy Sweet Fries",
+                    "DealValue": 8.5,
+                    "DealModifier": "=",
+                    "DealNote": "Served with Creamy Ranch or Bleu Cheese",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Classic Caesar Salad",
+                    "DealValue": 7,
+                    "DealModifier": "=",
+                    "DealNote": "With crispy romaine, parmesan & house croutons. ",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "House Salad",
+                    "DealValue": 7,
+                    "DealModifier": "=",
+                    "DealNote": "With fresh mixed greens, onions, tomatoes & parmesan. ",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Basket Crispy Pub Fries",
+                    "DealValue": 7,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                }]
+            }]
 	    }
     ]
 }
