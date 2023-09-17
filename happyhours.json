@@ -2664,7 +2664,7 @@
             "Address": "12345 SW Horizon Blvd #61, Beaverton, OR 97007",
 			"Phone": "+15037477319",
 			"Website": "https://theridgepub.com/index.html",
-			"Id": "",
+			"Id": "0R12",
             "Hours":[{
 				"DayOfWeek":0,
 				"Open":"2023-01-01T20:00:00.000Z",

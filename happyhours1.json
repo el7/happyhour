@@ -4,6 +4,7 @@
             "Name": "",
             "Address": "",
 			"Phone": "",
+			"Website": "",
 			"Id": "",
             "Hours":[{
 				"DayOfWeek":0,
