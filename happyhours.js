@@ -6,7 +6,7 @@ var dealActive = false;
 var targetDiv = document.getElementById('container-hh-result');
 
 var datetimeNow = new Date();
-//var datetimeNow = new Date("2023-09-11T15:00:00.000Z");
+//var datetimeNow = new Date("2023-09-14T23:00:00.000Z");
 console.log("Time now: " + datetimeNow);
 
 document.body.style = "white-space: pre;"
@@ -23,12 +23,8 @@ for (var i = 0; i < data.Restaurants.length; i++) {
 	// create div for restaurant
 	var divRestaurant = document.createElement("div");
     divRestaurant.classList.add(re.Id, "restaurant");
-    divRestaurant.style.backgroundColor = "red";
-    divRestaurant.style.width = "1px";
-    divRestaurant.style.height = "20px";
-    divRestaurant.style.marginTop = "20px";
-	document.body.appendChild(divRestaurant); 
 	divRestaurant.appendChild(contentRestaurantName);
+	document.body.appendChild(divRestaurant); 
 
 	console.log(re.Name);
 
@@ -46,12 +42,8 @@ function addToDisplayDeals (sp) {
 		console.log("Deal Name: " + de.Name);
 
 		var divDeal = document.createElement("div");
-		// divDeal.classList.add(de.Id, "deal");
+		//divDeal.classList.add(de.Id, "deal");
 		divDeal.classList.add("deal");
-		divDeal.style.backgroundColor = "green";
-		divDeal.style.width = "0px";
-		divDeal.style.height = "20px";
-		divDeal.style.marginLeft = "20px";
 		document.body.appendChild(divDeal); 
 
 		var contentDealModifier = document.createTextNode(de.DealModifier);
@@ -130,15 +122,12 @@ function addToDisplaySpecials(openTime, closeTime){
 			if (dealActive == true) {
 
 				console.log("special active");
+
 				// create div for restaurant
 				var divSpecial = document.createElement("div");
-				divSpecial.className = sp.Id;
-				divSpecial.style.backgroundColor = "blue";
-				divSpecial.style.width = "1px";
-				divSpecial.style.height = "20px";
-				divSpecial.style.marginLeft = "10px";
+				//divSpecial.classList.add(sp.Id, "special");
+				divSpecial.classList.add("special");
 				document.body.appendChild(divSpecial); 
-
 
 				var contentSpecialName = document.createTextNode(sp.Name);
 				// targetDiv.appendChild(contentSpecialName);	
