@@ -3,10 +3,10 @@ import data from './happyhours.json' assert { type: 'json' };
 
 /* create variables */
 var dealActive = false;
-var targetDiv = document.getElementById('container-hh-result');
 
-var datetimeNow = new Date();
-//var datetimeNow = new Date("2023-09-14T23:00:00.000Z");
+//var datetimeNow = new Date();
+var datetimeNow = new Date("2023-09-14T23:00:00.000Z");
+
 console.log("Time now: " + datetimeNow);
 
 document.body.style = "white-space: pre;"
@@ -31,6 +31,15 @@ for (var i = 0; i < data.Restaurants.length; i++) {
 	addToDisplayBizHours();
 	addToDisplaySpecials(openTime, closeTime);
 }
+
+starter();
+
+function starter () {
+
+
+
+}
+
 
 function addToDisplayDeals (sp) {
 
