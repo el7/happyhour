@@ -1,125 +1,150 @@
 {
     "Restaurants": [
         {
-            "Name": "McMenamins: John Barleycorn",
+            "Name": "McMenamins: John Barleycorns",
             "Address": "14610 SW Sequoia Pkwy, Tigard, OR 97223",
-            "Phone": "",
+            "Phone": "+15036842688",
+            "Id": "0R1",
             "Hours": [
                 {
                     "DayOfWeek": 0,
                     "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T08:00:00.000Z"
+                    "Close": "2023-01-01T08:00:00.000Z",
+                    "Id":""
                 },
                 {
                     "DayOfWeek": 1,
                     "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T08:00:00.000Z"
+                    "Close": "2023-01-01T08:00:00.000Z",
+                    "Id":""
                 },
                 {
                     "DayOfWeek": 2,
                     "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T08:00:00.000Z"
+                    "Close": "2023-01-01T08:00:00.000Z",
+                    "Id":""
                 },
                 {
                     "DayOfWeek": 3,
                     "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T09:00:00.000Z"
+                    "Close": "2023-01-01T09:00:00.000Z",
+                    "Id":""
                 },
                 {
                     "DayOfWeek": 4,
                     "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T09:00:00.000Z"
+                    "Close": "2023-01-01T09:00:00.000Z",
+                    "Id":""
                 },
                 {
                     "DayOfWeek": 5,
                     "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T09:00:00.000Z"
+                    "Close": "2023-01-01T09:00:00.000Z",
+                    "Id":""
                 },
                 {
                     "DayOfWeek": 6,
                     "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T09:00:00.000Z"
+                    "Close": "2023-01-01T09:00:00.000Z",
+                    "Id":""
                 }
             ],
             "Attributes": [
                 {
-                    "Name": ""
+                    "Name": "",
+                    "Id":""
                 }
             ],
             "Specials": [
                 {
                     "Name": "Happy Hour",
-                    "Note": "",
+                    "Note": "Minimum drink purchase of 3.75 per person, no substitutions, additions or to go orders",
+                    "Id":"0S1",
+                    "datetimeSpecialLastConfirmed": "",
                     "Days": [
                         {
                             "DayOfWeek": 0,
                             "StartTime": "2023-01-01T22:00:00.000Z",
-                            "EndTime": "2023-01-01T01:00:00.000Z"
+                            "EndTime": "2023-01-01T01:00:00.000Z",
+                            "Id":""
                         },
                         {
                             "DayOfWeek": 0,
                             "StartTime": "2023-01-01T05:00:00.000Z",
-                            "EndTime": "close"
+                            "EndTime": "close",
+                            "Id":""                            
                         },
                         {
                             "DayOfWeek": 1,
                             "StartTime": "2023-01-01T22:00:00.000Z",
-                            "EndTime": "2023-01-01T01:00:00.000Z"
+                            "EndTime": "2023-01-01T01:00:00.000Z",
+                            "Id":""                            
                         },
                         {
                             "DayOfWeek": 1,
                             "StartTime": "2023-01-01T05:00:00.000Z",
-                            "EndTime": "close"
+                            "EndTime": "close",
+                            "Id":""
                         },
                         {
                             "DayOfWeek": 2,
                             "StartTime": "2023-01-01T22:00:00.000Z",
-                            "EndTime": "2023-01-01T01:00:00.000Z"
+                            "EndTime": "2023-01-01T01:00:00.000Z",
+                            "Id":""
                         },
                         {
                             "DayOfWeek": 2,
                             "StartTime": "2023-01-01T05:00:00.000Z",
-                            "EndTime": "close"
+                            "EndTime": "close",
+                            "Id":""
                         },
                         {
                             "DayOfWeek": 3,
                             "StartTime": "2023-01-01T22:00:00.000Z",
-                            "EndTime": "2023-01-01T01:00:00.000Z"
+                            "EndTime": "2023-01-01T01:00:00.000Z",
+                            "Id":""
                         },
                         {
                             "DayOfWeek": 3,
                             "StartTime": "2023-01-01T05:00:00.000Z",
-                            "EndTime": "close"
+                            "EndTime": "close",
+                            "Id":""
                         },
                         {
                             "DayOfWeek": 4,
                             "StartTime": "2023-01-01T22:00:00.000Z",
-                            "EndTime": "2023-01-01T01:00:00.000Z"
+                            "EndTime": "2023-01-01T01:00:00.000Z",
+                            "Id":""
                         },
                         {
                             "DayOfWeek": 4,
                             "StartTime": "2023-01-01T05:00:00.000Z",
-                            "EndTime": "close"
+                            "EndTime": "close",
+                            "Id":""
                         },
                         {
                             "DayOfWeek": 5,
                             "StartTime": "2023-01-01T22:00:00.000Z",
-                            "EndTime": "2023-01-01T01:00:00.000Z"
+                            "EndTime": "2023-01-01T01:00:00.000Z",
+                            "Id":""
                         },
                         {
                             "DayOfWeek": 5,
                             "StartTime": "2023-01-01T05:00:00.000Z",
-                            "EndTime": "close"
+                            "EndTime": "close",
+                            "Id":""
                         },
                         {
                             "DayOfWeek": 6,
                             "StartTime": "2023-01-01T22:00:00.000Z",
-                            "EndTime": "2023-01-01T01:00:00.000Z"
+                            "EndTime": "2023-01-01T01:00:00.000Z",
+                            "Id":""
                         },
                         {
                             "DayOfWeek": 6,
                             "StartTime": "2023-01-01T05:00:00.000Z",
-                            "EndTime": "close"
+                            "EndTime": "close",
+                            "Id":""
                         }
                     ],
                     "Details": [
@@ -128,177 +153,136 @@
                             "DealValue": 1,
                             "DealModifier": "-",
                             "DealNote": "Pint",
-                            "DealType": "Drink"
+                            "DealType": "Drink",
+                            "Id":""
                         },
                         {
                             "Name": "Edgefield Hard Cider",
                             "DealValue": 1,
                             "DealModifier": "-",
                             "DealNote": "Pint",
-                            "DealType": "Drink"
+                            "DealType": "Drink",
+                            "Id":""
                         },
                         {
                             "Name": "Edgefield Wine",
                             "DealValue": 1,
                             "DealModifier": "-",
                             "DealNote": "Glass",
-                            "DealType": "Drink"
+                            "DealType": "Drink",
+                            "Id":""
                         },
                         {
                             "Name": "Half Pub Green Salad",
                             "DealValue": 5,
                             "DealModifier": "=",
                             "DealNote": "",
-                            "DealType": "Food"
+                            "DealType": "Food",
+                            "Id":""
                         },
                         {
                             "Name": "Well Drinks",
                             "DealValue": 1,
                             "DealModifier": "-",
-                            "DealNote": ""
+                            "DealNote": "",
+                            "DealType": "Drink",
+                            "Id":""
                         },
                         {
                             "Name": "Red or White Wine Flight",
                             "DealValue": 1,
                             "DealModifier": "-",
-                            "DealNote": "three samples"
+                            "DealNote": "Three samples",
+                            "DealType": "Drink",
+                            "Id":""
                         },
                         {
                             "Name": "Brewery Flight",
                             "DealValue": 1,
                             "DealModifier": "-",
-                            "DealNote": "six samples"
+                            "DealNote": "six samples",
+                            "DealType": "Drink",
+                            "Id":""
                         },
                         {
                             "Name": "Cider Flight",
                             "DealValue": 1,
                             "DealModifier": "-",
-                            "DealNote": "three samples"
+                            "DealNote": "Three samples",
+                            "DealType": "Drink",
+                            "Id":""
                         },
                         {
                             "Name": "Distillery Fight",
                             "DealValue": 2,
                             "DealModifier": "-",
-                            "DealNote": "three samples"
+                            "DealNote": "three samples",
+                            "DealType": "Drink",
+                            "Id":""
                         },
                         {
                             "Name": "Edgefield Wines",
                             "DealValue": 5,
                             "DealModifier": "-",
-                            "DealNote": "bottle"
+                            "DealNote": "bottle",
+                            "DealType": "Drink",
+                            "Id":""
                         },
                         {
                             "Name": "Half Pub Green Salad",
                             "DealValue": 5,
                             "DealModifier": "=",
-                            "DealNote": ""
+                            "DealNote": "",
+                            "DealType": "Food",
+                            "Id":""
                         },
                         {
                             "Name": "Small Cajun Tots",
                             "DealValue": 5.50,
                             "DealModifier": "=",
-                            "DealNote": ""
-                        },
-                        {
-                            "Name": "Small Cajun Tots",
-                            "DealValue": 5.50,
-                            "DealModifier": "=",
-                            "DealNote": ""
+                            "DealNote": "",
+                            "DealType": "Food",
+                            "Id":""
                         },
                         {
                             "Name": "Half Hail! Cesar Salad",
                             "DealValue": 7.25,
                             "DealModifier": "=",
-                            "DealNote": ""
+                            "DealNote": "",
+                            "DealType": "Food",
+                            "Id":""
                         },
                         {
                             "Name": "Cheeseburger Slider Trio",
                             "DealValue": 9.25,
                             "DealModifier": "=",
-                            "DealNote": ""
+                            "DealNote": "",
+                            "DealType": "Food",
+                            "Id":""
                         },
                         {
                             "Name": "Small Hummus",
                             "DealValue": 9.25,
                             "DealModifier": "=",
-                            "DealNote": ""
+                            "DealNote": "",
+                            "DealType": "Food",
+                            "Id":""
                         },
                         {
                             "Name": "Cheeseburger & Cajun Tots",
                             "DealValue": 13.50,
                             "DealModifier": "=",
-                            "DealNote": "beef or Hammerhead patty, add bacon $1"
+                            "DealNote": "beef or Hammerhead patty, add bacon $1",
+                            "DealType": "Food",
+                            "Id":""
                         },
                         {
                             "Name": "Mystic 18 Burger & Fries",
                             "DealValue": 14,
                             "DealModifier": "=",
-                            "DealNote": ""
-                        }
-                    ]
-                },
-                {
-                    "Name": "Seasonal Specials",
-                    "Note": "",
-                    "Days": [
-                        {
-                            "DayOfWeek": 0,
-                            "StartTime": "open",
-                            "EndTime": "close"
-                        },
-                        {
-                            "StartTime": "open",
-                            "EndTime": "close"
-                        },
-                        {
-                            "StartTime": "open",
-                            "EndTime": "close"
-                        },
-                        {
-                            "StartTime": "open",
-                            "EndTime": "close"
-                        },
-                        {
-                            "StartTime": "open",
-                            "EndTime": "close"
-                        },
-                        {
-                            "StartTime": "open",
-                            "EndTime": "close"
-                        },
-                        {
-                            "StartTime": "open",
-                            "EndTime": "close"
-                        }
-                    ],
-                    "Details": [
-                        {
-                            "Name": "Shakedown Street Fries",
-                            "DealValue": 10.25,
-                            "DealModifier": "=",
-                            "DealNote": "Garlic oil, Parmesan, Parsley",
-                            "DealType": "Food"
-                        },
-                        {
-                            "Name": "RUBY’S BREWER SALAD",
-                            "DealValue": 12,
-                            "DealModifier": "=",
-                            "DealNote": "mixed lettuces, goat cheese, fresh raspberries, hazelnuts, Ruby-raspberry vinaigrette",
-                            "DealType": "Food"
-                        },
-                        {
-                            "Name": "HOGSHEAD BBQ SALMON BURGER",
-                            "DealValue": 18,
-                            "DealModifier": "=",
-                            "DealNote": "wild-caught salmon patty basted with Hogshead-mustard BBQ sauce, grilled onions, avocado & spicy tartar sauce on a bun with your choice of fries or tots",
-                            "DealType": "Food"
-                        },
-                        {
-                            "Name": "GAUCHO STEAK SOFT TACOS",
-                            "DealValue": 22.75,
-                            "DealModifier": "=",
-                            "DealNote": "grilled peppers & onion, asada mojo shaved ribeye, jicama-radish curtido, chimichurri sauce, onion, cilantro & jalapeño with ranchero-spiced tortilla chips",
-                            "DealType": "Food"
+                            "DealNote": "",
+                            "DealType": "Food",
+                            "Id":""
                         }
                     ]
                 }
@@ -307,7 +291,8 @@
         {
             "Name": "Three Mermaids Public House",
             "Address": "18041 SW Lower Boones Ferry Rd #1b, Tigard, OR 97224",
-            "Phone": "",
+            "Phone": "+15033525091",
+            "Id": "0R2",
             "Hours": [
                 {
                     "DayOfWeek": 0,
@@ -353,7 +338,8 @@
             "Specials": [
                 {
                     "Name": "Happy Hour",
-                    "Note": "",
+                    "Note": "0S3",
+                    "datetimeSpecialLastConfirmed": "",
                     "Days": [
                         {
                             "DayOfWeek": 0,
@@ -393,31 +379,35 @@
                     ],
                     "Details": [
                         {
-                            "Name": "$1 off pints, wine by the glass & well drinks",
+                            "Name": "Pints, wine by the glass & well drinks",
                             "DealValue": 1,
                             "DealModifier": "-",
                             "DealNote": "",
-                            "DealType": "Drink"
+                            "DealType": "Drink",
+                            "Id": ""                            
                         },
                         {
-                            "Name": "$2 off specialty cocktails",
+                            "Name": "Specialty cocktails",
                             "DealValue": 2,
                             "DealModifier": "-",
                             "DealNote": "",
-                            "DealType": "Drink"
+                            "DealType": "Drink",
+                            "Id": ""
                         },
                         {
                             "Name": "Discounted appetizers",
                             "DealValue": 0,
                             "DealModifier": "-",
                             "DealNote": "",
-                            "DealType": "Food"
+                            "DealType": "Food",
+                            "Id": ""
                         }
                     ]
                 },
                 {
-                    "Name": "Monday Night Bingo/Trivia",
-                    "Note": "",
+                    "Name": "Monday Night Bingo/Themed Trivia",
+                    "Note": "Join us every Monday night for alternating Bingo and themed Trivia by Stumptown Trivia & Bingo. Explore our specific trivia themes on our Events Calendar.",
+                    "Id": "0S4",
                     "Days": [
                         {
                             "DayOfWeek": 1,
@@ -427,7 +417,7 @@
                     ],
                     "Details": [
                         {
-                            "Name": "Monday Night Bingo/Trivia",
+                            "Name": "Monday Night Bingo/Themed Trivia",
                             "DealValue": 0,
                             "DealModifier": "",
                             "DealNote": "",
@@ -438,6 +428,7 @@
                 {
                     "Name": "Taco Tuesday",
                     "Note": "",
+                    "Id": "0S5",
                     "Days": [
                         {
                             "DayOfWeek": 2,
@@ -458,6 +449,7 @@
                 {
                     "Name": "Wednesday Trivia Night",
                     "Note": "",
+                    "Id": "0S3",
                     "Days": [
                         {
                             "DayOfWeek": 3,
@@ -478,6 +470,7 @@
                 {
                     "Name": "Wine Down Wednesday",
                     "Note": "",
+                    "Id": "0S6",
                     "Days": [
                         {
                             "DayOfWeek": 3,
@@ -498,6 +491,7 @@
                 {
                     "Name": "Thirsty Thursday",
                     "Note": "",
+                    "Id": "0S7",
                     "Days": [
                         {
                             "DayOfWeek": 4,
@@ -518,6 +512,7 @@
                 {
                     "Name": "Friday: $5 Pints",
                     "Note": "",
+                    "Id": "0R8",
                     "Days": [
                         {
                             "DayOfWeek": 5,
@@ -538,6 +533,7 @@
                 {
                     "Name": "Sunday Breakfast",
                     "Note": "",
+                    "Id": "0S8",
                     "Days": [
                         {
                             "DayOfWeek": 0,
@@ -558,6 +554,7 @@
                 {
                     "Name": "Military Discount",
                     "Note": "",
+                    "Id": "0S9",
                     "Days": [
                         {
                             "DayOfWeek": 0,
@@ -611,6 +608,7 @@
             "Name": "Thirsty Lion Gastropub: Tigard",
             "Phone": "",
             "Address": "10205 SW Washington Square Rd, Tigard, OR 97223",
+            "Id": "0R3",
             "Hours": [
                 {
                     "DayOfWeek": 0,
@@ -657,6 +655,8 @@
                 {
                     "Name": "Happy Hour",
                     "Note": "",
+                    "Id": "0S10",
+                    "datetimeSpecialLastConfirmed": "",
                     "Days": [
                         {
                             "DayOfWeek": 0,
@@ -867,6 +867,7 @@
             "Name": "The Stockpot Broiler: Lounge",
             "Phone": "",
             "Address": "",
+            "Id": "0R4",
             "Hours": [
                 {
                     "DayOfWeek": 0,
@@ -913,6 +914,8 @@
                 {
                     "Name": "Happy Hour Food",
                     "Note": "",
+                    "Id": "0S11",
+                    "datetimeSpecialLastConfirmed": "",
                     "Days": [
                         {
                             "DayOfWeek": 0,
@@ -1068,6 +1071,7 @@
                 {
                     "Name": "Happy Hour Drinks",
                     "Note": "",
+                    "Id": "0S12",
                     "Days": [
                         {
                             "DayOfWeek": 1,
@@ -1132,6 +1136,7 @@
             "Name": "Ringo's Bar & Grill",
             "Address": "3655 SW Hall Blvd, Beaverton, OR 97005",
             "Phone": "",
+            "Id": "0R5",
             "Hours": [
                 {
                     "DayOfWeek": 0,
@@ -1178,6 +1183,8 @@
                 {
                     "Name": "Happy Hour",
                     "Note": "",
+                    "Id": "0S13",
+                    "datetimeSpecialLastConfirmed": "",
                     "Days": [
                         {
                             "DayOfWeek": 1,
@@ -1212,21 +1219,21 @@
                     ],
                     "Details": [
                         {
-                            "Name": "Discount on Large-Sized Appetizers",
+                            "Name": "Large-Sized Appetizers",
                             "DealValue": 2,
                             "DealModifier": "-",
                             "DealNote": "",
                             "DealType": "Food"
                         },
                         {
-                            "Name": "Discount on Well Drinks and Draft Beers",
+                            "Name": "Well Drinks and Draft Beers",
                             "DealValue": 0.50,
                             "DealModifier": "-",
                             "DealNote": "",
                             "DealType": "Drink"
                         },
                         {
-                            "Name": "Discount on Large Pitchers of Beer",
+                            "Name": "Large Pitchers of Beer",
                             "DealValue": 1.50,
                             "DealModifier": "-",
                             "DealNote": "",
@@ -1240,6 +1247,7 @@
             "Name": "Tapphoria",
             "Address": "",
             "Note": "",
+            "Id": "0R6",
             "Hours": [
                 {
                     "DayOfWeek": 0,
@@ -1281,6 +1289,8 @@
                 {
                     "Name": "Pre-Happy Hour",
                     "Note": "",
+                    "Id": "0S14",
+                    "datetimeSpecialLastConfirmed": "",
                     "Days": [
                         {
                             "DayOfWeek": 1,
@@ -1328,6 +1338,7 @@
                 {
                     "Name": "Happy Hour",
                     "Note": "",
+                    "Id": "0S15",
                     "Days": [
                         {
                             "DayOfWeek": 1,
@@ -1375,6 +1386,7 @@
                 {
                     "Name": "Daily Special: Mike's Mon Deals",
                     "Note": "",
+                    "Id": "0S16",
                     "Days": [
                         {
                             "DayOfWeek": 1,
@@ -1395,6 +1407,7 @@
                 {
                     "Name": "Daily Special: Tightwad Tuesday",
                     "Note": "",
+                    "Id": "0S17",
                     "Days": [
                         {
                             "DayOfWeek": 2,
@@ -1422,6 +1435,7 @@
                 {
                     "Name": "Daily Special: Wine-O Wednesday",
                     "Note": "",
+                    "Id": "0S18",
                     "Days": [
                         {
                             "DayOfWeek": 3,
@@ -1442,6 +1456,7 @@
                 {
                     "Name": "Daily Special: Red Zone Thursday",
                     "Note": "",
+                    "Id": "0S19",
                     "Days": [
                         {
                             "DayOfWeek": 4,
@@ -1462,6 +1477,7 @@
                 {
                     "Name": "Daily Special: TGIF",
                     "Note": "",
+                    "Id": "0S20",
                     "Days": [
                         {
                             "DayOfWeek": 5,
@@ -1482,6 +1498,7 @@
                 {
                     "Name": "Daily Special: Sunday Funday",
                     "Note": "",
+                    "Id": "0S21",
                     "Days": [
                         {
                             "DayOfWeek": 0,
@@ -1500,7 +1517,105 @@
                     ]
                 },
                 {
-                    "Name": "Event Special: NFL Game ",
+                    "Name": "Event Special: NFL Game",
+                    "Note": "",
+                    "Id": "0S22",
+                    "Days": [
+                        {
+                            "DayOfWeek": 1,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 2,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 3,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 4,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 5,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "Discount on 64oz Growler Fill",
+                            "DealValue": 2,
+                            "DealModifier": "-",
+                            "DealNote": "",
+                            "DealType": "Drink",
+                            "Id": ""
+                        },
+                        {
+                            "Name": "Discount on 32oz Growler Fill",
+                            "DealValue": 1,
+                            "DealModifier": "-",
+                            "DealNote": "",
+                            "DealType": "Drink",
+                            "Id": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Event Special: Blazer Game ",
+                    "Note": "",
+                    "Id": "",
+                    "Days": [
+                        {
+                            "DayOfWeek": 1,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 2,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 3,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 4,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        },
+                        {
+                            "DayOfWeek": 5,
+                            "StartTime": "2023-01-01T14:00:00.000Z",
+                            "EndTime": "2023-01-01T16:00:00.000Z"
+                        }
+                    ],
+                    "Details": [
+                        {
+                            "Name": "Discount on 64oz Growler Fill",
+                            "DealValue": 2,
+                            "DealModifier": "-",
+                            "DealNote": "",
+                            "DealType": "Drink"
+                        },
+                        {
+                            "Name": "Discount on 32oz Growler Fill",
+                            "DealValue": 1,
+                            "DealModifier": "-",
+                            "DealNote": "",
+                            "DealType": "Drink"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Event Special: Soccer Game (Timbers, Thorns)",
                     "Note": "",
                     "Days": [
                         {
@@ -1543,104 +1658,1622 @@
                             "DealModifier": "-",
                             "DealNote": "",
                             "DealType": "Drink"
-                        },
-                        {
-                            "Name": "Event Special: Blazer Game ",
-                            "Note": "",
-                            "Days": [
-                                {
-                                    "DayOfWeek": 1,
-                                    "StartTime": "2023-01-01T14:00:00.000Z",
-                                    "EndTime": "2023-01-01T16:00:00.000Z"
-                                },
-                                {
-                                    "DayOfWeek": 2,
-                                    "StartTime": "2023-01-01T14:00:00.000Z",
-                                    "EndTime": "2023-01-01T16:00:00.000Z"
-                                },
-                                {
-                                    "DayOfWeek": 3,
-                                    "StartTime": "2023-01-01T14:00:00.000Z",
-                                    "EndTime": "2023-01-01T16:00:00.000Z"
-                                },
-                                {
-                                    "DayOfWeek": 4,
-                                    "StartTime": "2023-01-01T14:00:00.000Z",
-                                    "EndTime": "2023-01-01T16:00:00.000Z"
-                                },
-                                {
-                                    "DayOfWeek": 5,
-                                    "StartTime": "2023-01-01T14:00:00.000Z",
-                                    "EndTime": "2023-01-01T16:00:00.000Z"
-                                }
-                            ],
-                            "Details": [
-                                {
-                                    "Name": "Discount on 64oz Growler Fill",
-                                    "DealValue": 2,
-                                    "DealModifier": "-",
-                                    "DealNote": "",
-                                    "DealType": "Drink"
-                                },
-                                {
-                                    "Name": "Discount on 32oz Growler Fill",
-                                    "DealValue": 1,
-                                    "DealModifier": "-",
-                                    "DealNote": "",
-                                    "DealType": "Drink"
-                                }
-                            ]
-                        },
-                        {
-                            "Name": "Event Special: Soccer Game (Timbers, Thorns)",
-                            "Note": "",
-                            "Days": [
-                                {
-                                    "DayOfWeek": 1,
-                                    "StartTime": "2023-01-01T14:00:00.000Z",
-                                    "EndTime": "2023-01-01T16:00:00.000Z"
-                                },
-                                {
-                                    "DayOfWeek": 2,
-                                    "StartTime": "2023-01-01T14:00:00.000Z",
-                                    "EndTime": "2023-01-01T16:00:00.000Z"
-                                },
-                                {
-                                    "DayOfWeek": 3,
-                                    "StartTime": "2023-01-01T14:00:00.000Z",
-                                    "EndTime": "2023-01-01T16:00:00.000Z"
-                                },
-                                {
-                                    "DayOfWeek": 4,
-                                    "StartTime": "2023-01-01T14:00:00.000Z",
-                                    "EndTime": "2023-01-01T16:00:00.000Z"
-                                },
-                                {
-                                    "DayOfWeek": 5,
-                                    "StartTime": "2023-01-01T14:00:00.000Z",
-                                    "EndTime": "2023-01-01T16:00:00.000Z"
-                                }
-                            ],
-                            "Details": [
-                                {
-                                    "Name": "Discount on 64oz Growler Fill",
-                                    "DealValue": 2,
-                                    "DealModifier": "-",
-                                    "DealNote": "",
-                                    "DealType": "Drink"
-                                },
-                                {
-                                    "Name": "Discount on 32oz Growler Fill",
-                                    "DealValue": 1,
-                                    "DealModifier": "-",
-                                    "DealNote": "",
-                                    "DealType": "Drink"
-                                }
-                            ]
                         }
                     ]
                 }
             ]
-        }
+        },
+        {
+            "Name": "Tigardville Station",
+            "Address": "12370 SW Main St, Tigard, OR 97223",
+			"Phone": "+15036398375",
+            "Id": "0R7",
+            "Hours":[{
+				"DayOfWeek":0,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T09:30:00.000Z"
+			},
+            {
+				"DayOfWeek":1,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T09:30:00.000Z"
+			},
+            {
+				"DayOfWeek":2,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T09:30:00.000Z"
+			},
+            {
+				"DayOfWeek":3,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T09:30:00.000Z"
+			},
+            {
+				"DayOfWeek":4,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T09:30:00.000Z"
+			},
+            {
+				"DayOfWeek": 5,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T09:30:00.000Z"
+			},
+            {
+				"DayOfWeek":6,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T09:30:00.000Z"
+			}],
+			"Attributes": [{
+				"Name": ""
+			}],
+            "Specials": [{
+                "Name": "Happy Hour",
+				"Note": "",
+                "Id": "0S23",
+                "datetimeSpecialLastConfirmed": "",
+                "Days": [{
+                    "DayOfWeek": 1,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T002:30:00.000Z"
+                },
+                {
+                    "DayOfWeek": 2,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T002:30:00.000Z"
+                },
+                {
+                    "DayOfWeek": 3,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T002:30:00.000Z"
+                },
+                {
+                    "DayOfWeek": 4,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T002:30:00.000Z"
+                },
+                {
+                    "DayOfWeek": 5,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T002:30:00.000Z"
+                }],
+                "Details": [{
+                    "Name": "Discount on Select Appetizers",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "Steak Cut Fries, Tator Tots, Taquitos, Spring Rolls, Onion Rings, Mozzarella Sticks, Loaded Fries or Tots, Chicken Wings, Jalapeno Poppers",
+                    "DealType": "Food"
+                }]
+            },
+            {
+                "Name": "Taco Tuesday",
+				"Note": "Served while supplies last.",
+                "Id": "0S23",
+                "Days": [{
+                    "DayOfWeek": 2,
+                    "StartTime": "open",
+                    "EndTime": "close"
+                }],
+                "Details": [{
+                    "Name": "Taco",
+                    "DealValue": 2,
+                    "DealModifier": "=",
+                    "DealNote": "Hard or Soft shell, Beef or Chicken",
+                    "DealType": "Food"
+                },
+                {
+                    "Name": "Taco Salad",
+                    "DealValue": 14,
+                    "DealModifier": "=",
+                    "DealNote": "Hard or Soft shell, Beef or Chicken",
+                    "DealType": "Food"
+                }]
+            }]
+        },
+        {
+            "Name": "Big Red's",
+            "Address": "11485 SW Scholls Ferry Rd, Beaverton, OR 97008",
+			"Phone": "+15035794292",
+			"Id": "0R8",
+            "Hours":[{
+				"DayOfWeek":0,
+				"Open":"2023-01-01T15:00:00.000Z",
+				"Close":"2023-01-01T09:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":1,
+				"Open":"2023-01-01T15:00:00.000Z",
+				"Close":"2023-01-01T09:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":2,
+				"Open":"2023-01-01T15:00:00.000Z",
+				"Close":"2023-01-01T09:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":3,
+				"Open":"2023-01-01T15:00:00.000Z",
+				"Close":"2023-01-01T09:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":4,
+				"Open":"2023-01-01T15:00:00.000Z",
+				"Close":"2023-01-01T09:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":5,
+				"Open":"2023-01-01T15:00:00.000Z",
+				"Close":"2023-01-01T09:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":6,
+				"Open":"2023-01-01T15:00:00.000Z",
+				"Close":"2023-01-01T09:00:00.000Z",
+				"Id":""
+			}],
+			"Attributes": [{
+				"Name": "",
+				"Id": ""
+			}],
+            "Specials": [{
+                "Name": "Happy Hour",
+				"Note": "Beverage Purchase required, in the dining room. Not Available For Take Out",
+				"Id": "",
+                "datetimeSpecialLastConfirmed": "",
+                "Days": [{
+                    "DayOfWeek": 0,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 1,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 2,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 3,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 4,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 5,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 6,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                }],
+                "Details": [{
+                    "Name": "Deal?",
+                    "DealValue": 1,
+                    "DealModifier": "-",
+                    "DealNote": "Unknown",
+                    "DealType": "",
+					"Id": ""
+                }]
+            }]
+        },
+        {
+            "Name": "J.B. O'Brien's Irish Pub",
+            "Address": "11555 SW Durham Rd, Tigard, OR 97224",
+			"Phone": "+15039415592",
+			"Id": "0R9",
+            "Hours":[{
+				"DayOfWeek":0,
+				"Open":"2023-01-01T17:00:00.000Z",
+				"Close":"2023-01-01T09:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":1,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T09:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":2,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T09:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":3,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T09:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":4,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T09:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":5,
+				"Open":"2023-01-01T00:00:00.000Z",
+				"Close":"2023-01-01T00:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":6,
+				"Open":"2023-01-01T17:00:00.000Z",
+				"Close":"2023-01-01T09:00:00.000Z",
+				"Id":""
+			}],
+			"Attributes": [{
+				"Name": "",
+				"Id": ""
+			}],
+            "Specials": [{
+                "Name": "Happy Hour",
+				"Note": "No substitude, additions or to-go orders",
+				"Id": "",
+                "datetimeSpecialLastConfirmed": "2018-03-01T00:00:00.000Z",
+                "Days": [{
+                    "DayOfWeek": 0,
+                    "StartTime": "2023-01-01T00:00:00.000Z",
+                    "EndTime": "2023-01-01T00:00:00.000Z",
+					"Id": ""
+                }],
+                "Details": [{
+                    "Name": "Corned Beer Slider",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "BBQ Chicken Slider",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Cheese Steak Slider",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Cheeseburger Slider",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Shepherd's Pie",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Banger & Mash",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Beef Nachos",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Spinach Dip",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Caesar Salad",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Cheeseburger & Fries",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Chicken Taquitos",
+                    "DealValue": 4,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Buffalo Wings",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Pot Stickers",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Potato Skins",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Fried Mushrooms",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "House Salad",
+                    "DealValue": 4,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Veggie Plate",
+                    "DealValue": 4,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Fried Zucchini",
+                    "DealValue": 4,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Cheese Quesadilla",
+                    "DealValue": 4,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                }]
+            }]
+        },
+        {
+            "Name": "Berkeley's",
+            "Address": "6302 Meadows Rd, Lake Oswego, OR 97035",
+			"Phone": "+19712468384",
+			"Id": "0R10",
+            "Hours":[{
+				"DayOfWeek":0,
+				"Open":"2023-01-01T17:30:00.000Z",
+				"Close":"2023-01-01T06:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":1,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T07:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":2,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T07:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":3,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T07:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":4,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T07:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":5,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T07:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":6,
+				"Open":"2023-01-01T17:30:00.000Z",
+				"Close":"2023-01-01T07:00:00.000Z",
+				"Id":""
+			}],
+			"Attributes": [{
+				"Name": "",
+				"Id": ""
+			}],
+            "Specials": [{
+                "Name": "Happy Hour",
+				"Note": "Not available for takeout/To Go. $2.50 drink minimum.",
+				"Id": "",
+                "datetimeSpecialLastConfirmed": "2023-09-16T00:00:00.000Z",
+                "Days": [{
+                    "DayOfWeek": 0,
+                    "StartTime": "2023-01-01T00:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 1,
+                    "StartTime": "2023-01-01T00:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 2,
+                    "StartTime": "2023-01-01T00:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 3,
+                    "StartTime": "2023-01-01T00:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 4,
+                    "StartTime": "2023-01-01T00:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 5,
+                    "StartTime": "2023-01-01T00:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 6,
+                    "StartTime": "2023-01-01T00:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                }],
+                "Details": [{
+                    "Name": "Wings",
+                    "DealValue": 7,
+                    "DealModifier": "=",
+                    "DealNote": "6 wings: Biggalo, dry rub, bbq, sweet chili.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Quesadilla",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "Cheddar, jack cheese, pico, sour cream & salsa. Add chicken or carne $3, Add Guacamole $3.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Nachos",
+                    "DealValue": 9,
+                    "DealModifier": "=",
+                    "DealNote": "Queso, sour cream, pico, black beans, & jalapenos on corn chips, fries or tots. Add chicken or carne $3, Add Guacamole $3",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Side Caesar",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "Romaine tossed in Caesar dressing with croutons and parmesan. Add chicken or carne $3.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Well Drinks, Draft Beers & Wine",
+                    "DealValue": 1,
+                    "DealModifier": "-",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                }]
+            }]
+	    },
+        {
+            "Name": "Home Turf Sports Bar",
+            "Address": "13500 SW Pacific Hwy #34, Tigard, OR 97223",
+			"Phone": "+15039685778",
+			"Id": "0R11",
+            "Hours":[{
+				"DayOfWeek":0,
+				"Open":"2023-01-01T18:00:00.000Z",
+				"Close":"2023-01-01T10:30:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":1,
+				"Open":"2023-01-01T18:00:00.000Z",
+				"Close":"2023-01-01T10:30:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":2,
+				"Open":"2023-01-01T18:00:00.000Z",
+				"Close":"2023-01-01T10:30:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":3,
+				"Open":"2023-01-01T18:00:00.000Z",
+				"Close":"2023-01-01T10:30:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":4,
+				"Open":"2023-01-01T18:00:00.000Z",
+				"Close":"2023-01-01T10:30:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":5,
+				"Open":"2023-01-01T18:00:00.000Z",
+				"Close":"2023-01-01T10:30:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":6,
+				"Open":"2023-01-01T18:00:00.000Z",
+				"Close":"2023-01-01T10:30:00.000Z",
+				"Id":""
+			}],
+			"Attributes": [{
+				"Name": "",
+				"Id": ""
+			}],
+            "Specials": [{
+                "Name": "Happy Hour",
+				"Note": "",
+				"Id": "",
+                "datetimeSpecialLastConfirmed": "2023-09-16T00:00:00.000Z",
+                "Days": [
+                {
+                    "DayOfWeek": 1,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 2,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 3,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 4,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 5,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                }],
+                "Details": [{
+                    "Name": "Garlic Parmesean Fries",
+                    "DealValue": 8,
+                    "DealModifier": "=",
+                    "DealNote": "Our signature french fries tossed in garlic parmesan coating",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Chicken Strips & Fries",
+                    "DealValue": 11,
+                    "DealModifier": "=",
+                    "DealNote": "Served with housemade ranch dressing",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Mozzarella Cheese Sticks",
+                    "DealValue": 8,
+                    "DealModifier": "=",
+                    "DealNote": "Served with marinara sauce",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "French Fries/Tots",
+                    "DealValue": 5.50,
+                    "DealModifier": "=",
+                    "DealNote": "Our signature french fries tossed in garlic parmesan coating",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Tortilla Chips & Salsa",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Beer, Wine and Well Drinks",
+                    "DealValue": 0.50,
+                    "DealModifier": "-",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                }]
+            },
+        {
+                "Name": "Happy Hour",
+				"Note": "",
+				"Id": "",
+                "datetimeSpecialLastConfirmed": "2023-09-16T00:00:00.000Z",
+                "Days": [
+                {
+                    "DayOfWeek": 1,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 2,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 3,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 4,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 5,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                }],
+                "Details": [{
+                    "Name": "Garlic Parmesean Fries",
+                    "DealValue": 8,
+                    "DealModifier": "=",
+                    "DealNote": "Our signature french fries tossed in garlic parmesan coating",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Chicken Strips & Fries",
+                    "DealValue": 11,
+                    "DealModifier": "=",
+                    "DealNote": "Served with housemade ranch dressing",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Mozzarella Cheese Sticks",
+                    "DealValue": 8,
+                    "DealModifier": "=",
+                    "DealNote": "Served with marinara sauce",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "French Fries/Tots",
+                    "DealValue": 5.50,
+                    "DealModifier": "=",
+                    "DealNote": "Our signature french fries tossed in garlic parmesan coating",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Tortilla Chips & Salsa",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Beer, Wine and Well Drinks",
+                    "DealValue": 0.50,
+                    "DealModifier": "-",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                }]
+            },
+            {
+                "Name": "Monday Specials",
+				"Note": "",
+				"Id": "",
+                "datetimeSpecialLastConfirmed": "2018-01-01T00:00:00.000Z",
+                "Days": [{
+                    "DayOfWeek": 1,
+                    "StartTime": "open",
+                    "EndTime": "close",
+					"Id": ""
+                }],
+                "Details": [{
+                    "Name": "Discount on Burgers",
+                    "DealValue": 1,
+                    "DealModifier": "-",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                }]
+            },
+            {
+                "Name": "Taco Tuesday",
+				"Note": "",
+				"Id": "",
+                "datetimeSpecialLastConfirmed": "2018-01-01T00:00:00.000Z",
+                "Days": [{
+                    "DayOfWeek": 2,
+                    "StartTime": "open",
+                    "EndTime": "close",
+					"Id": ""
+                }],
+                "Details": [{
+                    "Name": "Bucket of Tall Boy PBR 5ct.",
+                    "DealValue": 10,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Tacos",
+                    "DealValue": 1.25,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                }]
+            },
+            {
+                "Name": "Wild Wing Wednesday",
+				"Note": "",
+				"Id": "",
+                "datetimeSpecialLastConfirmed": "2018-01-01T00:00:00.000Z",
+                "Days": [{
+                    "DayOfWeek": 3,
+                    "StartTime": "open",
+                    "EndTime": "close",
+					"Id": ""
+                }],
+                "Details": [{
+                    "Name": "Wings",
+                    "DealValue": 0.75,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Ladies Night",
+                    "DealValue": 0,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Event",
+					"Id": ""
+                },
+                {
+                    "Name": "Karaoke",
+                    "DealValue": 0,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Event",
+					"Id": ""
+                }]
+            },
+            {
+                "Name": "Thirsty Thursday",
+				"Note": "Happy Hour all day",
+				"Id": "",
+                "datetimeSpecialLastConfirmed": "2018-01-01T00:00:00.000Z",
+                "Days": [{
+                    "DayOfWeek": 4,
+                    "StartTime": "open",
+                    "EndTime": "close",
+					"Id": ""
+                }],
+                "Details": [{
+                    "Name": "Garlic Parmesean Fries",
+                    "DealValue": 8,
+                    "DealModifier": "=",
+                    "DealNote": "Our signature french fries tossed in garlic parmesan coating",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Chicken Strips & Fries",
+                    "DealValue": 11,
+                    "DealModifier": "=",
+                    "DealNote": "Served with housemade ranch dressing",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Mozzarella Cheese Sticks",
+                    "DealValue": 8,
+                    "DealModifier": "=",
+                    "DealNote": "Served with marinara sauce",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "French Fries/Tots",
+                    "DealValue": 5.50,
+                    "DealModifier": "=",
+                    "DealNote": "Our signature french fries tossed in garlic parmesan coating",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Tortilla Chips & Salsa",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Beer, Wine and Well Drinks",
+                    "DealValue": 0.50,
+                    "DealModifier": "-",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                }]
+            },
+            {
+                "Name": "TGIF",
+				"Note": "",
+				"Id": "",
+                "datetimeSpecialLastConfirmed": "2018-01-01T00:00:00.000Z",
+                "Days": [{
+                    "DayOfWeek": 5,
+                    "StartTime": "open",
+                    "EndTime": "close",
+					"Id": ""
+                }],
+                "Details": [{
+                    "Name": "?",
+                    "DealValue": 1,
+                    "DealModifier": "-",
+                    "DealNote": "",
+                    "DealType": "",
+					"Id": ""
+                }]
+            },
+            {
+                "Name": "Saturday Specials",
+				"Note": "",
+				"Id": "",
+                "datetimeSpecialLastConfirmed": "2018-01-01T00:00:00.000Z",
+                "Days": [{
+                    "DayOfWeek": 6,
+                    "StartTime": "open",
+                    "EndTime": "close",
+					"Id": ""
+                }],
+                "Details": [{
+                    "Name": "Pitchers",
+                    "DealValue": 1,
+                    "DealModifier": "-",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                }]
+            },
+            {
+                "Name": "Sunday Specials",
+				"Note": "",
+				"Id": "",
+                "datetimeSpecialLastConfirmed": "2018-01-01T00:00:00.000Z",
+                "Days": [{
+                    "DayOfWeek": 0,
+                    "StartTime": "open",
+                    "EndTime": "close",
+					"Id": ""
+                }],
+                "Details": [{
+                    "Name": "Free Pool",
+                    "DealValue": 0,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Activity",
+					"Id": ""
+                }]
+            }]
+	    },
+        {
+            "Name": "The Ridge Grill",
+            "Address": "12345 SW Horizon Blvd #61, Beaverton, OR 97007",
+			"Phone": "+15037477319",
+			"Website": "https://theridgepub.com/index.html",
+			"Id": "0R12",
+            "Hours":[{
+				"DayOfWeek":0,
+				"Open":"2023-01-01T20:00:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":1,
+				"Open":"2023-01-01T22:00:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":2,
+				"Open":"2023-01-01T22:00:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":3,
+				"Open":"2023-01-01T22:00:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":4,
+				"Open":"2023-01-01T22:00:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":5,
+				"Open":"2023-01-01T20:00:00.000Z",
+				"Close":"2023-01-01T06:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":6,
+				"Open":"2023-01-01T20:00:00.000Z",
+				"Close":"2023-01-01T06:00:00.000Z",
+				"Id":""
+			}],
+			"Attributes": [{
+				"Name": "",
+				"Id": ""
+			}],
+            "Specials": [{
+                "Name": "Happy Hour",
+				"Note": "Dine in only. Minimum $3.75 drink purchase.",
+				"Id": "",
+                "datetimeSpecialLastConfirmed": "2023-01-01T00:00:00.000Z",
+                "Days": [{
+                    "DayOfWeek": 0,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 0,
+                    "StartTime": "2023-01-01T04:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 1,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 1,
+                    "StartTime": "2023-01-01T04:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },                
+                {
+                    "DayOfWeek": 2,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 2,
+                    "StartTime": "2023-01-01T04:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 3,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 3,
+                    "StartTime": "2023-01-01T04:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 4,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 4,
+                    "StartTime": "2023-01-01T04:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 5,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 5,
+                    "StartTime": "2023-01-01T04:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 6,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 6,
+                    "StartTime": "2023-01-01T04:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                }],
+                "Details": [{
+                    "Name": "Classic Ridge Burger",
+                    "DealValue": 9.5,
+                    "DealModifier": "=",
+                    "DealNote": "4 oz. Country Natural beef patty with lettuce, tomato, onion, pickles and your choice of cheese.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Melted Mozzarella Meatball Sliders",
+                    "DealValue": 9.5,
+                    "DealModifier": "=",
+                    "DealNote": "With Marinara",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Woodfired Pizza",
+                    "DealValue": 9.5,
+                    "DealModifier": "=",
+                    "DealNote": "Personal pizza made with our house sauce, fresh mozzarella and your choice of 3 toppings.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Pub Buffalo Mac & Cheese",
+                    "DealValue": 9.5,
+                    "DealModifier": "=",
+                    "DealNote": "Our cheesy creamy mac & cheese topped with grilled chicken tossed in our buffalo sauce & bleu cheese crumbles",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Hand Dipped Beer Battered Onion Rings",
+                    "DealValue": 9.5,
+                    "DealModifier": "=",
+                    "DealNote": "With Smoked Aioli",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Cajun Calamari",
+                    "DealValue": 9.5,
+                    "DealModifier": "=",
+                    "DealNote": "Crispy flash fried cajun spice calamari served with house cocktail sauce , smokey aioli & fresh lemon.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Braised Barbacoa Tacos",
+                    "DealValue": 9.5,
+                    "DealModifier": "=",
+                    "DealNote": "Two Barbacoa tacos served with fresh onion & cilantro with house tomatillo sauce on the side.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Grilled Chicken Quesadilla",
+                    "DealValue": 9.5,
+                    "DealModifier": "=",
+                    "DealNote": "Melty cheese topped with olives, tomato & green onion. Add Guac $3",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Half Dozen Ridge Wings",
+                    "DealValue": 8.5,
+                    "DealModifier": "=",
+                    "DealNote": "With your choice of Buffalo, Dragon, Thai Peanut or Habanero BBQ sauce.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Ridge Smoked Chicken Salad",
+                    "DealValue": 8.5,
+                    "DealModifier": "=",
+                    "DealNote": "Half portion of our signature smoked chicken salad with candied pecans, fresh pear & bleu cheese crumbles.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "House Made Hummus w/ House Woodfired Flatbread",
+                    "DealValue": 8.5,
+                    "DealModifier": "=",
+                    "DealNote": "Served with a side of carrots. ",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Asian Chicken Lo Mein",
+                    "DealValue": 8.5,
+                    "DealModifier": "=",
+                    "DealNote": "Soft noodles tossed wtih chicken & veggies. Try it with Prawns ... add $2",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Santa Fe Tostadas",
+                    "DealValue": 8.5,
+                    "DealModifier": "=",
+                    "DealNote": "Two crispy tostadas topped with smoked chicken, pepper jack cheese, jalapeno & red peppers. ",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Crispy Sweet Fries",
+                    "DealValue": 8.5,
+                    "DealModifier": "=",
+                    "DealNote": "Served with Creamy Ranch or Bleu Cheese",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Classic Caesar Salad",
+                    "DealValue": 7,
+                    "DealModifier": "=",
+                    "DealNote": "With crispy romaine, parmesan & house croutons. ",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "House Salad",
+                    "DealValue": 7,
+                    "DealModifier": "=",
+                    "DealNote": "With fresh mixed greens, onions, tomatoes & parmesan. ",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Basket Crispy Pub Fries",
+                    "DealValue": 7,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                }]
+            }]
+	    },
+        {
+            "Name": "Bull Mountain Bar & Grill",
+            "Address": "13727 SW Pacific Hwy, Tigard, OR 97223",
+			"Phone": "+15034433888",
+			"Website": "https://bull-mountain-bar-grill.business.site/",
+			"Id": "0R13",
+            "Hours":[{
+				"DayOfWeek":0,
+				"Open":"2023-01-01T23:00:00.000Z",
+				"Close":"2023-01-01T07:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":1,
+				"Open":"2023-01-01T23:00:00.000Z",
+				"Close":"2023-01-01T08:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":2,
+				"Open":"2023-01-01T23:00:00.000Z",
+				"Close":"2023-01-01T08:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":3,
+				"Open":"2023-01-01T23:00:00.000Z",
+				"Close":"2023-01-01T08:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":4,
+				"Open":"2023-01-01T23:00:00.000Z",
+				"Close":"2023-01-01T08:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":5,
+				"Open":"2023-01-01T23:00:00.000Z",
+				"Close":"2023-01-01T09:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":6,
+				"Open":"2023-01-01T23:00:00.000Z",
+				"Close":"2023-01-01T09:00:00.000Z",
+				"Id":""
+			}],
+			"Attributes": [{
+				"Name": "",
+				"Id": ""
+			}],
+            "Specials": [{
+                "Name": "Late Night Menu",
+				"Note": "",
+				"Id": "",
+                "datetimeSpecialLastConfirmed": "2023-01-01T00:00:00.000Z",
+                "Days": [{
+                    "DayOfWeek": 0,
+                    "StartTime": "2023-01-01T05:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 1,
+                    "StartTime": "2023-01-01T05:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 2,
+                    "StartTime": "2023-01-01T05:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 3,
+                    "StartTime": "2023-01-01T05:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 4,
+                    "StartTime": "2023-01-01T05:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 5,
+                    "StartTime": "2023-01-01T05:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 6,
+                    "StartTime": "2023-01-01T05:00:00.000Z",
+                    "EndTime": "close",
+					"Id": ""
+                }],
+                "Details": [{
+                    "Name": "Black & Tan Onion Rings",
+                    "DealValue": 7,
+                    "DealModifier": "=",
+                    "DealNote": "Drizzled with balsamic ale reduction",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Fried Pickle Spears",
+                    "DealValue": 7,
+                    "DealModifier": "=",
+                    "DealNote": "Ranch or Bull sauce",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Mozzarella Sticks",
+                    "DealValue": 7,
+                    "DealModifier": "=",
+                    "DealNote": "W/ Marinara or Ranch",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Chicken Wings",
+                    "DealValue": 9,
+                    "DealModifier": "=",
+                    "DealNote": "Buffalo, BBQ, Honey Garlic, No-Bull Dry Rub. With Ranch or Blue Cheese",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Mini Corn Dogs",
+                    "DealValue": 7,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Jalapeno Cheese Bites",
+                    "DealValue": 8,
+                    "DealModifier": "=",
+                    "DealNote": "W/ Bull Sauce",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Basket of Fries or Tots",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Sweet Fries",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "2 Piece Fish & Chips",
+                    "DealValue": 10,
+                    "DealModifier": "=",
+                    "DealNote": "House made tartar",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "2 Piece Chicken Tenders w/ Fries or Tots",
+                    "DealValue": 7,
+                    "DealModifier": "=",
+                    "DealNote": "Ranch, BBQ, Honey Mustard, Honey Garlic or Buffalo.",
+                    "DealType": "Food",
+					"Id": ""
+                }]
+            },
+            {
+                "Name": "Happy Hour",
+				"Note": "",
+				"Id": "",
+                "datetimeSpecialLastConfirmed": "2018-03-01T00:00:00.000Z",
+                "Days": [{
+                    "DayOfWeek": 1,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 2,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 3,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 4,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 5,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                }],
+                "Details": [{
+                    "Name": "Potato Skins",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "House made potato skins w/ bacon, cheese, tomatoes and chives",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Margarita Flatbread",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "Pesto, tomatoes & mozzarella",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Triple 'S' Flatbread",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "Steak, mushrooms & swiss cheese",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Bufy the Flatbread Slayer",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "Crispy buffalo chicken, cheddar, bleu cheese crumbles, green onion",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Two Sliders w/ Fries or Tots",
+                    "DealValue": 7,
+                    "DealModifier": "=",
+                    "DealNote": "Corned beef, burger, pork, or chicken",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "2 Pork Tacos",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "Corn tortilla, house smoked pork, cabbage, cilantro and lime",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Half Pork Nachos",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "House smoked pork, melted jack and cheddar cheese, jalapeno, black olvies and chives.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Hummus Plate",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "Hummus, flatbread, cured onions, cucumbers, tomatoes",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Side Salad, Side Caesar or Caprese Salad",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "Tomatoes, cucumber, red onion, croutons and your choice of dressing",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Cajun Steak Bites",
+                    "DealValue": 7,
+                    "DealModifier": "=",
+                    "DealNote": "6oz sirloin bites grilled with Cajun seasoning",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Basket of Fries/Tots/Sweet Fries",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "Add chili & cheese $3",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Two Piece Chicken Tenders w/ Fries or Tots",
+                    "DealValue": 7,
+                    "DealModifier": "=",
+                    "DealNote": "Ranch, BBQ, Honey Mustard, Honey Garlic or Buffalo",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Cheese Quesadilla",
+                    "DealValue": 4,
+                    "DealModifier": "=",
+                    "DealNote": "Salsa & Sour Cream",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Chips & Salsa",
+                    "DealValue": 4,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Beer, Well Drinks, House Wine",
+                    "DealValue": 0.50,
+                    "DealModifier": "-",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                }]
+            }]
+	    }
     ]
 }
