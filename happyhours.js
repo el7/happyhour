@@ -4,8 +4,8 @@ import data from './happyhours.json' assert { type: 'json' };
 /* create variables */
 var dealActive = false;
 
-//var datetimeNow = new Date();
-var datetimeNow = new Date("2023-09-14T23:00:00.000Z");
+var datetimeNow = new Date();
+//var datetimeNow = new Date("2023-09-14T23:00:00.000Z");
 
 console.log("Time now: " + datetimeNow);
 

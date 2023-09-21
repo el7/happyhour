@@ -4,6 +4,7 @@
             "Name": "McMenamins: John Barleycorns",
             "Address": "14610 SW Sequoia Pkwy, Tigard, OR 97223",
             "Phone": "+15036842688",
+			"Website": "https://www.mcmenamins.com/john-barleycorns/home/",
             "Id": "0R1",
             "Hours": [
                 {
@@ -292,6 +293,7 @@
             "Name": "Three Mermaids Public House",
             "Address": "18041 SW Lower Boones Ferry Rd #1b, Tigard, OR 97224",
             "Phone": "+15033525091",
+			"Website": "https://www.threemermaidspub.com/",
             "Id": "0R2",
             "Hours": [
                 {
@@ -606,8 +608,9 @@
         },
         {
             "Name": "Thirsty Lion Gastropub: Tigard",
-            "Phone": "",
+            "Phone": "+15033524030",
             "Address": "10205 SW Washington Square Rd, Tigard, OR 97223",
+			"Website": "https://www.thirstyliongastropub.com/",
             "Id": "0R3",
             "Hours": [
                 {
@@ -865,8 +868,9 @@
         },
         {
             "Name": "The Stockpot Broiler: Lounge",
-            "Phone": "",
-            "Address": "",
+            "Phone": "+15036435451",
+            "Address": "8200 SW Scholls Ferry Rd, Beaverton, OR 97008",
+			"Website": "https://www.stockpotbroiler.com/the-lounge",
             "Id": "0R4",
             "Hours": [
                 {
@@ -1135,7 +1139,8 @@
         {
             "Name": "Ringo's Bar & Grill",
             "Address": "3655 SW Hall Blvd, Beaverton, OR 97005",
-            "Phone": "",
+            "Phone": "+15036447847",
+			"Website": "https://ringosbar.com/",
             "Id": "0R5",
             "Hours": [
                 {
@@ -1245,8 +1250,9 @@
         },
         {
             "Name": "Tapphoria",
-            "Address": "",
-            "Note": "",
+            "Address": "13815 SW Pacific Hwy #40, Tigard, OR 97223",
+            "Note": "+19713713979",
+			"Website": "http://www.tapphoria.com/home.html",
             "Id": "0R6",
             "Hours": [
                 {
@@ -1667,6 +1673,7 @@
             "Name": "Tigardville Station",
             "Address": "12370 SW Main St, Tigard, OR 97223",
 			"Phone": "+15036398375",
+			"Website": "https://www.tigardvillestation.com/",
             "Id": "0R7",
             "Hours":[{
 				"DayOfWeek":0,
@@ -1773,7 +1780,8 @@
             "Name": "Big Red's",
             "Address": "11485 SW Scholls Ferry Rd, Beaverton, OR 97008",
 			"Phone": "+15035794292",
-			"Id": "0R8",
+			"Website": "https://www.bigredspdx.com/",
+            "Id": "0R8",
             "Hours":[{
 				"DayOfWeek":0,
 				"Open":"2023-01-01T15:00:00.000Z",
@@ -1881,7 +1889,8 @@
             "Name": "J.B. O'Brien's Irish Pub",
             "Address": "11555 SW Durham Rd, Tigard, OR 97224",
 			"Phone": "+15039415592",
-			"Id": "0R9",
+			"Website": "https://jbobriens.com/",
+            "Id": "0R9",
             "Hours":[{
 				"DayOfWeek":0,
 				"Open":"2023-01-01T17:00:00.000Z",
@@ -2097,7 +2106,8 @@
             "Name": "Berkeley's",
             "Address": "6302 Meadows Rd, Lake Oswego, OR 97035",
 			"Phone": "+19712468384",
-			"Id": "0R10",
+			"Website": "https://www.berkeleysbarandgrill.com/",
+            "Id": "0R10",
             "Hours":[{
 				"DayOfWeek":0,
 				"Open":"2023-01-01T17:30:00.000Z",
@@ -2237,7 +2247,8 @@
             "Name": "Home Turf Sports Bar",
             "Address": "13500 SW Pacific Hwy #34, Tigard, OR 97223",
 			"Phone": "+15039685778",
-			"Id": "0R11",
+			"Website": "https://www.hometurfsportsbar.com/home/",
+            "Id": "0R11",
             "Hours":[{
 				"DayOfWeek":0,
 				"Open":"2023-01-01T18:00:00.000Z",
@@ -3271,6 +3282,308 @@
                     "DealModifier": "-",
                     "DealNote": "",
                     "DealType": "Drink",
+					"Id": ""
+                }]
+            }]
+	    },
+        {
+            "Name": "California Pizza Kitchen: Tualitin",
+            "Address": "Bridgeport Blg. R2 Sp, 7315 SW Bridgeport Rd, Portland, OR 97224",
+			"Phone": "+15039680504",
+			"Website": "https://www.cpk.com/",
+			"Id": "0R14",
+            "Hours":[{
+				"DayOfWeek":0,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T06:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":1,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T06:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":2,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T06:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":3,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T06:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":4,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T06:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":5,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T07:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":6,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T07:00:00.000Z",
+				"Id":""
+			}],
+			"Attributes": [{
+				"Name": "",
+				"Id": ""
+			}],
+            "Specials": [{
+                "Name": "Happy Hour",
+				"Note": "",
+				"Id": "",
+                "datetimeSpecialLastConfirmed": "2023-01-01T00:00:00.000Z",
+                "Days": [{
+                    "DayOfWeek": 1,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T01:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 2,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T01:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 3,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T01:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 4,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T01:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 5,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T01:00:00.000Z",
+					"Id": ""
+                }],
+                "Details": [{
+                    "Name": "Discount on All Drinks",
+                    "DealValue": 50,
+                    "DealModifier": "%",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Discount on All Starters",
+                    "DealValue": 50,
+                    "DealModifier": "%",
+                    "DealNote": "",
+                    "DealType": "Food",
+					"Id": ""
+                }]
+            }]
+	    },
+        {
+            "Name": "Big's Chicken: Beaverton",
+            "Address": "4570 SW Watson Ave, Beaverton, OR 97005",
+			"Phone": "+15037473190",
+			"Website": "https://www.bigschicken.com/",
+			"Id": "0R15",
+            "Hours":[{
+				"DayOfWeek":0,
+				"Open":"2023-01-01T19:30:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":1,
+				"Open":"2023-01-01T19:30:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":2,
+				"Open":"2023-01-01T19:30:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":3,
+				"Open":"2023-01-01T19:30:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":4,
+				"Open":"2023-01-01T19:30:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":5,
+				"Open":"2023-01-01T19:30:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":6,
+				"Open":"2023-01-01T19:30:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			}],
+			"Attributes": [{
+				"Name": "",
+				"Id": ""
+			}],
+            "Specials": [{
+                "Name": "Happy Hour",
+				"Note": "",
+				"Id": "",
+                "datetimeSpecialLastConfirmed": "2023-01-01T00:00:00.000Z",
+                "Days": [{
+                    "DayOfWeek": 0,
+                    "StartTime": "2023-01-01T22:00:00.000Z",
+                    "EndTime": "2023-01-01T01:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 1,
+                    "StartTime": "open",
+                    "EndTime": "close",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 2,
+                    "StartTime": "2023-01-01T22:00:00.000Z",
+                    "EndTime": "2023-01-01T01:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 3,
+                    "StartTime": "2023-01-01T22:00:00.000Z",
+                    "EndTime": "2023-01-01T01:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 4,
+                    "StartTime": "2023-01-01T22:00:00.000Z",
+                    "EndTime": "2023-01-01T01:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 5,
+                    "StartTime": "2023-01-01T22:00:00.000Z",
+                    "EndTime": "2023-01-01T01:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 6,
+                    "StartTime": "2023-01-01T22:00:00.000Z",
+                    "EndTime": "2023-01-01T01:00:00.000Z",
+					"Id": ""
+                }],
+                "Details": [{
+                    "Name": "Cocktails",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Microbrew Beer",
+                    "DealValue": 5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Smoked Wings 6pc",
+                    "DealValue": 5.95,
+                    "DealModifier": "=",
+                    "DealNote": "Fried and Tossed With Our Dry Spice",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Wedge Salad",
+                    "DealValue": 5.25,
+                    "DealModifier": "=",
+                    "DealNote": "Iceberg Lettuce, Blue Cheese Dressing, Smoked Chicken, Mix Pickles",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Lemon Popcorn Chicken Bites",
+                    "DealValue": 5.95,
+                    "DealModifier": "=",
+                    "DealNote": "Served with Zesty Ranch",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "The Little Dirty",
+                    "DealValue": 6.25,
+                    "DealModifier": "=",
+                    "DealNote": "Jo-Jos Topped With Chopped Smoked Chicken, Green Onion, Creole Gravy, Cojita, FResno and White Gold Sauce.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Smash Burger",
+                    "DealValue": 6.95,
+                    "DealModifier": "=",
+                    "DealNote": "LMH Patty, American Cheese, Lettuce, Sauce and Pickles. Make it Souble: +$2",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Buffalo FRied Chicken Sandwitch",
+                    "DealValue": 8.95,
+                    "DealModifier": "=",
+                    "DealNote": "Blue Cheese Dressing, Mixed Pickles, Lettuce, Buffalo Sauce",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Mashed Potato Bowl",
+                    "DealValue": 6.95,
+                    "DealModifier": "=",
+                    "DealNote": "Smoked Chicken, Pimento Cheese, Gravy, Slaw, Fresno & White Gold Sauce, Green Onion",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "The Hot Brown",
+                    "DealValue": 6.95,
+                    "DealModifier": "=",
+                    "DealNote": "Fried Chicken, Texas Toast, Bacon, American & Pimento Cheese, Gravy, Fresno & White Gold Sauce, Green Onion",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Sandwitch & Beer",
+                    "DealValue": 10.95,
+                    "DealModifier": "=",
+                    "DealNote": "Choice of Jo-Jos, Slaw or Black Eyed Pea Salad. Fried or Grilled Chicken, Slaw, White Gold & Fresno Sauce on a Potato Bun and a can of Rainier Beer",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "The Big Family Meal",
+                    "DealValue": 29.95,
+                    "DealModifier": "=",
+                    "DealNote": "Whole Bid, Big Salad, choice of 2 large sides",
+                    "DealType": "Food",
 					"Id": ""
                 }]
             }]
