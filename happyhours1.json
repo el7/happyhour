@@ -1,12 +1,12 @@
 {
 	"Restaurants":[
 		{
-            "Name": "",
-            "Address": "",
+			"Name": "",
+			"Address": "",
 			"Phone": "",
 			"Website": "",
 			"Id": "",
-            "Hours":[{
+			"Hours":[{
 				"DayOfWeek":0,
 				"Open":"2023-01-01T00:00:00.000Z",
 				"Close":"2023-01-01T00:00:00.000Z",
@@ -16,8 +16,8 @@
 				"Name": "",
 				"Id": ""
 			}],
-            "Specials": [{
-                "Name": "",
+			"Specials": [{
+				"Name": "",
 				"Note": "",
 				"Id": "",
                 "datetimeSpecialLastConfirmed": "2023-01-01T00:00:00.000Z",

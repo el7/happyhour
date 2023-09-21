@@ -84,9 +84,7 @@ function addToDisplayBizHours () {
 
 		/* show hour info for today */
 		if (datetimeNow.getDay() == re.Hours[iter_hours].DayOfWeek) {
-
-			var contentRestaurantHours = document.createTextNode(textRestaurantHours);
-			// targetDiv.appendChild(contentRestaurantHours);
+			// do later
 		}
 	}
 
