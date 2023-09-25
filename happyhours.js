@@ -5,20 +5,41 @@ import data from './happyhours.json' assert { type: 'json' };
 var dealActive = false;
 
 var datetimeNow = new Date();
-//var datetimeNow = new Date("2023-09-14T23:00:00.000Z");
+//var datetimeNow = new Date("2023-09-15T22:00:00.000Z");
 
 console.log("Time now: " + datetimeNow);
-
 document.body.style = "white-space: pre;"
 
 /* iterate over biz' */
 for (var i = 0; i < data.Restaurants.length; i++) {
 
-	console.log("here3");
-	var re = data.Restaurants[i];
-	var openTime = re.Hours[datetimeNow.getDay()].Open;
+	try {
+		var re = data.Restaurants[i];
+		var openTime = re.Hours[datetimeNow.getDay()].Open;
+		var closeTime = re.Hours[datetimeNow.getDay()].Close;
+	} catch (ex) {
+		console.log("ERROR no retaurant data, or no open/close time for today's day in the array")
+	}
+
+	addToDisplayRestaurantInfo(re);
+	addToDisplayBizHours();
+	addToDisplaySpecials(openTime, closeTime);
+}
+
+starter();
+function starter () {}
+
+
+function addToDisplayRestaurantInfo (restaurant) {
+
+	var openTime = re.Hours[datetimeNow.getDay()].Open; // duplicate, need to rework this
 	var closeTime = re.Hours[datetimeNow.getDay()].Close;
-	var contentRestaurantName = document.createTextNode("" + re.Name + "");
+	var restaurantName = re.Name;
+	var restaurantOpen = re.Hours[datetimeNow.getDay()].Open;
+	var restaurantClose = re.Hours[datetimeNow.getDay()].Close;
+	var datetimeRestaurantOpen = new Date(restaurantOpen);
+	var datetimeRestaurantClose = new Date(restaurantClose);
+	var contentRestaurantName = document.createTextNode(restaurantName + " [Open: " + datetimeRestaurantOpen.getHours() + " - Close: " + datetimeRestaurantClose.getHours() + "]");
 
 	// create div for restaurant
 	var divRestaurant = document.createElement("div");
@@ -28,18 +49,7 @@ for (var i = 0; i < data.Restaurants.length; i++) {
 
 	console.log(re.Name);
 
-	addToDisplayBizHours();
-	addToDisplaySpecials(openTime, closeTime);
 }
-
-starter();
-
-function starter () {
-
-
-
-}
-
 
 function addToDisplayDeals (sp) {
 
@@ -113,6 +123,11 @@ function addToDisplaySpecials(openTime, closeTime){
 				var datetimeDealStart = new Date(da.StartTime);
 				var datetimeDealEnd = new Date(da.EndTime);
 
+				console.log("currentDay: " + datetimeNow.getDay());
+				console.log("currentHours: " + datetimeNow.getHours());
+				console.log("da.day: " + da.DayOfWeek);
+				console.log("dealStartHours: " + datetimeDealStart.getHours());
+				console.log("dealEndHours: " + datetimeDealEnd.getHours());
 
 				/* check if this deal is active */
 				if (datetimeNow.getHours() >= datetimeDealStart.getHours() 
@@ -136,7 +151,7 @@ function addToDisplaySpecials(openTime, closeTime){
 				divSpecial.classList.add("special");
 				document.body.appendChild(divSpecial); 
 
-				var contentSpecialName = document.createTextNode(sp.Name);
+				var contentSpecialName = document.createTextNode(sp.Name + " [Start: " + datetimeDealStart.getHours() + " End: " + datetimeDealEnd.getHours() + "]");
 				// targetDiv.appendChild(contentSpecialName);	
 				divSpecial.appendChild(contentSpecialName);
 				addToDisplayDeals(sp);	
