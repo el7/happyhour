@@ -1296,7 +1296,7 @@
                     "Name": "Pre-Happy Hour",
                     "Note": "",
                     "Id": "0S14",
-                    "datetimeSpecialLastConfirmed": "",
+                    "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z",
                     "Days": [
                         {
                             "DayOfWeek": 1,
@@ -1345,6 +1345,7 @@
                     "Name": "Happy Hour",
                     "Note": "",
                     "Id": "0S15",
+                    "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z",
                     "Days": [
                         {
                             "DayOfWeek": 1,
@@ -1393,6 +1394,7 @@
                     "Name": "Daily Special: Mike's Mon Deals",
                     "Note": "",
                     "Id": "0S16",
+                    "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z",
                     "Days": [
                         {
                             "DayOfWeek": 1,
@@ -1414,6 +1416,7 @@
                     "Name": "Daily Special: Tightwad Tuesday",
                     "Note": "",
                     "Id": "0S17",
+                    "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z",
                     "Days": [
                         {
                             "DayOfWeek": 2,
@@ -1441,6 +1444,7 @@
                 {
                     "Name": "Daily Special: Wine-O Wednesday",
                     "Note": "",
+                    "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z",
                     "Id": "0S18",
                     "Days": [
                         {
@@ -1462,6 +1466,7 @@
                 {
                     "Name": "Daily Special: Red Zone Thursday",
                     "Note": "",
+                    "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z",
                     "Id": "0S19",
                     "Days": [
                         {
@@ -1483,6 +1488,7 @@
                 {
                     "Name": "Daily Special: TGIF",
                     "Note": "",
+                    "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z",
                     "Id": "0S20",
                     "Days": [
                         {
@@ -1504,6 +1510,7 @@
                 {
                     "Name": "Daily Special: Sunday Funday",
                     "Note": "",
+                    "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z",
                     "Id": "0S21",
                     "Days": [
                         {
@@ -1525,6 +1532,7 @@
                 {
                     "Name": "Event Special: NFL Game",
                     "Note": "",
+                    "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z",
                     "Id": "0S22",
                     "Days": [
                         {
@@ -1575,6 +1583,7 @@
                 {
                     "Name": "Event Special: Blazer Game ",
                     "Note": "",
+                    "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z",
                     "Id": "",
                     "Days": [
                         {
@@ -1622,7 +1631,9 @@
                 },
                 {
                     "Name": "Event Special: Soccer Game (Timbers, Thorns)",
+                    "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z",
                     "Note": "",
+                    "Id": "",
                     "Days": [
                         {
                             "DayOfWeek": 1,

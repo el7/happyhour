@@ -3,6 +3,13 @@ import data from './happyhours.json' assert { type: 'json' };
 
 /* create variables */
 var dealActive = false;
+const hhScopeSelection = {
+	All: "",
+	Today: "",
+	WithinHour: "",
+	Now: ""
+}
+
 
 var datetimeNow = new Date();
 //var datetimeNow = new Date("2023-09-15T22:00:00.000Z");
@@ -39,7 +46,7 @@ function addToDisplayRestaurantInfo (restaurant) {
 	var restaurantClose = re.Hours[datetimeNow.getDay()].Close;
 	var datetimeRestaurantOpen = new Date(restaurantOpen);
 	var datetimeRestaurantClose = new Date(restaurantClose);
-	var contentRestaurantName = document.createTextNode(restaurantName + " [Open: " + datetimeRestaurantOpen.getHours() + " - Close: " + datetimeRestaurantClose.getHours() + "]");
+	var contentRestaurantName = document.createTextNode(restaurantName + " \n[Open: " + datetimeRestaurantOpen.getHours() + " - Close: " + datetimeRestaurantClose.getHours() + "]");
 
 	// create div for restaurant
 	var divRestaurant = document.createElement("div");
@@ -60,15 +67,20 @@ function addToDisplayDeals (sp) {
 
 		console.log("Deal Name: " + de.Name);
 
+		// crate div for deal
 		var divDeal = document.createElement("div");
-		//divDeal.classList.add(de.Id, "deal");
-		divDeal.classList.add("deal");
+		divDeal.classList.add(de.Id, "deal");
 		document.body.appendChild(divDeal); 
 
-		var contentDealModifier = document.createTextNode(de.DealModifier);
-		var contentDealValue = document.createTextNode(de.DealValue + " ");
-		var contentDealName = document.createTextNode("| " + de.Name + ": ");
-		var contentDealNote = document.createTextNode("(" + de.DealNote + ")\n");
+
+
+		// crate text content for deal
+		var contentDealType = document.createTextNode(de.DealType + " | ");
+		var contentDealModifier = document.createTextNode(de.DealModifier + " ");
+		var contentDealValue = document.createTextNode(de.DealValue + " | ");
+		var contentDealName = document.createTextNode(de.Name + "\n");
+		var contentDealNote = document.createTextNode(de.DealNote);
+		divDeal.appendChild(contentDealType);
 		divDeal.appendChild(contentDealModifier);
 		divDeal.appendChild(contentDealValue);
 		divDeal.appendChild(contentDealName);
@@ -151,9 +163,15 @@ function addToDisplaySpecials(openTime, closeTime){
 				divSpecial.classList.add("special");
 				document.body.appendChild(divSpecial); 
 
-				var contentSpecialName = document.createTextNode(sp.Name + " [Start: " + datetimeDealStart.getHours() + " End: " + datetimeDealEnd.getHours() + "]");
+				var datetimeSpecialLastConfirmed = new Date(sp.datetimeSpecialLastConfirmed);
+				var contentSpecialName = document.createTextNode(sp.Name + "\n");
+				var contentSpecialTimes = document.createTextNode("[Start: " + datetimeDealStart.getHours() + " End: " + datetimeDealEnd.getHours() + "]\n");
+				var contentSpecialConfirmed = document.createTextNode("Verified: " + datetimeSpecialLastConfirmed);
+
 				// targetDiv.appendChild(contentSpecialName);	
 				divSpecial.appendChild(contentSpecialName);
+				divSpecial.appendChild(contentSpecialTimes);
+				divSpecial.appendChild(contentSpecialConfirmed);
 				addToDisplayDeals(sp);	
 
 			} else {
