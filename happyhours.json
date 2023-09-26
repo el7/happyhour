@@ -409,6 +409,7 @@
                 {
                     "Name": "Monday Night Bingo/Themed Trivia",
                     "Note": "Join us every Monday night for alternating Bingo and themed Trivia by Stumptown Trivia & Bingo. Explore our specific trivia themes on our Events Calendar.",
+                    "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z",
                     "Id": "0S4",
                     "Days": [
                         {
@@ -421,7 +422,7 @@
                         {
                             "Name": "Monday Night Bingo/Themed Trivia",
                             "DealValue": 0,
-                            "DealModifier": "",
+                            "DealModifier": "=",
                             "DealNote": "",
                             "DealType": "Event"
                         }
@@ -2167,7 +2168,7 @@
 			}],
             "Specials": [{
                 "Name": "Happy Hour",
-				"Note": "Not available for takeout/To Go. $2.50 drink minimum.",
+				"Note": "Not available for takeout/To Go. $2.50 drink minimum. More here: https://www.berkeleysbarandgrill.com/?pgid=lj4ql2gh-921a265d-c6b0-4af5-a440-6e3990abb3c8",
 				"Id": "",
                 "datetimeSpecialLastConfirmed": "2023-09-16T00:00:00.000Z",
                 "Days": [{
@@ -4055,6 +4056,211 @@
                     "DealModifier": "=",
                     "DealNote": "Ask your server for our current selections",
                     "DealType": "Drink",
+					"Id": ""
+                }]
+            }]
+	    },
+        {
+			"Name": "",
+			"Address": "15230 SW Sequoia Pkwy, Tigard, OR 97224",
+			"Phone": "+19713170137",
+			"Website": "http://www.flyboybrewing.com/",
+			"Id": "0R18",
+			"Hours":[{
+				"DayOfWeek":0,
+				"Open":"2023-01-01T21:00:00.000Z",
+				"Close":"2023-01-01T04:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":1,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":2,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":3,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":4,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":5,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T06:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":6,
+				"Open":"2023-01-01T19:00:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			}],
+			"Attributes": [{
+				"Name": "",
+				"Id": ""
+			}],
+			"Specials": [{
+				"Name": "Late Night Mites Menu",
+				"Note": "",
+				"Id": "",
+                "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z",
+                "Days": [{
+                    "DayOfWeek": 4,
+                    "StartTime": "2023-01-01T05:00:00.000Z",
+                    "EndTime": "2023-01-01T06:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 5,
+                    "StartTime": "2023-01-01T05:00:00.000Z",
+                    "EndTime": "2023-01-01T06:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 6,
+                    "StartTime": "2023-01-01T05:00:00.000Z",
+                    "EndTime": "2023-01-01T06:00:00.000Z",
+					"Id": ""
+                }],
+                "Details": [{
+                    "Name": "Mozzarella Sticks",
+                    "DealValue": 10,
+                    "DealModifier": "=",
+                    "DealNote": "Sharables",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Onion Ring Basket",
+                    "DealValue": 10,
+                    "DealModifier": "=",
+                    "DealNote": "Sharables",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Tater Tot Basket",
+                    "DealValue": 8,
+                    "DealModifier": "=",
+                    "DealNote": "Sharables. Regular or Cajun",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Rosemary & Garlic Fry Platter",
+                    "DealValue": 10,
+                    "DealModifier": "=",
+                    "DealNote": "Sharables. Served with Marinera and Honey Mustard",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "1/2 LB Pretzel Cheese Curds",
+                    "DealValue": 8.50,
+                    "DealModifier": "=",
+                    "DealNote": "Sharables. Served with Burger Sauce and Jalapeno Ranch",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Get Your Wings! 6 Piece",
+                    "DealValue": 10,
+                    "DealModifier": "=",
+                    "DealNote": "Sharables. 6 Wings. Now Served naked, with your choice of up to 3 dipping caused (Franks hot sauce, BBQ, spicy BBQ, garlic lemon, hells angel, or sweet chili.) Served with blue cheese, carrots and celery.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Get Your Wings! 9 Piece",
+                    "DealValue": 13,
+                    "DealModifier": "=",
+                    "DealNote": "Sharables. Now Served naked, with your choice of up to 3 dipping caused (Franks hot sauce, BBQ, spicy BBQ, garlic lemon, hells angel, or sweet chili.) Served with blue cheese, carrots and celery.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Get Your Wings! 12 Piece",
+                    "DealValue": 17,
+                    "DealModifier": "=",
+                    "DealNote": "Sharables. Now Served naked, with your choice of up to 3 dipping caused (Franks hot sauce, BBQ, spicy BBQ, garlic lemon, hells angel, or sweet chili.) Served with blue cheese, carrots and celery.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "House-Made Chips & Salsa",
+                    "DealValue": 6.50,
+                    "DealModifier": "=",
+                    "DealNote": "Sharables",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Cod Fish and Chips",
+                    "DealValue": 16,
+                    "DealModifier": "=",
+                    "DealNote": "Off The Deep End. Beer battered and panko-crusted cod, and coleslaw.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Chicken Strips",
+                    "DealValue": 16,
+                    "DealModifier": "=",
+                    "DealNote": "Off The Deep End. Large white meat chicken breast pieces, and coleslaw, with your choice of French fries, or tater tots. (Upgrade to a mixed green salad, Caesar, sweet potato fries or rosemary & garlic fries for 1.00)",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Wdge Salad",
+                    "DealValue": 13,
+                    "DealModifier": "=",
+                    "DealNote": "Salads. Classic wedge salad with smoked bacon, bleu cheese crumbles, cherry tomatoes, and house-pickled onions.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Mixed Greens",
+                    "DealValue": 10,
+                    "DealModifier": "=",
+                    "DealNote": "Salads. Arugula, spinach, spring mix baby greens; finished with bleu cheese crumbles, roasted cherry tomatoes, house-pickled onions, and candied walnuts. Served with a house vinaigrette.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Caesar Salad",
+                    "DealValue": 10,
+                    "DealModifier": "=",
+                    "DealNote": "Salads. Classic romaine with hearty amounts of grated parmesan cheese, croutons and our savory house Caesar dressing.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Caprese Salad",
+                    "DealValue": 11,
+                    "DealModifier": "=",
+                    "DealNote": "Salads. Tomato, sliced mozzarella, basil, drizzled with a balsamic glaze.",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Chopped Italian Salad",
+                    "DealValue": 14,
+                    "DealModifier": "=",
+                    "DealNote": "Salads. Lettuce, salami, sun-dried tomatoes, diced tomatoes, garbanzo beans, mushrooms, celery, pepperoncini, provolone; tossed with Caesar dressing.",
+                    "DealType": "Food",
 					"Id": ""
                 }]
             }]

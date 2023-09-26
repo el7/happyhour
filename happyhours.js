@@ -39,6 +39,7 @@ function starter () {}
 
 function addToDisplayRestaurantInfo (restaurant) {
 
+	try {
 	var openTime = re.Hours[datetimeNow.getDay()].Open; // duplicate, need to rework this
 	var closeTime = re.Hours[datetimeNow.getDay()].Close;
 	var restaurantName = re.Name;
@@ -47,7 +48,9 @@ function addToDisplayRestaurantInfo (restaurant) {
 	var datetimeRestaurantOpen = new Date(restaurantOpen);
 	var datetimeRestaurantClose = new Date(restaurantClose);
 	var contentRestaurantName = document.createTextNode(restaurantName + " \n[Open: " + datetimeRestaurantOpen.getHours() + " - Close: " + datetimeRestaurantClose.getHours() + "]");
-
+	} catch (ex) {
+		console.log("ERROR no retaurant data, or no open/close time2 for today's day in the array")
+	}
 	// create div for restaurant
 	var divRestaurant = document.createElement("div");
     divRestaurant.classList.add(re.Id, "restaurant");
