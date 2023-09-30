@@ -4,10 +4,10 @@ import data from './happyhours.json' assert { type: 'json' };
 /* create variables */
 var dealActive = false;
 const hhScopeSelection = {
-	All: "",
-	Today: "",
-	WithinHour: "",
-	Now: ""
+	HH_All: "",
+	HH_Today: "",
+	HH_WithinHour: "",
+	HH_Now: ""
 }
 
 
@@ -67,15 +67,20 @@ function addToDisplayDeals (sp) {
 	for (var l = 0; l < sp.Details.length; l++) {
 
 		var de = sp.Details[l];
+		var dealId;
+
+		try {
+			dealId = de.id;
+		} catch (er) {
+			dealId = "noDealId";
+		}
 
 		console.log("Deal Name: " + de.Name);
 
 		// crate div for deal
 		var divDeal = document.createElement("div");
-		divDeal.classList.add(de.Id, "deal");
+		divDeal.classList.add(dealId, "deal");
 		document.body.appendChild(divDeal); 
-
-
 
 		// crate text content for deal
 		var contentDealType = document.createTextNode(de.DealType + " | ");
@@ -143,6 +148,19 @@ function addToDisplaySpecials(openTime, closeTime){
 				console.log("da.day: " + da.DayOfWeek);
 				console.log("dealStartHours: " + datetimeDealStart.getHours());
 				console.log("dealEndHours: " + datetimeDealEnd.getHours());
+
+
+				switch (hhScopeSelection) {
+					case "HH_All":
+						// call function, return bool into dealactive
+						break;
+					case "HH_Today":
+						break;
+					case "HH_WithinHour":
+						break;
+					case "HH_Now":
+						break;
+				}
 
 				/* check if this deal is active */
 				if (datetimeNow.getHours() >= datetimeDealStart.getHours() 

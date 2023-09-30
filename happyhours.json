@@ -340,7 +340,7 @@
             "Specials": [
                 {
                     "Name": "Happy Hour",
-                    "Note": "0S3",
+                    "Id": "0S3",
                     "datetimeSpecialLastConfirmed": "",
                     "Days": [
                         {
@@ -386,7 +386,7 @@
                             "DealModifier": "-",
                             "DealNote": "",
                             "DealType": "Drink",
-                            "Id": ""                            
+                            "Id": "0D1"                            
                         },
                         {
                             "Name": "Specialty cocktails",
@@ -394,7 +394,7 @@
                             "DealModifier": "-",
                             "DealNote": "",
                             "DealType": "Drink",
-                            "Id": ""
+                            "Id": "0D2"
                         },
                         {
                             "Name": "Discounted appetizers",
@@ -402,7 +402,7 @@
                             "DealModifier": "-",
                             "DealNote": "",
                             "DealType": "Food",
-                            "Id": ""
+                            "Id": "0D3"
                         }
                     ]
                 },
@@ -4061,7 +4061,7 @@
             }]
 	    },
         {
-			"Name": "",
+			"Name": "FlyBoy Brewing",
 			"Address": "15230 SW Sequoia Pkwy, Tigard, OR 97224",
 			"Phone": "+19713170137",
 			"Website": "http://www.flyboybrewing.com/",
