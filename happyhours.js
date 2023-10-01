@@ -13,6 +13,7 @@ const HH_ScopeSelection = {
 
 var hhSelection = HH_ScopeSelection.HH_Now;
 hhSelection = HH_ScopeSelection.HH_Today;
+hhSelection = HH_ScopeSelection.HH_WithinHour;
 
 var datetimeNow = new Date();
 //var datetimeNow = new Date("2023-09-15T22:00:00.000Z");
@@ -52,20 +53,23 @@ function addToDisplayRestaurantInfo (restaurant) {
 		var restaurantClose = re.Hours[datetimeNow.getDay()].Close;
 		var datetimeRestaurantOpen = new Date(restaurantOpen);
 		var datetimeRestaurantClose = new Date(restaurantClose);
+		var strRestaurantGoogleMap = "https://www.google.com/maps/place/" + re.Address;
+		var strRestaurantMapLink = " (<a href='" + strRestaurantGoogleMap + "'>map</a>)"
 	} catch (ex) {
 		console.log("ERROR no retaurant data, or no open/close time2 for today's day in the array")
 	}
 
-	// decide if restaurant is open
 	var hhSelectionModifierUpper = 0;
 	var hhSelectionModifierLower = 0;
 
 	switch (hhSelection) {
 		case HH_ScopeSelection.HH_Now:
+			hhSelectionModifierUpper = 0;
+			hhSelectionModifierLower = 0;
 			break;
 		case HH_ScopeSelection.HH_WithinHour:
 			hhSelectionModifierUpper = 1;
-			hhSelectionModifierUpper = 1;
+			hhSelectionModifierLower = 1;
 			break;
 		case HH_ScopeSelection.HH_Today:
 			hhSelectionModifierLower = (datetimeNow.getHours() - datetimeRestaurantOpen.getHours());
@@ -74,7 +78,8 @@ function addToDisplayRestaurantInfo (restaurant) {
 			break;		
 	}
 
-	if (isDateBetween(datetimeRestaurantOpen, datetimeRestaurantClose, datetimeNow)) {
+	// decide if restaurant is open
+	if (isDateHoursBetween(datetimeRestaurantOpen.getHours(), datetimeRestaurantClose.getHours(), datetimeNow.getHours())) {
 		console.log("open");
 		strRestrauntStatus = "Open";
 	} else {
@@ -83,7 +88,7 @@ function addToDisplayRestaurantInfo (restaurant) {
 	}
 
 	// create div for restaurant
-	var textNodeRestaurantInfo = document.createTextNode(restaurantName + " \n" + strRestrauntStatus + " [" + datetimeRestaurantOpen.getHours() + " - " + datetimeRestaurantClose.getHours() + "]");
+	var textNodeRestaurantInfo = document.createTextNode(restaurantName + strRestaurantMapLink + " \n" + strRestrauntStatus + " [" + datetimeRestaurantOpen.getHours() + " - " + datetimeRestaurantClose.getHours() + "]");
 	var divRestaurant = document.createElement("div");
     divRestaurant.classList.add(re.Id, "restaurant");
 	divRestaurant.appendChild(textNodeRestaurantInfo);
@@ -153,10 +158,16 @@ function addToDisplayBizHours () {
 
 function addToDisplaySpecials(openTime, closeTime){
 		/* iterate over specials for the biz */
+
+		var datetimeRestaurantOpen = new Date(openTime);
+		var datetimeRestaurantClose = new Date(closeTime);
+		var hhSelectionModifierUpper = 0;
+		var hhSelectionModifierLower = 0;
+
 		for (var j = 0; j < re.Specials.length; j++) {
 
 			var sp = re.Specials[j];
-//			console.log("here2");
+			//	console.log("here2");
 
 			console.log("Special Name: " + sp.Name);
 
@@ -180,9 +191,24 @@ function addToDisplaySpecials(openTime, closeTime){
 				console.log("dealStartHours: " + datetimeDealStart.getHours());
 				console.log("dealEndHours: " + datetimeDealEnd.getHours());
 
+				switch (hhSelection) {
+					case HH_ScopeSelection.HH_Now:
+						hhSelectionModifierUpper = 0;
+						hhSelectionModifierLower = 0;
+						break;
+					case HH_ScopeSelection.HH_WithinHour:
+						hhSelectionModifierUpper = 1;
+						hhSelectionModifierLower = 1;
+						break;
+					case HH_ScopeSelection.HH_Today:
+						hhSelectionModifierLower = (datetimeNow.getHours() - datetimeRestaurantOpen.getHours());
+						hhSelectionModifierUpper = (datetimeRestaurantClose.getHours() - datetimeNow.getHours());
+						console.log("now: " + datetimeNow.getHours() + " hhSelectionModifierLower: " + hhSelectionModifierLower + " upper: " + hhSelectionModifierUpper);
+						break;		
+				}
+
 				/* check if this deal is active */
-				if (datetimeNow.getHours() >= datetimeDealStart.getHours() 
-					&& datetimeNow.getHours() < datetimeDealEnd.getHours()
+				if (isDateHoursBetween(datetimeDealStart.getHours()-hhSelectionModifierLower, datetimeDealEnd.getHours()+hhSelectionModifierUpper, datetimeNow.getHours())
 					&& datetimeNow.getDay() == da.DayOfWeek) {
 					dealActive = true;
 	
@@ -220,10 +246,10 @@ function addToDisplaySpecials(openTime, closeTime){
 }
 
 
-function isDateBetween (lowerDate, upperDate, currentDate) {
+function isDateHoursBetween (lowerDate, upperDate, currentDate) {
 
-	if (currentDate.getHours() >= lowerDate.getHours() 
-	&& currentDate.getHours() <= upperDate.getHours()) {
+	if (currentDate >= lowerDate 
+	&& currentDate <= upperDate) {
 		return true;
 	} else {
 		return false;
