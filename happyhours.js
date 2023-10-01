@@ -13,15 +13,19 @@ const HH_ScopeSelection = {
 
 var hhSelection = HH_ScopeSelection.HH_Now;
 hhSelection = HH_ScopeSelection.HH_Today;
-hhSelection = HH_ScopeSelection.HH_WithinHour;
+// hhSelection = HH_ScopeSelection.HH_WithinHour;
 
 var datetimeNow = new Date();
 //var datetimeNow = new Date("2023-09-15T22:00:00.000Z");
 
-console.log("Time now: " + datetimeNow);
-document.body.style = "white-space: pre";
 
-/* iterate over biz' */
+starter();
+function starter () {
+
+	console.log("Time now: " + datetimeNow);
+	document.body.style = "white-space: pre";
+
+	/* iterate over biz' */
 for (var i = 0; i < data.Restaurants.length; i++) {
 
 	try {
@@ -33,12 +37,13 @@ for (var i = 0; i < data.Restaurants.length; i++) {
 	}
 
 	addToDisplayRestaurantInfo(re);
-	addToDisplayBizHours();
-	addToDisplaySpecials(openTime, closeTime);
+	addToDisplayBizHours(re);
+	addToDisplaySpecials(openTime, closeTime, re);
 }
 
-starter();
-function starter () {}
+
+
+}
 
 
 function addToDisplayRestaurantInfo (restaurant) {
@@ -47,14 +52,15 @@ function addToDisplayRestaurantInfo (restaurant) {
 
 	// get restaurant info from datasource
 	try {
-		var restaurantName = re.Name;
+		var restaurantName = restaurant.Name;
 		console.log(restaurantName);
-		var restaurantOpen = re.Hours[datetimeNow.getDay()].Open;
-		var restaurantClose = re.Hours[datetimeNow.getDay()].Close;
+		var restaurantOpen = restaurant.Hours[datetimeNow.getDay()].Open;
+		var restaurantClose = restaurant.Hours[datetimeNow.getDay()].Close;
 		var datetimeRestaurantOpen = new Date(restaurantOpen);
 		var datetimeRestaurantClose = new Date(restaurantClose);
-		var strRestaurantGoogleMap = "https://www.google.com/maps/place/" + re.Address;
-		var strRestaurantMapLink = " (<a href='" + strRestaurantGoogleMap + "'>map</a>)"
+		var strRestaurantGoogleMap = "https://www.google.com/maps/place/" + restaurant.Address;
+		var strRestaurantMapLink = "";
+		// strRestaurantMapLink = " (<a href='" + strRestaurantGoogleMap + "'>map</a>)"
 	} catch (ex) {
 		console.log("ERROR no retaurant data, or no open/close time2 for today's day in the array")
 	}
@@ -92,7 +98,7 @@ function addToDisplayRestaurantInfo (restaurant) {
 	var divRestaurant = document.createElement("div");
 	var spanBusinessName = document.createElement('span');
 	spanBusinessName.appendChild(textNodeRestaurantInfo);
-	divRestaurant.classList.add(re.Id, "restaurant");
+	divRestaurant.classList.add(restaurant.Id, "restaurant");
 	divRestaurant.appendChild(spanBusinessName);
 	document.body.appendChild(divRestaurant); 
 
@@ -150,27 +156,27 @@ function addToDisplayDeals (sp) {
 }
 
 
-function addToDisplayBizHours () {
+function addToDisplayBizHours (restaurant) {
 
 
 
 	/* iterate over biz hours info */
-	for (var iter_hours = 0; iter_hours < re.Hours.length; iter_hours++) {
+	for (var iter_hours = 0; iter_hours < restaurant.Hours.length; iter_hours++) {
 	
 		/* display hour info */
-		var datetimeRestaurantOpen = new Date(re.Hours[iter_hours].Open);
-		var datetimeRestaurantClose = new Date(re.Hours[iter_hours].Close);
+		var datetimeRestaurantOpen = new Date(restaurant.Hours[iter_hours].Open);
+		var datetimeRestaurantClose = new Date(restaurant.Hours[iter_hours].Close);
 		var textRestaurantHours = "Open: " + datetimeRestaurantOpen.toLocaleTimeString() + "\nClose: " + datetimeRestaurantClose.toLocaleTimeString() + "\n";
 
 		/* show hour info for today */
-		if (datetimeNow.getDay() == re.Hours[iter_hours].DayOfWeek) {
+		if (datetimeNow.getDay() == restaurant.Hours[iter_hours].DayOfWeek) {
 			// do later
 		}
 	}
 
 }
 
-function addToDisplaySpecials(openTime, closeTime){
+function addToDisplaySpecials(openTime, closeTime, restaurant){
 		/* iterate over specials for the biz */
 
 		var datetimeRestaurantOpen = new Date(openTime);
@@ -178,9 +184,9 @@ function addToDisplaySpecials(openTime, closeTime){
 		var hhSelectionModifierUpper = 0;
 		var hhSelectionModifierLower = 0;
 
-		for (var j = 0; j < re.Specials.length; j++) {
+		for (var j = 0; j < restaurant.Specials.length; j++) {
 
-			var sp = re.Specials[j];
+			var sp = restaurant.Specials[j];
 			//	console.log("here2");
 
 			console.log("Special Name: " + sp.Name);
