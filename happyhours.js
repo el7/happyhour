@@ -19,7 +19,7 @@ var datetimeNow = new Date();
 //var datetimeNow = new Date("2023-09-15T22:00:00.000Z");
 
 console.log("Time now: " + datetimeNow);
-document.body.style = "white-space: pre;"
+document.body.style = "white-space: pre";
 
 /* iterate over biz' */
 for (var i = 0; i < data.Restaurants.length; i++) {
@@ -90,8 +90,10 @@ function addToDisplayRestaurantInfo (restaurant) {
 	// create div for restaurant
 	var textNodeRestaurantInfo = document.createTextNode(restaurantName + strRestaurantMapLink + " \n" + strRestrauntStatus + " [" + datetimeRestaurantOpen.getHours() + " - " + datetimeRestaurantClose.getHours() + "]");
 	var divRestaurant = document.createElement("div");
-    divRestaurant.classList.add(re.Id, "restaurant");
-	divRestaurant.appendChild(textNodeRestaurantInfo);
+	var spanBusinessName = document.createElement('span');
+	spanBusinessName.appendChild(textNodeRestaurantInfo);
+	divRestaurant.classList.add(re.Id, "restaurant");
+	divRestaurant.appendChild(spanBusinessName);
 	document.body.appendChild(divRestaurant); 
 
 }
@@ -124,11 +126,23 @@ function addToDisplayDeals (sp) {
 		var contentDealName = document.createTextNode(de.Name + "\n");
 		var contentDealNote = document.createTextNode(de.DealNote);
 
-		divDeal.appendChild(contentDealType);
-		divDeal.appendChild(contentDealModifier);
-		divDeal.appendChild(contentDealValue);
-		divDeal.appendChild(contentDealName);
-		divDeal.appendChild(contentDealNote);
+		var spanDealType = document.createElement('span');
+		var spanDealModifier = document.createElement('span');
+		var spanDealValue = document.createElement('span');
+		var spanDealName = document.createElement('span');
+		var spanDealNote = document.createElement('span');
+
+		spanDealType.appendChild(contentDealType);
+		spanDealModifier.appendChild(contentDealModifier);
+		spanDealValue.appendChild(contentDealValue);
+		spanDealName.appendChild(contentDealName);
+		spanDealNote.appendChild(contentDealNote);
+
+		divDeal.appendChild(spanDealType);
+		divDeal.appendChild(spanDealModifier);
+		divDeal.appendChild(spanDealValue);
+		divDeal.appendChild(spanDealName);
+		divDeal.appendChild(spanDealNote);
 
 		console.log("Deal: " + de.Name);
 		
@@ -229,15 +243,24 @@ function addToDisplaySpecials(openTime, closeTime){
 				document.body.appendChild(divSpecial); 
 
 				var datetimeSpecialLastConfirmed = new Date(sp.datetimeSpecialLastConfirmed);
+
 				var contentSpecialName = document.createTextNode(sp.Name + "\n");
 				var contentSpecialTimes = document.createTextNode("[Start: " + datetimeDealStart.getHours() + " End: " + datetimeDealEnd.getHours() + "]\n");
 				var contentSpecialConfirmed = document.createTextNode("Verified: " + datetimeSpecialLastConfirmed);
 
+				var spanSpecialName = document.createElement('span');
+				var spanSpecialTimes = document.createElement('span');
+				var spanSpecialConfirmed = document.createElement('span');
+
+				spanSpecialName.appendChild(contentSpecialName);
+				spanSpecialTimes.appendChild(contentSpecialTimes);
+				spanSpecialConfirmed.appendChild(contentSpecialConfirmed);
+
 				// targetDiv.appendChild(contentSpecialName);	
-				divSpecial.appendChild(contentSpecialName);
-				divSpecial.appendChild(contentSpecialTimes);
-				divSpecial.appendChild(contentSpecialConfirmed);
-				addToDisplayDeals(sp);	
+				divSpecial.appendChild(spanSpecialName);
+				divSpecial.appendChild(spanSpecialTimes);
+				divSpecial.appendChild(spanSpecialConfirmed);
+				addToDisplayDeals(sp);
 
 			} else {
 				console.log("special not active");
