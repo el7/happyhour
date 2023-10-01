@@ -1,9 +1,7 @@
-/* import deal info */
+/* import data */
 import data from './happyhours.json' assert { type: 'json' };
 
-/* create variables */
-var dealActive = false;
-
+/* const and variables */
 const HH_ScopeSelection = {
 	HH_All: "all",
 	HH_Today: "today",
@@ -11,8 +9,9 @@ const HH_ScopeSelection = {
 	HH_Now: "now"
 }
 
+var dealActive = false;
 var hhSelection = HH_ScopeSelection.HH_Now;
-hhSelection = HH_ScopeSelection.HH_Today;
+//hhSelection = HH_ScopeSelection.HH_Today;
 // hhSelection = HH_ScopeSelection.HH_WithinHour;
 
 var datetimeNow = new Date();
@@ -26,23 +25,21 @@ function starter () {
 	document.body.style = "white-space: pre";
 
 	/* iterate over biz' */
-for (var i = 0; i < data.Restaurants.length; i++) {
+	for (var i = 0; i < data.Restaurants.length; i++) {
 
-	try {
-		var re = data.Restaurants[i];
-		var openTime = re.Hours[datetimeNow.getDay()].Open;
-		var closeTime = re.Hours[datetimeNow.getDay()].Close;
-	} catch (ex) {
-		console.log("ERROR no retaurant data, or no open/close time for today's day in the array")
-	}
+		try {
+			var re = data.Restaurants[i];
+			var openTime = re.Hours[datetimeNow.getDay()].Open;
+			var closeTime = re.Hours[datetimeNow.getDay()].Close;
+		} catch (ex) {
+			console.log("ERROR no retaurant data, or no open/close time for today's day in the array")
+		}
 
 	addToDisplayRestaurantInfo(re);
 	addToDisplayBizHours(re);
-	addToDisplaySpecials(openTime, closeTime, re);
-}
+	addToDisplaySpecials(re, openTime, closeTime);
 
-
-
+	}
 }
 
 
@@ -61,6 +58,7 @@ function addToDisplayRestaurantInfo (restaurant) {
 		var strRestaurantGoogleMap = "https://www.google.com/maps/place/" + restaurant.Address;
 		var strRestaurantMapLink = "";
 		// strRestaurantMapLink = " (<a href='" + strRestaurantGoogleMap + "'>map</a>)"
+
 	} catch (ex) {
 		console.log("ERROR no retaurant data, or no open/close time2 for today's day in the array")
 	}
@@ -80,9 +78,10 @@ function addToDisplayRestaurantInfo (restaurant) {
 		case HH_ScopeSelection.HH_Today:
 			hhSelectionModifierLower = (datetimeNow.getHours() - datetimeRestaurantOpen.getHours());
 			hhSelectionModifierUpper = (datetimeRestaurantClose.getHours() - datetimeNow.getHours());
-			console.log("now: " + datetimeNow.getHours() + " hhSelectionModifierLower: " + hhSelectionModifierLower + " upper: " + hhSelectionModifierUpper);
 			break;		
 	}
+
+	console.log("now: " + datetimeNow.getHours() + " hhSelectionModifierLower: " + hhSelectionModifierLower + " upper: " + hhSelectionModifierUpper);
 
 	// decide if restaurant is open
 	if (isDateHoursBetween(datetimeRestaurantOpen.getHours(), datetimeRestaurantClose.getHours(), datetimeNow.getHours())) {
@@ -176,7 +175,7 @@ function addToDisplayBizHours (restaurant) {
 
 }
 
-function addToDisplaySpecials(openTime, closeTime, restaurant){
+function addToDisplaySpecials(restaurant, openTime, closeTime){
 		/* iterate over specials for the biz */
 
 		var datetimeRestaurantOpen = new Date(openTime);
@@ -274,11 +273,18 @@ function addToDisplaySpecials(openTime, closeTime, restaurant){
 		}
 }
 
+function nighttimeAdjustment () {
 
-function isDateHoursBetween (lowerDate, upperDate, currentDate) {
+}
 
-	if (currentDate >= lowerDate 
-	&& currentDate <= upperDate) {
+function isDateHoursBetween (lowerHour, upperHour, currentHour) {
+
+	if (upperHour > -1 && upperHour < 5) 
+		upperHour += 24;
+
+	console.log("r.open " + lowerHour + " r.close: " + upperHour + "nowhour: " + currentHour);
+
+	if (currentHour >= lowerHour && currentHour <= upperHour) {
 		return true;
 	} else {
 		return false;
