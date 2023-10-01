@@ -11,7 +11,7 @@ const HH_ScopeSelection = {
 
 var dealActive = false;
 var hhSelection = HH_ScopeSelection.HH_Now;
-//hhSelection = HH_ScopeSelection.HH_Today;
+ hhSelection = HH_ScopeSelection.HH_Today;
 // hhSelection = HH_ScopeSelection.HH_WithinHour;
 
 var datetimeNow = new Date();
@@ -221,10 +221,11 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 						break;
 					case HH_ScopeSelection.HH_Today:
 						hhSelectionModifierLower = (datetimeNow.getHours() - datetimeRestaurantOpen.getHours());
-						hhSelectionModifierUpper = (datetimeRestaurantClose.getHours() - datetimeNow.getHours());
-						console.log("now: " + datetimeNow.getHours() + " hhSelectionModifierLower: " + hhSelectionModifierLower + " upper: " + hhSelectionModifierUpper);
+						hhSelectionModifierUpper = (nighttimeAdjustment(datetimeRestaurantClose.getHours()) - datetimeNow.getHours());
 						break;		
 				}
+
+				console.log("now: " + datetimeNow.getHours() + " hhSelectionModifierLower: " + hhSelectionModifierLower + " upper: " + hhSelectionModifierUpper);
 
 				/* check if this deal is active */
 				if (isDateHoursBetween(datetimeDealStart.getHours()-hhSelectionModifierLower, datetimeDealEnd.getHours()+hhSelectionModifierUpper, datetimeNow.getHours())
@@ -273,15 +274,18 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 		}
 }
 
-function nighttimeAdjustment () {
+function nighttimeAdjustment (earlyHours) {
 
+	// adjust for late hours, likely needs guardrails 
+	if (earlyHours > -1 && earlyHours < 5) 
+		earlyHours += 24;
+	
+	return earlyHours;
 }
 
 function isDateHoursBetween (lowerHour, upperHour, currentHour) {
 
-	if (upperHour > -1 && upperHour < 5) 
-		upperHour += 24;
-
+	upperHour = nighttimeAdjustment(upperHour);
 	console.log("r.open " + lowerHour + " r.close: " + upperHour + "nowhour: " + currentHour);
 
 	if (currentHour >= lowerHour && currentHour <= upperHour) {
