@@ -47,10 +47,22 @@ function addToDisplayRestaurantInfo (restaurant) {
 	var restaurantClose = re.Hours[datetimeNow.getDay()].Close;
 	var datetimeRestaurantOpen = new Date(restaurantOpen);
 	var datetimeRestaurantClose = new Date(restaurantClose);
-	var contentRestaurantName = document.createTextNode(restaurantName + " \n[Open: " + datetimeRestaurantOpen.getHours() + " - Close: " + datetimeRestaurantClose.getHours() + "]");
 	} catch (ex) {
 		console.log("ERROR no retaurant data, or no open/close time2 for today's day in the array")
 	}
+
+	var strRestrauntStatus;
+
+	if (isDateBetween(datetimeRestaurantOpen, datetimeRestaurantClose, datetimeNow)) {
+		console.log("open");
+		strRestrauntStatus = "Open";
+	} else {
+		console.log("closed");
+		strRestrauntStatus = "Closed";
+	}
+
+	var contentRestaurantName = document.createTextNode(restaurantName + " \n" + strRestrauntStatus + " [" + datetimeRestaurantOpen.getHours() + " - " + datetimeRestaurantClose.getHours() + "]");
+
 	// create div for restaurant
 	var divRestaurant = document.createElement("div");
     divRestaurant.classList.add(re.Id, "restaurant");
@@ -88,6 +100,7 @@ function addToDisplayDeals (sp) {
 		var contentDealValue = document.createTextNode(de.DealValue + " | ");
 		var contentDealName = document.createTextNode(de.Name + "\n");
 		var contentDealNote = document.createTextNode(de.DealNote);
+
 		divDeal.appendChild(contentDealType);
 		divDeal.appendChild(contentDealModifier);
 		divDeal.appendChild(contentDealValue);
@@ -199,4 +212,16 @@ function addToDisplaySpecials(openTime, closeTime){
 				console.log("special not active");
 			}
 		}
+}
+
+
+function isDateBetween (lowerDate, upperDate, currentDate) {
+
+	if (currentDate.getHours() >= lowerDate.getHours() 
+	&& currentDate.getHours() <= upperDate.getHours()) {
+		return true;
+	} else {
+		return false;
+	}
+
 }

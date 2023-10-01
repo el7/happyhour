@@ -3,7 +3,7 @@
 
 .restaurant {
 
-    border-left: 5px solid #ff3d07;
+    border-left: 5px solid #3B8EA5;
     width: 100%;
     height: 100%;
     margin-top: 10px;
@@ -13,7 +13,7 @@
 
 .special {
 
-    border-left: 5px solid #faad14;
+    border-left: 5px solid #F49E4C;
     width: 100%;
     height: 100%;
     margin-top: 10px;
@@ -24,7 +24,7 @@
 
 .deal {
 
-    border-left: 5px solid #ff2afb;
+    border-left: 5px solid #AB3428;
     width: 100%;
     height: 100%;
     margin-left: 20px;
