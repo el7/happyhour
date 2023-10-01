@@ -3,13 +3,16 @@ import data from './happyhours.json' assert { type: 'json' };
 
 /* create variables */
 var dealActive = false;
-const hhScopeSelection = {
-	HH_All: "",
-	HH_Today: "",
-	HH_WithinHour: "",
-	HH_Now: ""
+
+const HH_ScopeSelection = {
+	HH_All: "all",
+	HH_Today: "today",
+	HH_WithinHour: "hour",
+	HH_Now: "now"
 }
 
+var hhSelection = HH_ScopeSelection.HH_Now;
+hhSelection = HH_ScopeSelection.HH_Today;
 
 var datetimeNow = new Date();
 //var datetimeNow = new Date("2023-09-15T22:00:00.000Z");
@@ -39,19 +42,37 @@ function starter () {}
 
 function addToDisplayRestaurantInfo (restaurant) {
 
+	var strRestrauntStatus;
+
+	// get restaurant info from datasource
 	try {
-	var openTime = re.Hours[datetimeNow.getDay()].Open; // duplicate, need to rework this
-	var closeTime = re.Hours[datetimeNow.getDay()].Close;
-	var restaurantName = re.Name;
-	var restaurantOpen = re.Hours[datetimeNow.getDay()].Open;
-	var restaurantClose = re.Hours[datetimeNow.getDay()].Close;
-	var datetimeRestaurantOpen = new Date(restaurantOpen);
-	var datetimeRestaurantClose = new Date(restaurantClose);
+		var restaurantName = re.Name;
+		console.log(restaurantName);
+		var restaurantOpen = re.Hours[datetimeNow.getDay()].Open;
+		var restaurantClose = re.Hours[datetimeNow.getDay()].Close;
+		var datetimeRestaurantOpen = new Date(restaurantOpen);
+		var datetimeRestaurantClose = new Date(restaurantClose);
 	} catch (ex) {
 		console.log("ERROR no retaurant data, or no open/close time2 for today's day in the array")
 	}
 
-	var strRestrauntStatus;
+	// decide if restaurant is open
+	var hhSelectionModifierUpper = 0;
+	var hhSelectionModifierLower = 0;
+
+	switch (hhSelection) {
+		case HH_ScopeSelection.HH_Now:
+			break;
+		case HH_ScopeSelection.HH_WithinHour:
+			hhSelectionModifierUpper = 1;
+			hhSelectionModifierUpper = 1;
+			break;
+		case HH_ScopeSelection.HH_Today:
+			hhSelectionModifierLower = (datetimeNow.getHours() - datetimeRestaurantOpen.getHours());
+			hhSelectionModifierUpper = (datetimeRestaurantClose.getHours() - datetimeNow.getHours());
+			console.log("now: " + datetimeNow.getHours() + " hhSelectionModifierLower: " + hhSelectionModifierLower + " upper: " + hhSelectionModifierUpper);
+			break;		
+	}
 
 	if (isDateBetween(datetimeRestaurantOpen, datetimeRestaurantClose, datetimeNow)) {
 		console.log("open");
@@ -61,15 +82,12 @@ function addToDisplayRestaurantInfo (restaurant) {
 		strRestrauntStatus = "Closed";
 	}
 
-	var contentRestaurantName = document.createTextNode(restaurantName + " \n" + strRestrauntStatus + " [" + datetimeRestaurantOpen.getHours() + " - " + datetimeRestaurantClose.getHours() + "]");
-
 	// create div for restaurant
+	var textNodeRestaurantInfo = document.createTextNode(restaurantName + " \n" + strRestrauntStatus + " [" + datetimeRestaurantOpen.getHours() + " - " + datetimeRestaurantClose.getHours() + "]");
 	var divRestaurant = document.createElement("div");
     divRestaurant.classList.add(re.Id, "restaurant");
-	divRestaurant.appendChild(contentRestaurantName);
+	divRestaurant.appendChild(textNodeRestaurantInfo);
 	document.body.appendChild(divRestaurant); 
-
-	console.log(re.Name);
 
 }
 
@@ -162,22 +180,9 @@ function addToDisplaySpecials(openTime, closeTime){
 				console.log("dealStartHours: " + datetimeDealStart.getHours());
 				console.log("dealEndHours: " + datetimeDealEnd.getHours());
 
-
-				switch (hhScopeSelection) {
-					case "HH_All":
-						// call function, return bool into dealactive
-						break;
-					case "HH_Today":
-						break;
-					case "HH_WithinHour":
-						break;
-					case "HH_Now":
-						break;
-				}
-
 				/* check if this deal is active */
 				if (datetimeNow.getHours() >= datetimeDealStart.getHours() 
-					&& datetimeNow.getHours() <= datetimeDealEnd.getHours()
+					&& datetimeNow.getHours() < datetimeDealEnd.getHours()
 					&& datetimeNow.getDay() == da.DayOfWeek) {
 					dealActive = true;
 	
