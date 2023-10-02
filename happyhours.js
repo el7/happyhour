@@ -114,39 +114,8 @@ function addToDisplayDeals (sp) {
 			dealId = "noDealId";
 		}
 
-		// crate div for deal
-		var divDeal = document.createElement("div");
-		divDeal.classList.add(dealId, "deal");
-		document.body.appendChild(divDeal); 
-
-		// crate text content for deal
-		var contentDealType = document.createTextNode(de.DealType + " | ");
-		var contentDealModifier = document.createTextNode(de.DealModifier + " ");
-		var contentDealValue = document.createTextNode(de.DealValue + " | ");
-		var contentDealName = document.createTextNode(de.Name + "\n");
-		var contentDealNote = document.createTextNode(de.DealNote);
-
-		var spanDealType = document.createElement('span');
-		var spanDealModifier = document.createElement('span');
-		var spanDealValue = document.createElement('span');
-		var spanDealName = document.createElement('span');
-		var spanDealNote = document.createElement('span');
-
-		spanDealType.appendChild(contentDealType);
-		spanDealModifier.appendChild(contentDealModifier);
-		spanDealValue.appendChild(contentDealValue);
-		spanDealName.appendChild(contentDealName);
-		spanDealNote.appendChild(contentDealNote);
-
-		divDeal.appendChild(spanDealType);
-		divDeal.appendChild(spanDealModifier);
-		divDeal.appendChild(spanDealValue);
-		divDeal.appendChild(spanDealName);
-		divDeal.appendChild(spanDealNote);
-
 		console.log("Deal: " + de.Name);
-
-		// divFactoryDeals(de, dealId);
+		divFactoryDeals(de, dealId);
 
 	}
 }
@@ -235,33 +204,10 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 			if (specialActive == true) {
 
 				console.log("special active");
-
-				// create div for restaurant
-				var divSpecial = document.createElement("div");
-				//divSpecial.classList.add(sp.Id, "special");
-				divSpecial.classList.add("special");
-				document.body.appendChild(divSpecial); 
-
 				var datetimeSpecialLastConfirmed = new Date(sp.datetimeSpecialLastConfirmed);
 
-				var contentSpecialName = document.createTextNode(sp.Name + "\n");
-				var contentSpecialTimes = document.createTextNode("[Start: " + datetimeDealStart.getHours() + " End: " + datetimeDealEnd.getHours() + "]\n");
-				var contentSpecialConfirmed = document.createTextNode("Verified: " + datetimeSpecialLastConfirmed);
+				divFactorySpecials(sp, datetimeDealStart, datetimeDealEnd);
 
-				var spanSpecialName = document.createElement('span');
-				var spanSpecialTimes = document.createElement('span');
-				var spanSpecialConfirmed = document.createElement('span');
-
-				spanSpecialName.appendChild(contentSpecialName);
-				spanSpecialTimes.appendChild(contentSpecialTimes);
-				spanSpecialConfirmed.appendChild(contentSpecialConfirmed);
-
-				// targetDiv.appendChild(contentSpecialName);	
-				divSpecial.appendChild(spanSpecialName);
-				divSpecial.appendChild(spanSpecialTimes);
-				divSpecial.appendChild(spanSpecialConfirmed);
-
-				// divFactorySpecials(sp);
 				addToDisplayDeals(sp);
 
 			} else {
