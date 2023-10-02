@@ -9,10 +9,15 @@ const HH_ScopeSelection = {
 	HH_Now: "now"
 }
 
-var dealActive = false;
+var specialActive = false;
 var hhSelection = HH_ScopeSelection.HH_Now;
  hhSelection = HH_ScopeSelection.HH_Today;
 // hhSelection = HH_ScopeSelection.HH_WithinHour;
+
+var divHhMode = document.createElement("div");
+var textNodeHhMode = document.createTextNode("Deals: " + hhSelection.toUpperCase());
+divHhMode.append(textNodeHhMode);
+document.body.appendChild(divHhMode);
 
 var datetimeNow = new Date();
 //var datetimeNow = new Date("2023-09-15T22:00:00.000Z");
@@ -49,8 +54,7 @@ function addToDisplayRestaurantInfo (restaurant) {
 
 	// get restaurant info from datasource
 	try {
-		var restaurantName = restaurant.Name;
-		console.log(restaurantName);
+		console.log(restaurant.Name);
 		var restaurantOpen = restaurant.Hours[datetimeNow.getDay()].Open;
 		var restaurantClose = restaurant.Hours[datetimeNow.getDay()].Close;
 		var datetimeRestaurantOpen = new Date(restaurantOpen);
@@ -92,14 +96,7 @@ function addToDisplayRestaurantInfo (restaurant) {
 		strRestrauntStatus = "Closed";
 	}
 
-	// create div for restaurant
-	var textNodeRestaurantInfo = document.createTextNode(restaurantName + strRestaurantMapLink + " \n" + strRestrauntStatus + " [" + datetimeRestaurantOpen.getHours() + " - " + datetimeRestaurantClose.getHours() + "]");
-	var divRestaurant = document.createElement("div");
-	var spanBusinessName = document.createElement('span');
-	spanBusinessName.appendChild(textNodeRestaurantInfo);
-	divRestaurant.classList.add(restaurant.Id, "restaurant");
-	divRestaurant.appendChild(spanBusinessName);
-	document.body.appendChild(divRestaurant); 
+	divFactoryRestaurants(restaurant, strRestaurantMapLink, strRestrauntStatus, datetimeRestaurantOpen, datetimeRestaurantClose);
 
 }
 
@@ -116,8 +113,6 @@ function addToDisplayDeals (sp) {
 		} catch (er) {
 			dealId = "noDealId";
 		}
-
-		console.log("Deal Name: " + de.Name);
 
 		// crate div for deal
 		var divDeal = document.createElement("div");
@@ -150,14 +145,14 @@ function addToDisplayDeals (sp) {
 		divDeal.appendChild(spanDealNote);
 
 		console.log("Deal: " + de.Name);
-		
+
+		// divFactoryDeals(de, dealId);
+
 	}
 }
 
 
 function addToDisplayBizHours (restaurant) {
-
-
 
 	/* iterate over biz hours info */
 	for (var iter_hours = 0; iter_hours < restaurant.Hours.length; iter_hours++) {
@@ -198,17 +193,8 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 				if (da.StartTime == "open") da.StartTime = openTime; // prob going to break
 				if (da.EndTime == "close") da.EndTime = closeTime; // prob going to break
 
-				console.log("Special Start: " + da.StartTime);
-				console.log("Special End: " + da.EndTime);
-
 				var datetimeDealStart = new Date(da.StartTime);
 				var datetimeDealEnd = new Date(da.EndTime);
-
-				console.log("currentDay: " + datetimeNow.getDay());
-				console.log("currentHours: " + datetimeNow.getHours());
-				console.log("da.day: " + da.DayOfWeek);
-				console.log("dealStartHours: " + datetimeDealStart.getHours());
-				console.log("dealEndHours: " + datetimeDealEnd.getHours());
 
 				switch (hhSelection) {
 					case HH_ScopeSelection.HH_Now:
@@ -225,20 +211,28 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 						break;		
 				}
 
-				console.log("now: " + datetimeNow.getHours() + " hhSelectionModifierLower: " + hhSelectionModifierLower + " upper: " + hhSelectionModifierUpper);
+				console.log("Special Start: " 		+ datetimeDealStart.getHours()
+							+ " Special End: " 		+ datetimeDealEnd.getHours()
+							+ " Current Day: " 		+ datetimeNow.getDay()
+							+ " Current Hours: " 	+ datetimeNow.getHours()
+							+ " dealStartHours: " 	+ datetimeDealStart.getHours()
+							+ " dealEndHours: " 	+ datetimeDealEnd.getHours()
+							+ " da.day: " 			+ da.DayOfWeek
+							+ " hhSelectionModifierLower: " + hhSelectionModifierLower 
+							+ " upper: " + hhSelectionModifierUpper);
 
 				/* check if this deal is active */
 				if (isDateHoursBetween(datetimeDealStart.getHours()-hhSelectionModifierLower, datetimeDealEnd.getHours()+hhSelectionModifierUpper, datetimeNow.getHours())
 					&& datetimeNow.getDay() == da.DayOfWeek) {
-					dealActive = true;
+					specialActive = true;
 	
 				} else {
-					dealActive = false;
+					specialActive = false;
 				}
 			}
 	
 			/* if deal active, add to div */
-			if (dealActive == true) {
+			if (specialActive == true) {
 
 				console.log("special active");
 
@@ -266,6 +260,8 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 				divSpecial.appendChild(spanSpecialName);
 				divSpecial.appendChild(spanSpecialTimes);
 				divSpecial.appendChild(spanSpecialConfirmed);
+
+				// divFactorySpecials(sp);
 				addToDisplayDeals(sp);
 
 			} else {
@@ -274,13 +270,95 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 		}
 }
 
-function nighttimeAdjustment (earlyHours) {
+function divFactoryRestaurants (restaurant, strRestaurantMapLink, strRestrauntStatus, datetimeRestaurantOpen, datetimeRestaurantClose) {
+
+	// create div for restaurant
+	var textNodeRestaurantInfo = document.createTextNode(restaurant.Name + strRestaurantMapLink + " \n" + strRestrauntStatus + " [" + datetimeRestaurantOpen.getHours() + " - " + datetimeRestaurantClose.getHours() + "]");
+	var divRestaurant = document.createElement("div");
+	var spanBusinessName = document.createElement('span');
+
+	spanBusinessName.appendChild(textNodeRestaurantInfo);
+
+	divRestaurant.classList.add(restaurant.Id, "restaurant");
+	divRestaurant.appendChild(spanBusinessName);
+
+	document.body.appendChild(divRestaurant); 
+
+}
+
+
+function divFactorySpecials (sp, datetimeDealStart, datetimeDealEnd) {
+
+	// create div for restaurant
+	var divSpecial = document.createElement("div");
+	// divSpecial.classList.add(sp.Id, "special");
+	divSpecial.classList.add("special");
+	document.body.appendChild(divSpecial); 
+
+	var datetimeSpecialLastConfirmed = new Date(sp.datetimeSpecialLastConfirmed);
+
+	var contentSpecialName = document.createTextNode(sp.Name + "\n");
+	var contentSpecialTimes = document.createTextNode("[Start: " + datetimeDealStart.getHours() + " End: " + datetimeDealEnd.getHours() + "]\n");
+	var contentSpecialConfirmed = document.createTextNode("Verified: " + datetimeSpecialLastConfirmed);
+
+	var spanSpecialName = document.createElement('span');
+	var spanSpecialTimes = document.createElement('span');
+	var spanSpecialConfirmed = document.createElement('span');
+
+	spanSpecialName.appendChild(contentSpecialName);
+	spanSpecialTimes.appendChild(contentSpecialTimes);
+	spanSpecialConfirmed.appendChild(contentSpecialConfirmed);
+
+	// targetDiv.appendChild(contentSpecialName);	
+	divSpecial.appendChild(spanSpecialName);
+	divSpecial.appendChild(spanSpecialTimes);
+	divSpecial.appendChild(spanSpecialConfirmed);
+
+}
+
+function divFactoryDeals (de, dealId) {
+
+	// crate div for deal
+	var divDeal = document.createElement("div");
+	divDeal.classList.add(dealId, "deal");
+	document.body.appendChild(divDeal); 
+
+	// crate text content for deal
+	var contentDealType = document.createTextNode(de.DealType + " | ");
+	var contentDealModifier = document.createTextNode(de.DealModifier + " ");
+	var contentDealValue = document.createTextNode(de.DealValue + " | ");
+	var contentDealName = document.createTextNode(de.Name + "\n");
+	var contentDealNote = document.createTextNode(de.DealNote);
+
+	var spanDealType = document.createElement('span');
+	var spanDealModifier = document.createElement('span');
+	var spanDealValue = document.createElement('span');
+	var spanDealName = document.createElement('span');
+	var spanDealNote = document.createElement('span');
+
+	spanDealType.appendChild(contentDealType);
+	spanDealModifier.appendChild(contentDealModifier);
+	spanDealValue.appendChild(contentDealValue);
+	spanDealName.appendChild(contentDealName);
+	spanDealNote.appendChild(contentDealNote);
+
+	divDeal.appendChild(spanDealType);
+	divDeal.appendChild(spanDealModifier);
+	divDeal.appendChild(spanDealValue);
+	divDeal.appendChild(spanDealName);
+	divDeal.appendChild(spanDealNote);
+
+
+}
+
+
+function nighttimeAdjustment (lateHours) {
 
 	// adjust for late hours, likely needs guardrails 
-	if (earlyHours > -1 && earlyHours < 5) 
-		earlyHours += 24;
+	if (lateHours > -1 && lateHours < 5) 
+		lateHours += 24;
 	
-	return earlyHours;
+	return lateHours;
 }
 
 function isDateHoursBetween (lowerHour, upperHour, currentHour) {
