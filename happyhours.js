@@ -11,8 +11,8 @@ const HH_ScopeSelection = {
 
 var specialActive = false;
 var hhSelection = HH_ScopeSelection.HH_Now;
- hhSelection = HH_ScopeSelection.HH_Today;
-// hhSelection = HH_ScopeSelection.HH_WithinHour;
+hhSelection = HH_ScopeSelection.HH_Today;
+ hhSelection = HH_ScopeSelection.HH_WithinHour;
 
 var divHhMode = document.createElement("div");
 var textNodeHhMode = document.createTextNode("Deals: " + hhSelection.toUpperCase());
@@ -21,7 +21,6 @@ document.body.appendChild(divHhMode);
 
 var datetimeNow = new Date();
 //var datetimeNow = new Date("2023-09-15T22:00:00.000Z");
-
 
 starter();
 function starter () {
@@ -81,7 +80,7 @@ function addToDisplayRestaurantInfo (restaurant) {
 			break;
 		case HH_ScopeSelection.HH_Today:
 			hhSelectionModifierLower = (datetimeNow.getHours() - datetimeRestaurantOpen.getHours());
-			hhSelectionModifierUpper = (datetimeRestaurantClose.getHours() - datetimeNow.getHours());
+			hhSelectionModifierUpper = (nighttimeAdjustment(datetimeRestaurantClose.getHours()) - datetimeNow.getHours());
 			break;		
 	}
 
@@ -167,43 +166,55 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 
 				switch (hhSelection) {
 					case HH_ScopeSelection.HH_Now:
+						console.log("now!");
 						hhSelectionModifierUpper = 0;
 						hhSelectionModifierLower = 0;
 						break;
 					case HH_ScopeSelection.HH_WithinHour:
-						hhSelectionModifierUpper = 1;
+						console.log("hour!");
+						hhSelectionModifierUpper = 0;
 						hhSelectionModifierLower = 1;
 						break;
 					case HH_ScopeSelection.HH_Today:
-						hhSelectionModifierLower = (datetimeNow.getHours() - datetimeRestaurantOpen.getHours());
-						hhSelectionModifierUpper = (nighttimeAdjustment(datetimeRestaurantClose.getHours()) - datetimeNow.getHours());
-						break;		
+						console.log("today!");
+						hhSelectionModifierLower = (datetimeDealStart.getHours() - datetimeRestaurantOpen.getHours());
+						hhSelectionModifierUpper = (nighttimeAdjustment(datetimeRestaurantClose.getHours()) - datetimeDealStart.getHours());
+						break;
 				}
 
-				console.log("Special Start: " 		+ datetimeDealStart.getHours()
-							+ " Special End: " 		+ datetimeDealEnd.getHours()
-							+ " Current Day: " 		+ datetimeNow.getDay()
-							+ " Current Hours: " 	+ datetimeNow.getHours()
-							+ " dealStartHours: " 	+ datetimeDealStart.getHours()
-							+ " dealEndHours: " 	+ datetimeDealEnd.getHours()
-							+ " da.day: " 			+ da.DayOfWeek
+				console.log("Special Start: " 				+ datetimeDealStart.getHours()
+							+ " Special End: " 				+ nighttimeAdjustment(datetimeDealEnd.getHours())
+							+ " Current Day: " 				+ datetimeNow.getDay()
+							+ " Current Hours: " 			+ datetimeNow.getHours()
+							+ " dealStartHours: " 			+ datetimeDealStart.getHours()
+							+ " dealEndHours: " 			+ nighttimeAdjustment(datetimeDealEnd.getHours())
+							+ " da.day: " 					+ da.DayOfWeek
 							+ " hhSelectionModifierLower: " + hhSelectionModifierLower 
-							+ " upper: " + hhSelectionModifierUpper);
+							+ " upper: " 					+ hhSelectionModifierUpper);
 
-				/* check if this deal is active */
-				if (isDateHoursBetween(datetimeDealStart.getHours()-hhSelectionModifierLower, datetimeDealEnd.getHours()+hhSelectionModifierUpper, datetimeNow.getHours())
+				/* check if this special is active */
+				if (isDateHoursBetween(datetimeDealStart.getHours()-hhSelectionModifierLower, 
+						nighttimeAdjustment(datetimeDealEnd.getHours())+hhSelectionModifierUpper, 
+						datetimeNow.getHours())
 					&& datetimeNow.getDay() == da.DayOfWeek) {
 					specialActive = true;
+					console.log("special active");
 	
 				} else {
-					specialActive = false;
+					console.log("special not active");
+					console.log("Special Start: " 	+ datetimeDealStart.getHours()
+					+ " Special End: " 				+ nighttimeAdjustment(datetimeDealEnd.getHours())
+					+ " Special Day: " 				+ da.DayOfWeek
+					+ " Current Hours: "	 		+ datetimeNow.getHours()
+					+ " Current Day: " 				+ datetimeNow.getDay()
+					+ " ModifierLower: " 			+ hhSelectionModifierLower 
+					+ " upper: " 					+ hhSelectionModifierUpper);					
 				}
 			}
 	
 			/* if deal active, add to div */
 			if (specialActive == true) {
 
-				console.log("special active");
 				var datetimeSpecialLastConfirmed = new Date(sp.datetimeSpecialLastConfirmed);
 
 				divFactorySpecials(sp, datetimeDealStart, datetimeDealEnd);
@@ -211,8 +222,10 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 				addToDisplayDeals(sp);
 
 			} else {
-				console.log("special not active");
 			}
+
+			specialActive = false;
+
 		}
 }
 
