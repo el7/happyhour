@@ -177,7 +177,9 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 						break;
 					case HH_ScopeSelection.HH_Today:
 						console.log("today!");
+						// mod lower gets time between deal start and open time
 						hhSelectionModifierLower = (datetimeDealStart.getHours() - datetimeRestaurantOpen.getHours());
+						// mod upper gets time between deal end and close time
 						hhSelectionModifierUpper = (nighttimeAdjustment(datetimeRestaurantClose.getHours()) - datetimeDealStart.getHours());
 						break;
 				}
@@ -196,11 +198,13 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 				if (isDateHoursBetween(datetimeDealStart.getHours()-hhSelectionModifierLower, 
 						nighttimeAdjustment(datetimeDealEnd.getHours())+hhSelectionModifierUpper, 
 						datetimeNow.getHours())
-					&& datetimeNow.getDay() == da.DayOfWeek) {
+						&& datetimeNow.getDay() == da.DayOfWeek) {
+
 					specialActive = true;
 					console.log("special active");
 	
 				} else {
+
 					console.log("special not active");
 					console.log("Special Start: " 	+ datetimeDealStart.getHours()
 					+ " Special End: " 				+ nighttimeAdjustment(datetimeDealEnd.getHours())
