@@ -11,8 +11,8 @@ const HH_ScopeSelection = {
 
 var specialActive = false;
 var hhSelection = HH_ScopeSelection.HH_Now;
-hhSelection = HH_ScopeSelection.HH_Today;
-hhSelection = HH_ScopeSelection.HH_WithinHour;
+// hhSelection = HH_ScopeSelection.HH_Today;
+// hhSelection = HH_ScopeSelection.HH_WithinHour;
 
 var datetimeNow = new Date();
 //var datetimeNow = new Date("2023-09-15T22:00:00.000Z");
@@ -78,13 +78,14 @@ function addHhScopeSelector() {
 	if ( checked ) {
         radioModeNowHTML += ' checked="checked"';
     }
-    radioModeNowHTML += '/>';
+
+	radioModeNowHTML += '/>';
     radioModeHourHTML += '/>';
 	radioModeTodayHTML += '/>';
 
 	radioHtml += radioModeNowHTML + labelNow + radioModeHourHTML + labelHour + radioModeTodayHTML + labelToday;
 
-    var radioFragment = document.createElement('div');
+	var radioFragment = document.createElement('div');
     radioFragment.innerHTML = radioHtml;
 
 	document.body.appendChild(radioFragment);
@@ -190,6 +191,8 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 		var datetimeRestaurantClose = new Date(closeTime);
 		var hhSelectionModifierUpper = 0;
 		var hhSelectionModifierLower = 0;
+		var specialActiveStart;
+		var specialActiveEnd;
 
 		for (var j = 0; j < restaurant.Specials.length; j++) {
 
@@ -235,7 +238,7 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 							+ " Current Hours: " 			+ datetimeNow.getHours()
 							+ " dealStartHours: " 			+ datetimeDealStart.getHours()
 							+ " dealEndHours: " 			+ nighttimeAdjustment(datetimeDealEnd.getHours())
-							+ " da.day: " 					+ da.DayOfWeek
+							+ " Deal Day: " 				+ da.DayOfWeek
 							+ " hhSelectionModifierLower: " + hhSelectionModifierLower 
 							+ " upper: " 					+ hhSelectionModifierUpper);
 
@@ -246,6 +249,8 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 						&& datetimeNow.getDay() == da.DayOfWeek) {
 
 					specialActive = true;
+					specialActiveStart = datetimeDealStart;
+					specialActiveEnd = datetimeDealEnd;
 					console.log("special active");
 	
 				} else {
@@ -266,7 +271,7 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 
 				var datetimeSpecialLastConfirmed = new Date(sp.datetimeSpecialLastConfirmed);
 
-				divFactorySpecials(sp, datetimeDealStart, datetimeDealEnd);
+				divFactorySpecials(sp, specialActiveStart, specialActiveEnd);
 
 				addToDisplayDeals(sp);
 
@@ -306,7 +311,7 @@ function divFactorySpecials (sp, datetimeDealStart, datetimeDealEnd) {
 	var datetimeSpecialLastConfirmed = new Date(sp.datetimeSpecialLastConfirmed);
 
 	var contentSpecialName = document.createTextNode(sp.Name + "\n");
-	var contentSpecialTimes = document.createTextNode("[Start: " + datetimeDealStart.getHours() + " End: " + datetimeDealEnd.getHours() + "]\n");
+	var contentSpecialTimes = document.createTextNode("[Start: " + datetimeDealStart.getHours() + " End: " + nighttimeAdjustment(datetimeDealEnd.getHours()) + "]\n");
 	var contentSpecialConfirmed = document.createTextNode("Verified: " + datetimeSpecialLastConfirmed);
 
 	var spanSpecialName = document.createElement('span');
