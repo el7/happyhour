@@ -26,7 +26,6 @@ starter();
 function starter () {
 
 	console.log("Time now: " + datetimeNow);
-	document.body.style = "white-space: pre";
 
 	/* iterate over biz' */
 	for (var i = 0; i < data.Restaurants.length; i++) {
@@ -79,7 +78,7 @@ function addToDisplayRestaurantInfo (restaurant) {
 			hhSelectionModifierLower = 1;
 			break;
 		case HH_ScopeSelection.HH_Today:
-			hhSelectionModifierLower = (datetimeNow.getHours() - datetimeRestaurantOpen.getHours());
+			hhSelectionModifierLower = datetimeNow.getHours();
 			hhSelectionModifierUpper = (nighttimeAdjustment(datetimeRestaurantClose.getHours()) - datetimeNow.getHours());
 			break;		
 	}
@@ -177,8 +176,8 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 						break;
 					case HH_ScopeSelection.HH_Today:
 						console.log("today!");
-						// mod lower gets time between deal start and open time
-						hhSelectionModifierLower = (datetimeDealStart.getHours() - datetimeRestaurantOpen.getHours());
+						// mod lower gets time between deal start and midnight
+						hhSelectionModifierLower = datetimeNow.getHours();
 						// mod upper gets time between deal end and close time
 						hhSelectionModifierUpper = (nighttimeAdjustment(datetimeRestaurantClose.getHours()) - datetimeDealStart.getHours());
 						break;
