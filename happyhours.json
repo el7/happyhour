@@ -61,7 +61,7 @@
                     "Name": "Happy Hour",
                     "Note": "Minimum drink purchase of 3.75 per person, no substitutions, additions or to go orders",
                     "Id":"0S1",
-                    "datetimeSpecialLastConfirmed": "",
+                    "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z",
                     "Days": [
                         {
                             "DayOfWeek": 0,
@@ -474,6 +474,7 @@
                     "Name": "Wine Down Wednesday",
                     "Note": "",
                     "Id": "0S6",
+                    "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z",
                     "Days": [
                         {
                             "DayOfWeek": 3,
@@ -558,6 +559,7 @@
                     "Name": "Military Discount",
                     "Note": "",
                     "Id": "0S9",
+                    "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z",
                     "Days": [
                         {
                             "DayOfWeek": 0,
@@ -4028,7 +4030,7 @@
 				"Id": ""
 			}],
 			"Specials": [{
-				"Name": "Late Night Mites Menu",
+				"Name": "Late Night Bites Menu",
 				"Note": "",
 				"Id": "",
                 "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z",
