@@ -12,20 +12,27 @@ const HH_ScopeSelection = {
 var specialActive = false;
 var hhSelection = HH_ScopeSelection.HH_Now;
 hhSelection = HH_ScopeSelection.HH_Today;
-// hhSelection = HH_ScopeSelection.HH_WithinHour;
-
-var divHhMode = document.createElement("div");
-var textNodeHhMode = document.createTextNode("Deals: " + hhSelection.toUpperCase());
-divHhMode.append(textNodeHhMode);
-document.body.appendChild(divHhMode);
+hhSelection = HH_ScopeSelection.HH_WithinHour;
 
 var datetimeNow = new Date();
 //var datetimeNow = new Date("2023-09-15T22:00:00.000Z");
 
-starter();
+starterJr();
+
+function starterJr () {
+	starter();
+}
+
 function starter () {
 
-	console.log("Time now: " + datetimeNow);
+	clearPage();
+	addHhScopeSelector();
+
+	// add div to display current hh selection
+	var divHhMode = document.createElement("div");
+	var textNodeHhMode = document.createTextNode("Deals: " + hhSelection.toUpperCase());
+	divHhMode.append(textNodeHhMode);
+	document.body.appendChild(divHhMode);
 
 	/* iterate over biz' */
 	for (var i = 0; i < data.Restaurants.length; i++) {
@@ -43,6 +50,45 @@ function starter () {
 	addToDisplaySpecials(re, openTime, closeTime);
 
 	}
+}
+
+function hhModeRadioSelectionFunc () {
+	console.log("rb clicked");
+}
+
+
+
+function clearPage() {
+	document.body.innerHTML = "";
+}
+
+function addHhScopeSelector() {
+
+	var name = "hhModeRadio";
+	var checked = "true";
+	var labelNow = '<label for="radioNow">NOW</label>';
+	var labelHour = '<label for="radioHour">HOUR</label>';
+	var labelToday = '<label for="radioToday">TODAY</label>';
+
+	var radioModeNowHTML = '<input type="radio" id="hhModeNowRadio" class="radio hhMode" value="now" onclick="hhModeRadioSelectionFunc()" name="' + name + '"';
+	var radioModeHourHTML = '<input type="radio" id="hhModeHourRadio" class="radio hhMode" value="hour" onclick="hhModeRadioSelectionFunc()" name="' + name + '"';
+	var radioModeTodayHTML = '<input type="radio" id="hhModeTodayRadio" class="radio hhMode" value="today" onclick="hhModeRadioSelectionFunc()" name="' + name + '"';
+	var radioHtml = "";
+
+	if ( checked ) {
+        radioModeNowHTML += ' checked="checked"';
+    }
+    radioModeNowHTML += '/>';
+    radioModeHourHTML += '/>';
+	radioModeTodayHTML += '/>';
+
+	radioHtml += radioModeNowHTML + labelNow + radioModeHourHTML + labelHour + radioModeTodayHTML + labelToday;
+
+    var radioFragment = document.createElement('div');
+    radioFragment.innerHTML = radioHtml;
+
+	document.body.appendChild(radioFragment);
+	
 }
 
 
