@@ -12,7 +12,7 @@ const HH_ScopeSelection = {
 var specialActive = false;
 var hhSelection = HH_ScopeSelection.HH_Now;
 hhSelection = HH_ScopeSelection.HH_Today;
- hhSelection = HH_ScopeSelection.HH_WithinHour;
+// hhSelection = HH_ScopeSelection.HH_WithinHour;
 
 var divHhMode = document.createElement("div");
 var textNodeHhMode = document.createTextNode("Deals: " + hhSelection.toUpperCase());
