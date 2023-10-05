@@ -270,9 +270,7 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 			if (specialActive == true) {
 
 				var datetimeSpecialLastConfirmed = new Date(sp.datetimeSpecialLastConfirmed);
-
 				divFactorySpecials(sp, specialActiveStart, specialActiveEnd);
-
 				addToDisplayDeals(sp);
 
 			} else {
@@ -340,7 +338,7 @@ function divFactoryDeals (de, dealId) {
 	var contentDealType = document.createTextNode(de.DealType + " | ");
 	var contentDealModifier = document.createTextNode(de.DealModifier + " ");
 	var contentDealValue = document.createTextNode(de.DealValue + " | ");
-	var contentDealName = document.createTextNode(de.Name + "\n");
+	var contentDealName = document.createTextNode(de.Name + " | ");
 	var contentDealNote = document.createTextNode(de.DealNote);
 
 	var spanDealType = document.createElement('span');
