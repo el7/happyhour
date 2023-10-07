@@ -9,7 +9,7 @@ body {
 .restaurant {
 
     border-left: 5px solid #AB3428;
-    width: 100%;
+    width: 500px;
     height: 100%;
     margin-top: 10px;
     padding-left: 5px;
@@ -19,7 +19,7 @@ body {
 .special {
 
     border-left: 5px solid #F49E4C;
-    width: 100%;
+    width: 500px;
     height: 100%;
     margin-top: 10px;
     margin-left: 10px;

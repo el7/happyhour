@@ -11,7 +11,7 @@ const HH_ScopeSelection = {
 
 var specialActive = false;
 var hhSelection = HH_ScopeSelection.HH_Now;
-// hhSelection = HH_ScopeSelection.HH_Today;
+ hhSelection = HH_ScopeSelection.HH_Today;
 // hhSelection = HH_ScopeSelection.HH_WithinHour;
 
 var datetimeNow = new Date();
@@ -284,7 +284,7 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 function divFactoryRestaurants (restaurant, strRestaurantMapLink, strRestrauntStatus, datetimeRestaurantOpen, datetimeRestaurantClose) {
 
 	// create div for restaurant
-	var textNodeRestaurantInfo = document.createTextNode(restaurant.Name + strRestaurantMapLink + " \n" + strRestrauntStatus + " [" + datetimeRestaurantOpen.getHours() + " - " + datetimeRestaurantClose.getHours() + "]");
+	var textNodeRestaurantInfo = document.createTextNode(restaurant.Name + " | " + strRestaurantMapLink + " \n" + strRestrauntStatus + " [" + datetimeRestaurantOpen.getHours() + " - " + datetimeRestaurantClose.getHours() + "]");
 	var divRestaurant = document.createElement("div");
 	var spanBusinessName = document.createElement('span');
 
