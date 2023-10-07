@@ -14,20 +14,25 @@ var hhSelection = HH_ScopeSelection.HH_Now;
  hhSelection = HH_ScopeSelection.HH_Today;
 // hhSelection = HH_ScopeSelection.HH_WithinHour;
 
-var divHhMode = document.createElement("div");
-var textNodeHhMode = document.createTextNode("Deals: " + hhSelection.toUpperCase());
-divHhMode.append(textNodeHhMode);
-document.body.appendChild(divHhMode);
-
 var datetimeNow = new Date();
 //var datetimeNow = new Date("2023-09-15T22:00:00.000Z");
 
+starterJr();
 
-starter();
+function starterJr () {
+	starter();
+}
+
 function starter () {
 
-	console.log("Time now: " + datetimeNow);
-	document.body.style = "white-space: pre";
+	clearPage();
+	addHhScopeSelector();
+
+	// add div to display current hh selection
+	var divHhMode = document.createElement("div");
+	var textNodeHhMode = document.createTextNode("Deals: " + hhSelection.toUpperCase());
+	divHhMode.append(textNodeHhMode);
+	document.body.appendChild(divHhMode);
 
 	/* iterate over biz' */
 	for (var i = 0; i < data.Restaurants.length; i++) {
@@ -45,6 +50,46 @@ function starter () {
 	addToDisplaySpecials(re, openTime, closeTime);
 
 	}
+}
+
+function hhModeRadioSelectionFunc () {
+	console.log("rb clicked");
+}
+
+
+
+function clearPage() {
+	document.body.innerHTML = "";
+}
+
+function addHhScopeSelector() {
+
+	var name = "hhModeRadio";
+	var checked = "true";
+	var labelNow = '<label for="radioNow">NOW</label>';
+	var labelHour = '<label for="radioHour">HOUR</label>';
+	var labelToday = '<label for="radioToday">TODAY</label>';
+
+	var radioModeNowHTML = '<input type="radio" id="hhModeNowRadio" class="radio hhMode" value="now" onclick="hhModeRadioSelectionFunc()" name="' + name + '"';
+	var radioModeHourHTML = '<input type="radio" id="hhModeHourRadio" class="radio hhMode" value="hour" onclick="hhModeRadioSelectionFunc()" name="' + name + '"';
+	var radioModeTodayHTML = '<input type="radio" id="hhModeTodayRadio" class="radio hhMode" value="today" onclick="hhModeRadioSelectionFunc()" name="' + name + '"';
+	var radioHtml = "";
+
+	if ( checked ) {
+        radioModeNowHTML += ' checked="checked"';
+    }
+
+	radioModeNowHTML += '/>';
+    radioModeHourHTML += '/>';
+	radioModeTodayHTML += '/>';
+
+	radioHtml += radioModeNowHTML + labelNow + radioModeHourHTML + labelHour + radioModeTodayHTML + labelToday;
+
+	var radioFragment = document.createElement('div');
+    radioFragment.innerHTML = radioHtml;
+
+	document.body.appendChild(radioFragment);
+	
 }
 
 
@@ -80,8 +125,8 @@ function addToDisplayRestaurantInfo (restaurant) {
 			hhSelectionModifierLower = 1;
 			break;
 		case HH_ScopeSelection.HH_Today:
-			hhSelectionModifierLower = (datetimeNow.getHours() - datetimeRestaurantOpen.getHours());
-			hhSelectionModifierUpper = (datetimeRestaurantClose.getHours() - datetimeNow.getHours());
+			hhSelectionModifierLower = datetimeNow.getHours();
+			hhSelectionModifierUpper = (nighttimeAdjustment(datetimeRestaurantClose.getHours()) - datetimeNow.getHours());
 			break;		
 	}
 
@@ -114,39 +159,8 @@ function addToDisplayDeals (sp) {
 			dealId = "noDealId";
 		}
 
-		// crate div for deal
-		var divDeal = document.createElement("div");
-		divDeal.classList.add(dealId, "deal");
-		document.body.appendChild(divDeal); 
-
-		// crate text content for deal
-		var contentDealType = document.createTextNode(de.DealType + " | ");
-		var contentDealModifier = document.createTextNode(de.DealModifier + " ");
-		var contentDealValue = document.createTextNode(de.DealValue + " | ");
-		var contentDealName = document.createTextNode(de.Name + "\n");
-		var contentDealNote = document.createTextNode(de.DealNote);
-
-		var spanDealType = document.createElement('span');
-		var spanDealModifier = document.createElement('span');
-		var spanDealValue = document.createElement('span');
-		var spanDealName = document.createElement('span');
-		var spanDealNote = document.createElement('span');
-
-		spanDealType.appendChild(contentDealType);
-		spanDealModifier.appendChild(contentDealModifier);
-		spanDealValue.appendChild(contentDealValue);
-		spanDealName.appendChild(contentDealName);
-		spanDealNote.appendChild(contentDealNote);
-
-		divDeal.appendChild(spanDealType);
-		divDeal.appendChild(spanDealModifier);
-		divDeal.appendChild(spanDealValue);
-		divDeal.appendChild(spanDealName);
-		divDeal.appendChild(spanDealNote);
-
 		console.log("Deal: " + de.Name);
-
-		// divFactoryDeals(de, dealId);
+		divFactoryDeals(de, dealId);
 
 	}
 }
@@ -177,6 +191,8 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 		var datetimeRestaurantClose = new Date(closeTime);
 		var hhSelectionModifierUpper = 0;
 		var hhSelectionModifierLower = 0;
+		var specialActiveStart;
+		var specialActiveEnd;
 
 		for (var j = 0; j < restaurant.Specials.length; j++) {
 
@@ -198,82 +214,77 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 
 				switch (hhSelection) {
 					case HH_ScopeSelection.HH_Now:
+						console.log("now!");
 						hhSelectionModifierUpper = 0;
 						hhSelectionModifierLower = 0;
 						break;
 					case HH_ScopeSelection.HH_WithinHour:
-						hhSelectionModifierUpper = 1;
+						console.log("hour!");
+						hhSelectionModifierUpper = 0;
 						hhSelectionModifierLower = 1;
 						break;
 					case HH_ScopeSelection.HH_Today:
-						hhSelectionModifierLower = (datetimeNow.getHours() - datetimeRestaurantOpen.getHours());
-						hhSelectionModifierUpper = (nighttimeAdjustment(datetimeRestaurantClose.getHours()) - datetimeNow.getHours());
-						break;		
+						console.log("today!");
+						// mod lower gets time between deal start and midnight
+						hhSelectionModifierLower = datetimeNow.getHours();
+						// mod upper gets time between deal end and close time
+						hhSelectionModifierUpper = (nighttimeAdjustment(datetimeRestaurantClose.getHours()) - datetimeDealStart.getHours());
+						break;
 				}
 
-				console.log("Special Start: " 		+ datetimeDealStart.getHours()
-							+ " Special End: " 		+ datetimeDealEnd.getHours()
-							+ " Current Day: " 		+ datetimeNow.getDay()
-							+ " Current Hours: " 	+ datetimeNow.getHours()
-							+ " dealStartHours: " 	+ datetimeDealStart.getHours()
-							+ " dealEndHours: " 	+ datetimeDealEnd.getHours()
-							+ " da.day: " 			+ da.DayOfWeek
+				console.log("Special Start: " 				+ datetimeDealStart.getHours()
+							+ " Special End: " 				+ nighttimeAdjustment(datetimeDealEnd.getHours())
+							+ " Current Day: " 				+ datetimeNow.getDay()
+							+ " Current Hours: " 			+ datetimeNow.getHours()
+							+ " dealStartHours: " 			+ datetimeDealStart.getHours()
+							+ " dealEndHours: " 			+ nighttimeAdjustment(datetimeDealEnd.getHours())
+							+ " Deal Day: " 				+ da.DayOfWeek
 							+ " hhSelectionModifierLower: " + hhSelectionModifierLower 
-							+ " upper: " + hhSelectionModifierUpper);
+							+ " upper: " 					+ hhSelectionModifierUpper);
 
-				/* check if this deal is active */
-				if (isDateHoursBetween(datetimeDealStart.getHours()-hhSelectionModifierLower, datetimeDealEnd.getHours()+hhSelectionModifierUpper, datetimeNow.getHours())
-					&& datetimeNow.getDay() == da.DayOfWeek) {
+				/* check if this special is active */
+				if (isDateHoursBetween(datetimeDealStart.getHours()-hhSelectionModifierLower, 
+						nighttimeAdjustment(datetimeDealEnd.getHours())+hhSelectionModifierUpper, 
+						datetimeNow.getHours())
+						&& datetimeNow.getDay() == da.DayOfWeek) {
+
 					specialActive = true;
+					specialActiveStart = datetimeDealStart;
+					specialActiveEnd = datetimeDealEnd;
+					console.log("special active");
 	
 				} else {
-					specialActive = false;
+
+					console.log("special not active");
+					console.log("Special Start: " 	+ datetimeDealStart.getHours()
+					+ " Special End: " 				+ nighttimeAdjustment(datetimeDealEnd.getHours())
+					+ " Special Day: " 				+ da.DayOfWeek
+					+ " Current Hours: "	 		+ datetimeNow.getHours()
+					+ " Current Day: " 				+ datetimeNow.getDay()
+					+ " ModifierLower: " 			+ hhSelectionModifierLower 
+					+ " upper: " 					+ hhSelectionModifierUpper);					
 				}
 			}
 	
 			/* if deal active, add to div */
 			if (specialActive == true) {
 
-				console.log("special active");
-
-				// create div for restaurant
-				var divSpecial = document.createElement("div");
-				//divSpecial.classList.add(sp.Id, "special");
-				divSpecial.classList.add("special");
-				document.body.appendChild(divSpecial); 
-
 				var datetimeSpecialLastConfirmed = new Date(sp.datetimeSpecialLastConfirmed);
-
-				var contentSpecialName = document.createTextNode(sp.Name + "\n");
-				var contentSpecialTimes = document.createTextNode("[Start: " + datetimeDealStart.getHours() + " End: " + datetimeDealEnd.getHours() + "]\n");
-				var contentSpecialConfirmed = document.createTextNode("Verified: " + datetimeSpecialLastConfirmed);
-
-				var spanSpecialName = document.createElement('span');
-				var spanSpecialTimes = document.createElement('span');
-				var spanSpecialConfirmed = document.createElement('span');
-
-				spanSpecialName.appendChild(contentSpecialName);
-				spanSpecialTimes.appendChild(contentSpecialTimes);
-				spanSpecialConfirmed.appendChild(contentSpecialConfirmed);
-
-				// targetDiv.appendChild(contentSpecialName);	
-				divSpecial.appendChild(spanSpecialName);
-				divSpecial.appendChild(spanSpecialTimes);
-				divSpecial.appendChild(spanSpecialConfirmed);
-
-				// divFactorySpecials(sp);
+				divFactorySpecials(sp, specialActiveStart, specialActiveEnd);
 				addToDisplayDeals(sp);
 
 			} else {
-				console.log("special not active");
 			}
+
+			specialActive = false;
+
 		}
 }
 
 function divFactoryRestaurants (restaurant, strRestaurantMapLink, strRestrauntStatus, datetimeRestaurantOpen, datetimeRestaurantClose) {
 
 	// create div for restaurant
-	var textNodeRestaurantInfo = document.createTextNode(restaurant.Name + strRestaurantMapLink + " \n" + strRestrauntStatus + " [" + datetimeRestaurantOpen.getHours() + " - " + datetimeRestaurantClose.getHours() + "]");
+	var textNodeRestaurantInfo = document.createTextNode(restaurant.Name + " | " + strRestaurantMapLink + " \n" + strRestrauntStatus + " [" + datetimeRestaurantOpen.getHours() + " - " + datetimeRestaurantClose.getHours() + "]");
 	var divRestaurant = document.createElement("div");
 	var spanBusinessName = document.createElement('span');
 
@@ -298,7 +309,7 @@ function divFactorySpecials (sp, datetimeDealStart, datetimeDealEnd) {
 	var datetimeSpecialLastConfirmed = new Date(sp.datetimeSpecialLastConfirmed);
 
 	var contentSpecialName = document.createTextNode(sp.Name + "\n");
-	var contentSpecialTimes = document.createTextNode("[Start: " + datetimeDealStart.getHours() + " End: " + datetimeDealEnd.getHours() + "]\n");
+	var contentSpecialTimes = document.createTextNode("[Start: " + datetimeDealStart.getHours() + " End: " + nighttimeAdjustment(datetimeDealEnd.getHours()) + "]\n");
 	var contentSpecialConfirmed = document.createTextNode("Verified: " + datetimeSpecialLastConfirmed);
 
 	var spanSpecialName = document.createElement('span');
@@ -327,7 +338,7 @@ function divFactoryDeals (de, dealId) {
 	var contentDealType = document.createTextNode(de.DealType + " | ");
 	var contentDealModifier = document.createTextNode(de.DealModifier + " ");
 	var contentDealValue = document.createTextNode(de.DealValue + " | ");
-	var contentDealName = document.createTextNode(de.Name + "\n");
+	var contentDealName = document.createTextNode(de.Name + " | ");
 	var contentDealNote = document.createTextNode(de.DealNote);
 
 	var spanDealType = document.createElement('span');
