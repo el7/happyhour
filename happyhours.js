@@ -11,12 +11,12 @@ const HH_ScopeSelection = {
 
 var specialActive = false;
 var hhSelection = HH_ScopeSelection.HH_Now;
- hhSelection = HH_ScopeSelection.HH_Today;
+// hhSelection = HH_ScopeSelection.HH_Today;
 // hhSelection = HH_ScopeSelection.HH_WithinHour;
 
 var datetimeNow = new Date();
 //var datetimeNow = new Date("2023-09-15T22:00:00.000Z");
-
+ 
 starterJr();
 
 function starterJr () {
@@ -39,8 +39,8 @@ function starter () {
 
 		try {
 			var re = data.Restaurants[i];
-			var openTime = re.Hours[datetimeNow.getDay()].Open;
-			var closeTime = re.Hours[datetimeNow.getDay()].Close;
+			var openTime = re.Hours[datetimeNow.getDay()].Open; // this logic needs to change, doesn't account for venues with more or less than 7 entries
+			var closeTime = re.Hours[datetimeNow.getDay()].Close; // this logic needs to change, doesn't account for venues with more or less than 7 entries. 
 		} catch (ex) {
 			console.log("ERROR no retaurant data, or no open/close time for today's day in the array")
 		}
@@ -307,10 +307,13 @@ function divFactorySpecials (sp, datetimeDealStart, datetimeDealEnd) {
 	document.body.appendChild(divSpecial); 
 
 	var datetimeSpecialLastConfirmed = new Date(sp.datetimeSpecialLastConfirmed);
+	const confirmed = "" + datetimeSpecialLastConfirmed.getFullYear + "/" + datetimeSpecialLastConfirmed.getMonth + "/" + datetimeSpecialLastConfirmed.getDay;
 
 	var contentSpecialName = document.createTextNode(sp.Name + "\n");
 	var contentSpecialTimes = document.createTextNode("[Start: " + datetimeDealStart.getHours() + " End: " + nighttimeAdjustment(datetimeDealEnd.getHours()) + "]\n");
 	var contentSpecialConfirmed = document.createTextNode("Verified: " + datetimeSpecialLastConfirmed);
+	//var contentSpecialConfirmed = document.createTextNode("Verified: " + confirmed);
+
 
 	var spanSpecialName = document.createElement('span');
 	var spanSpecialTimes = document.createElement('span');
@@ -358,10 +361,7 @@ function divFactoryDeals (de, dealId) {
 	divDeal.appendChild(spanDealValue);
 	divDeal.appendChild(spanDealName);
 	divDeal.appendChild(spanDealNote);
-
-
 }
-
 
 function nighttimeAdjustment (lateHours) {
 
@@ -377,7 +377,7 @@ function isDateHoursBetween (lowerHour, upperHour, currentHour) {
 	upperHour = nighttimeAdjustment(upperHour);
 	console.log("r.open " + lowerHour + " r.close: " + upperHour + "nowhour: " + currentHour);
 
-	if (currentHour >= lowerHour && currentHour <= upperHour) {
+	if (currentHour >= lowerHour && currentHour < upperHour) {
 		return true;
 	} else {
 		return false;

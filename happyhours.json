@@ -644,7 +644,7 @@
                 {
                     "DayOfWeek": 5,
                     "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T04:00:00.000Z"
+                    "Close": "2023-01-01T07:00:00.000Z"
                 },
                 {
                     "DayOfWeek": 6,
@@ -4195,6 +4195,12 @@
 				"Id":""
 			},
             {
+				"DayOfWeek":1,
+				"Open":"2023-01-01T00:00:00.000Z",
+				"Close":"2023-01-01T00:00:00.000Z",
+				"Id":""
+			},            
+            {
 				"DayOfWeek":2,
 				"Open":"2023-01-01T01:00:00.000Z",
 				"Close":"2023-01-01T07:00:00.000Z",
@@ -4749,6 +4755,511 @@
                     "DealValue": 1,
                     "DealModifier": "-",
                     "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                }]
+            }]
+	    },
+        {
+			"Name": "McCormick & Schmick's: Tigard",
+			"Address": "17015 SW 72nd Ave, Tigard, OR 97224",
+			"Phone": "+15036845490",
+			"Website": "https://www.mccormickandschmicks.com/location/mccormick-schmicks-tigard-or/",
+			"Id": "0R21",
+			"Hours":[{
+				"DayOfWeek":0,
+				"Open":"2023-01-01T19:30:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":1,
+				"Open":"2023-01-01T19:30:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":2,
+				"Open":"2023-01-01T19:30:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":3,
+				"Open":"2023-01-01T19:30:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":4,
+				"Open":"2023-01-01T19:30:00.000Z",
+				"Close":"2023-01-01T05:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":5,
+				"Open":"2023-01-01T19:30:00.000Z",
+				"Close":"2023-01-01T06:00:00.000Z",
+				"Id":""
+			},
+            {
+				"DayOfWeek":6,
+				"Open":"2023-01-01T19:30:00.000Z",
+				"Close":"2023-01-01T06:00:00.000Z",
+				"Id":""
+			}],
+			"Attributes": [{
+				"Name": "",
+				"Id": ""
+			}],
+			"Specials": [{
+				"Name": "Happy Hour",
+				"Note": "Available with minimum beverage purchase of $3.40 per person.",
+				"Id": "0S32",
+                "datetimeSpecialLastConfirmed": "2023-10-07T00:00:00.000Z",
+                "Days": [{
+                    "DayOfWeek": 1,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 2,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 3,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 4,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                },
+                {
+                    "DayOfWeek": 5,
+                    "StartTime": "2023-01-01T23:00:00.000Z",
+                    "EndTime": "2023-01-01T02:00:00.000Z",
+					"Id": ""
+                }],
+                "Details": [{
+                    "Name": "Truffle Fries",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "Truffle butter, fresh herbs, parmesan cheese",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Vine Ripe Tomato Buschetta",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "Tomatoes, basil, garlic, olive oil, balsamic",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Pan Roasted Edamame",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "Sesame oil, Soy Sauce, Garlic",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Crispy Asian Calamari",
+                    "DealValue": 8,
+                    "DealModifier": "=",
+                    "DealNote": "Sweet & Spicy glaze, Thai chilies, green onions",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Crispy Baja Fish Tacos",
+                    "DealValue": 8,
+                    "DealModifier": "=",
+                    "DealNote": "Southwest Jicama Slaw, Fire-Roasted Corn Salsa, Avocadeo Cilantro Lime Aioli",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Pork Belly Bao Buns",
+                    "DealValue": 8,
+                    "DealModifier": "=",
+                    "DealNote": "Korean Glazed Crispy Pork Belly, Asian Slaw, Nuoc Cham Sauce",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Mediterranean Baked Feta",
+                    "DealValue": 8,
+                    "DealModifier": "=",
+                    "DealNote": "Grape Tomatoes, Olives, Extra Virgin Olive Oil, Fresh Herbs",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Asian Chicken Lettuce Wraps",
+                    "DealValue": 10,
+                    "DealModifier": "=",
+                    "DealNote": "Bibb Lettuce, Roasted Peanuts",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Smoked Gouda Flatbread",
+                    "DealValue": 10,
+                    "DealModifier": "=",
+                    "DealNote": "Figs, Brie Cheese, Prosciutto, Arugula, Balsamic Reduction",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Cheeseburger",
+                    "DealValue": 10,
+                    "DealModifier": "=",
+                    "DealNote": "Lettuce, Tomato, Onion, Cheedar Cheese, French Fries",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Spice Seared Ahi Tuna",
+                    "DealValue": 12,
+                    "DealModifier": "=",
+                    "DealNote": "Pickled Lipstick Peppers, Avocado Cilantro Lime Aioli",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Thai Coconut Curery Mussels",
+                    "DealValue": 12,
+                    "DealModifier": "=",
+                    "DealNote": "Tomatoes, Thai Chilies, Fresh Herbs",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Chilled Shrimp Cocktail",
+                    "DealValue": 12,
+                    "DealModifier": "=",
+                    "DealNote": "Horseradish cocktail sauce",
+                    "DealType": "Food",
+					"Id": ""
+                },
+                {
+                    "Name": "Coors Light",
+                    "DealValue": 4.50,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Michelob Ultra",
+                    "DealValue": 4.50,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Blue Moon",
+                    "DealValue": 5.50,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Sam Adams",
+                    "DealValue": 5.50,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Stella Artois",
+                    "DealValue": 5.50,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Widmer Brothers Hefe",
+                    "DealValue": 5.50,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Well Spirits: Vodka",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Well Spirits: Gin",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Well Spirits: Rum",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Well Spirits: Tequila",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Well Spirits: Bourbon",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Well Spirits: Scotch",
+                    "DealValue": 6,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "American Craft Spirits: Tito's Handmade Vodaka (TX)",
+                    "DealValue": 7.5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "American Craft Spirits: Aviation Gin (OR)",
+                    "DealValue": 7.5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "American Craft Spirits: Bulleit Bourbon (KY)",
+                    "DealValue": 7.5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Wines By The Glass: CHATEAU SOUVERAIN CHARDONNAY",
+                    "DealValue": 6.5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Wines By The Glass: BERINGER WHITE ZINFANDEL",
+                    "DealValue": 6.5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Wines By The Glass: ECCO DOMANI PINOT GRIGIO",
+                    "DealValue": 6.5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Wines By The Glass: ROBERT MONDAVI CABERNET SAUVIGNON",
+                    "DealValue": 6.5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Wines By The Glass: CHATEAU STE. MICHELLE RIESLING",
+                    "DealValue": 6.5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Wines By The Glass: BV COASTAL MERLOT",
+                    "DealValue": 6.5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Premium Wines By The Glass: LA MARCA PROSECCO",
+                    "DealValue": 8.5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Premium Wines By The Glass: PEYRASSOL LA CROIX ROSÉ",
+                    "DealValue": 8.5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Premium Wines By The Glass: MARK WEST PINOT NOIR",
+                    "DealValue": 8.5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Premium Wines By The Glass: LA CREMA CHARDONNAY",
+                    "DealValue": 8.5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Premium Wines By The Glass: CLEAN SLATE RIESLING",
+                    "DealValue": 8.5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Premium Wines By The Glass: STERLING `VINTNER'S COLLECTION` MERLOT",
+                    "DealValue": 8.5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Premium Wines By The Glass: DON MIGUEL GASCON MALBEC",
+                    "DealValue": 8.5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Premium Wines By The Glass: ACROBAT PINOT GRIS",
+                    "DealValue": 8.5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Premium Wines By The Glass: WAIRAU RIVER SAUVIGNON BLANC",
+                    "DealValue": 8.5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Premium Wines By The Glass: LOUIS M. MARTINI CABERNET SAUVIGNON",
+                    "DealValue": 8.5,
+                    "DealModifier": "=",
+                    "DealNote": "",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Hand-Crafted Cocktails: GOLD MARGARITA",
+                    "DealValue": 7.5,
+                    "DealModifier": "=",
+                    "DealNote": "Sauza Gold Tequila, triple sec, fresh lime juice",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Hand-Crafted Cocktails: M&S ICED TEA",
+                    "DealValue": 7.5,
+                    "DealModifier": "=",
+                    "DealNote": "Tito's Handmade Vodka, Bacardi Superior Rum, Beefeater Gin, Cointreau Orange Liqueur, fresh lemon juice, Coca-Cola",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Hand-Crafted Cocktails: BERRY BERRY MOJITO",
+                    "DealValue": 7.5,
+                    "DealModifier": "=",
+                    "DealNote": "Bacardi Superior Rum, Reàl Blackberry Purée, fresh lime, strawberry, mint, simple syrup, club soda",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Hand-Crafted Cocktails: PERFECT LEMON DROP MARTINI",
+                    "DealValue": 7.5,
+                    "DealModifier": "=",
+                    "DealNote": "Absolut Citron Vodka, triple sec, simple syrup, fresh lemon juice",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Hand-Crafted Cocktails: M&S MOSCOW MULE",
+                    "DealValue": 7.5,
+                    "DealModifier": "=",
+                    "DealNote": "Stoli Vodka, fresh lime juice, simple syrup, Fever-Tree Ginger Beer",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Hand-Crafted Cocktails: BULLEIT THE OLD FASHION WAY",
+                    "DealValue": 7.5,
+                    "DealModifier": "=",
+                    "DealNote": "Bulleit Bourbon, Angostura Bitters, simple syrup",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Hand-Crafted Cocktails: TITO’S CHERRY MULE",
+                    "DealValue": 7.5,
+                    "DealModifier": "=",
+                    "DealNote": "Tito’s Handmade Vodka, Cherry Heering Liqueur, fresh lime juice, simple syrup, Fever-Tree Ginger Beer",
+                    "DealType": "Drink",
+					"Id": ""
+                },
+                {
+                    "Name": "Hand-Crafted Cocktails: PROSECCO SANGRIA",
+                    "DealValue": 7.5,
+                    "DealModifier": "=",
+                    "DealNote": "Bacardi Limón Rum, simple syrup, strawberries, cucumber, Prosecco",
                     "DealType": "Drink",
 					"Id": ""
                 }]
