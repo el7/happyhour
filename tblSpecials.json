@@ -1,340 +1,56 @@
-{
-    "Specials": [
-        {
-        "Name": "Happy Hour",
-        "Note": "Minimum drink purchase of 3.75 per person, no substitutions, additions or to go orders",
-        "Id":"0S1",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Happy Hour",
-        "Note": "",
-        "Id": "0S2",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Monday Night Bingo/Themed Trivia",
-        "Note": "Join us every Monday night for alternating Bingo and themed Trivia by Stumptown Trivia & Bingo. Explore our specific trivia themes on our Events Calendar.",
-        "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z",
-        "Id": "0S3"
-        },
-        {
-        "Name": "Taco Tuesday",
-        "Note": "",
-        "Id": "0S4",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Wednesday Trivia Night",
-        "Note": "",
-        "Id": "0S5",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Wine Down Wednesday",
-        "Note": "",
-        "Id": "0S6",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Thirsty Thursday",
-        "Note": "",
-        "Id": "0S7",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Friday: $5 Pints",
-        "Note": "",
-        "Id": "0S8",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Sunday Breakfast",
-        "Note": "",
-        "Id": "0S9",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Military Discount",
-        "Note": "",
-        "Id": "0S10",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Happy Hour",
-        "Note": "",
-        "Id": "0S11",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Happy Hour Food",
-        "Note": "",
-        "Id": "0S12",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Happy Hour Drinks",
-        "Note": "",
-        "Id": "0S13",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Happy Hour",
-        "Note": "",
-        "Id": "0S14",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Pre-Happy Hour",
-        "Note": "",
-        "Id": "0S15",
-        "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z"
-        },
-        {
-        "Name": "Happy Hour",
-        "Note": "",
-        "Id": "0S16",
-        "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z"
-        },
-        {
-        "Name": "Daily Special: Mike's Mon Deals",
-        "Note": "",
-        "Id": "0S17",
-        "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z"
-        },
-        {
-        "Name": "Daily Special: Tightwad Tuesday",
-        "Note": "",
-        "Id": "0S18",
-        "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z"
-        },
-        {
-        "Name": "Daily Special: Wine-O Wednesday",
-        "Note": "",
-        "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z",
-        "Id": "0S19"
-        },
-        {
-        "Name": "Daily Special: Red Zone Thursday",
-        "Note": "",
-        "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z",
-        "Id": "0S20"
-        },
-        {
-        "Name": "Daily Special: TGIF",
-        "Note": "",
-        "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z",
-        "Id": "0S21"
-        },
-        {
-        "Name": "Daily Special: Sunday Funday",
-        "Note": "",
-        "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z",
-        "Id": "0S22"
-        },
-        {
-        "Name": "Event Special: NFL Game",
-        "Note": "",
-        "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z",
-        "Id": "0S23"
-        },
-        {
-        "Name": "Event Special: Blazer Game ",
-        "Note": "",
-        "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z",
-        "Id": "0S24"
-        },
-        {
-        "Name": "Event Special: Soccer Game (Timbers, Thorns)",
-        "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z",
-        "Note": "",
-        "Id": "0S25"
-        },
-        {
-        "Name": "Happy Hour",
-        "Note": "",
-        "Id": "0S26",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Taco Tuesday",
-        "Note": "Served while supplies last.",
-        "Id": "0S27",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Happy Hour",
-        "Note": "Beverage Purchase required, in the dining room. Not Available For Take Out",
-        "Id": "0S28",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Happy Hour",
-        "Note": "No substitude, additions or to-go orders",
-        "Id": "0S29",
-        "datetimeSpecialLastConfirmed": "2018-03-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Happy Hour",
-        "Note": "Not available for takeout/To Go. $2.50 drink minimum. More here: https://www.berkeleysbarandgrill.com/?pgid=lj4ql2gh-921a265d-c6b0-4af5-a440-6e3990abb3c8",
-        "Id": "0S30",
-        "datetimeSpecialLastConfirmed": "2023-09-16T00:00:00.000Z"
-        },
-        {
-        "Name": "Happy Hour",
-        "Note": "",
-        "Id": "0S31",
-        "datetimeSpecialLastConfirmed": "2023-09-16T00:00:00.000Z"
-        },
-        {
-        "Name": "Monday Specials",
-        "Note": "",
-        "Id": "0S32",
-        "datetimeSpecialLastConfirmed": "2018-01-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Taco Tuesday",
-        "Note": "",
-        "Id": "0S33",
-        "datetimeSpecialLastConfirmed": "2018-01-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Wild Wing Wednesday",
-        "Note": "",
-        "Id": "0S34",
-        "datetimeSpecialLastConfirmed": "2018-01-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Thirsty Thursday",
-        "Note": "Happy Hour all day",
-        "Id": "0S35",
-        "datetimeSpecialLastConfirmed": "2018-01-01T00:00:00.000Z"
-        },
-        {
-        "Name": "TGIF",
-        "Note": "",
-        "Id": "0S36",
-        "datetimeSpecialLastConfirmed": "2018-01-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Saturday Specials",
-        "Note": "",
-        "Id": "0S37",
-        "datetimeSpecialLastConfirmed": "2018-01-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Sunday Specials",
-        "Note": "",
-        "Id": "0S38",
-        "datetimeSpecialLastConfirmed": "2018-01-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Happy Hour",
-        "Note": "Dine in only. Minimum $3.75 drink purchase.",
-        "Id": "0S39",
-        "datetimeSpecialLastConfirmed": "2023-01-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Late Night Menu",
-        "Note": "",
-        "Id": "0S40",
-        "datetimeSpecialLastConfirmed": "2023-01-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Happy Hour",
-        "Note": "",
-        "Id": "0S41",
-        "datetimeSpecialLastConfirmed": "2018-03-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Happy Hour",
-        "Note": "",
-        "Id": "0S42",
-        "datetimeSpecialLastConfirmed": "2023-09-20T00:00:00.000Z"
-        },
-        {
-        "Name": "Happy Hour",
-        "Note": "",
-        "Id": "0S43",
-        "datetimeSpecialLastConfirmed": "2023-09-20T00:00:00.000Z"
-        },
-        {
-        "Name": "Happy Hour",
-        "Note": "",
-        "Id": "0S44",
-        "datetimeSpecialLastConfirmed": "2022-04-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Happy Hour",
-        "Note": "Available In The Bar Only. Not Available For Take-Out. No Substitutions. Not All Ingredients Listed. Must Be Consumed On Premises. Minimum Beverage Purchase Of $3.79 Per Person",
-        "Id": "0S45",
-        "datetimeSpecialLastConfirmed": "2023-09-20T00:00:00.000Z"
-        },
-        {
-        "Name": "Late Night Bites Menu",
-        "Note": "",
-        "Id": "0S46",
-        "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z"
-        },
-        {
-        "Name": "Happy Hour",
-        "Note": "Beverage Purchase required",
-        "Id": "0S47",
-        "datetimeSpecialLastConfirmed": "2017-02-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Happy Hour",
-        "Note": "",
-        "Id": "0S48",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Daily Special: Monday",
-        "Note": "",
-        "Id": "0S49",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Daily Special: Tuesday",
-        "Note": "",
-        "Id": "0S50",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Daily Special: Wednesday",
-        "Note": "",
-        "Id": "0S51",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Daily Special: Thursday",
-        "Note": "",
-        "Id": "0S52",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Daily Special: Friday",
-        "Note": "",
-        "Id": "0S53",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Daily Special: Saturday",
-        "Note": "",
-        "Id": "0S54",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Daily Special: Sunday",
-        "Note": "",
-        "Id": "0S55",
-        "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"
-        },
-        {
-        "Name": "Happy Hour",
-        "Note": "Available with minimum beverage purchase of $3.40 per person.",
-        "Id": "0S56",
-        "datetimeSpecialLastConfirmed": "2023-10-07T00:00:00.000Z"
-        }
-    ]
-}
+{"Name": "Happy Hour", "Note": "Minimum drink purchase of 3.75 per person, no substitutions, additions or to go orders", "Id":"0SP0000001", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Happy Hour", "Note": "", "Id": "0SP0000002", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Monday Night Bingo/Themed Trivia", "Note": "Join us every Monday night for alternating Bingo and themed Trivia by Stumptown Trivia & Bingo. Explore our specific trivia themes on our Events Calendar.", "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z", "Id": "0SP0000003"}
+{"Name": "Taco Tuesday", "Note": "", "Id": "0SP0000004", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Wednesday Trivia Night", "Note": "", "Id": "0SP0000005", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Wine Down Wednesday", "Note": "", "Id": "0SP0000006", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Thirsty Thursday", "Note": "", "Id": "0SP0000007", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Friday: $5 Pints", "Note": "", "Id": "0SP0000008", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Sunday Breakfast", "Note": "", "Id": "0SP0000009", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Military Discount", "Note": "", "Id": "0SP0000010", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Happy Hour", "Note": "", "Id": "0SP0000011", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Happy Hour Food", "Note": "", "Id": "0SP0000012", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Happy Hour Drinks", "Note": "", "Id": "0SP0000013", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Happy Hour", "Note": "", "Id": "0SP0000014", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Pre-Happy Hour", "Note": "", "Id": "0SP0000015", "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z"}
+{"Name": "Happy Hour", "Note": "", "Id": "0SP0000016", "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z"}
+{"Name": "Daily Special: Mike's Mon Deals", "Note": "", "Id": "0SP0000017", "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z"}
+{"Name": "Daily Special: Tightwad Tuesday", "Note": "", "Id": "0SP0000018", "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z"}
+{"Name": "Daily Special: Wine-O Wednesday", "Note": "", "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z", "Id": "0SP0000019"}
+{"Name": "Daily Special: Red Zone Thursday", "Note": "", "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z", "Id": "0SP0000020"}
+{"Name": "Daily Special: TGIF", "Note": "", "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z", "Id": "0SP0000021"}
+{"Name": "Daily Special: Sunday Funday", "Note": "", "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z", "Id": "0SP0000022"}
+{"Name": "Event Special: NFL Game", "Note": "", "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z", "Id": "0SP0000023"}
+{"Name": "Event Special: Blazer Game ", "Note": "", "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z", "Id": "0SP0000024"}
+{"Name": "Event Special: Soccer Game (Timbers, Thorns)", "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z", "Note": "", "Id": "0SP0000025"}
+{"Name": "Happy Hour", "Note": "", "Id": "0SP0000026", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Taco Tuesday", "Note": "Served while supplies last.", "Id": "0SP0000027", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Happy Hour", "Note": "Beverage Purchase required, in the dining room. Not Available For Take Out", "Id": "0SP0000028", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Happy Hour", "Note": "No substitude, additions or to-go orders", "Id": "0SP0000029", "datetimeSpecialLastConfirmed": "2018-03-01T00:00:00.000Z"}
+{"Name": "Happy Hour", "Note": "Not available for takeout/To Go. $2.50 drink minimum. More here: https://www.berkeleysbarandgrill.com/?pgid=lj4ql2gh-921a265d-c6b0-4af5-a440-6e3990abb3c8", "Id": "0SP0000030", "datetimeSpecialLastConfirmed": "2023-09-16T00:00:00.000Z"}
+{"Name": "Happy Hour", "Note": "", "Id": "0SP0000031", "datetimeSpecialLastConfirmed": "2023-09-16T00:00:00.000Z"}
+{"Name": "Monday Specials", "Note": "", "Id": "0SP0000032", "datetimeSpecialLastConfirmed": "2018-01-01T00:00:00.000Z"}
+{"Name": "Taco Tuesday", "Note": "", "Id": "0SP0000033", "datetimeSpecialLastConfirmed": "2018-01-01T00:00:00.000Z"}
+{"Name": "Wild Wing Wednesday", "Note": "", "Id": "0SP0000034", "datetimeSpecialLastConfirmed": "2018-01-01T00:00:00.000Z"}
+{"Name": "Thirsty Thursday", "Note": "Happy Hour all day", "Id": "0SP0000035", "datetimeSpecialLastConfirmed": "2018-01-01T00:00:00.000Z"}
+{"Name": "TGIF", "Note": "", "Id": "0SP0000036", "datetimeSpecialLastConfirmed": "2018-01-01T00:00:00.000Z"}
+{"Name": "Saturday Specials", "Note": "", "Id": "0SP0000037", "datetimeSpecialLastConfirmed": "2018-01-01T00:00:00.000Z"}
+{"Name": "Sunday Specials", "Note": "", "Id": "0SP0000038", "datetimeSpecialLastConfirmed": "2018-01-01T00:00:00.000Z"}
+{"Name": "Happy Hour", "Note": "Dine in only. Minimum $3.75 drink purchase.", "Id": "0SP0000039", "datetimeSpecialLastConfirmed": "2023-01-01T00:00:00.000Z"}
+{"Name": "Late Night Menu", "Note": "", "Id": "0SP0000040", "datetimeSpecialLastConfirmed": "2023-01-01T00:00:00.000Z"}
+{"Name": "Happy Hour", "Note": "", "Id": "0SP0000041", "datetimeSpecialLastConfirmed": "2018-03-01T00:00:00.000Z"}
+{"Name": "Happy Hour", "Note": "", "Id": "0SP0000042", "datetimeSpecialLastConfirmed": "2023-09-20T00:00:00.000Z"}
+{"Name": "Happy Hour", "Note": "", "Id": "0SP0000043", "datetimeSpecialLastConfirmed": "2023-09-20T00:00:00.000Z"}
+{"Name": "Happy Hour", "Note": "", "Id": "0SP0000044", "datetimeSpecialLastConfirmed": "2022-04-01T00:00:00.000Z"}
+{"Name": "Happy Hour", "Note": "Available In The Bar Only. Not Available For Take-Out. No Substitutions. Not All Ingredients Listed. Must Be Consumed On Premises. Minimum Beverage Purchase Of $3.79 Per Person", "Id": "0SP0000045", "datetimeSpecialLastConfirmed": "2023-09-20T00:00:00.000Z"}
+{"Name": "Late Night Bites Menu", "Note": "", "Id": "0SP0000046", "datetimeSpecialLastConfirmed": "2023-09-25T00:00:00.000Z"}
+{"Name": "Happy Hour", "Note": "Beverage Purchase required", "Id": "0SP0000047", "datetimeSpecialLastConfirmed": "2017-02-01T00:00:00.000Z"}
+{"Name": "Happy Hour", "Note": "", "Id": "0SP0000048", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Daily Special: Monday", "Note": "", "Id": "0SP0000049", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Daily Special: Tuesday", "Note": "", "Id": "0SP0000050", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Daily Special: Wednesday", "Note": "", "Id": "0SP0000051", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Daily Special: Thursday", "Note": "", "Id": "0SP0000052", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Daily Special: Friday", "Note": "", "Id": "0SP0000053", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Daily Special: Saturday", "Note": "", "Id": "0SP0000054", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Daily Special: Sunday", "Note": "", "Id": "0SP0000055", "datetimeSpecialLastConfirmed": "2023-10-01T00:00:00.000Z"}
+{"Name": "Happy Hour", "Note": "Available with minimum beverage purchase of $3.40 per person.", "Id": "0SP0000056", "datetimeSpecialLastConfirmed": "2023-10-07T00:00:00.000Z"}
