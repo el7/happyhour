@@ -1,5 +1,13 @@
 /* import data */
-import data from './happyhours.json' assert { type: 'json' };
+import data from './happyhours.json' with { type: 'json' };
+
+fetch('http://localhost:3000/api/data')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data); // Here's where you handle your data
+    // Process data as needed for your application
+  })
+  .catch(error => console.error('Error:', error));
 
 /* const and variables */
 const HH_ScopeSelection = {

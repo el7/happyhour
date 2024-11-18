@@ -53,7 +53,9 @@
             "Attributes": [
                 {
                     "Name": "",
-                    "Id":""
+                    "Id":"",
+                    "Note":"",
+                    "VenueId":""
                 }
             ],
             "Specials": [
@@ -67,85 +69,99 @@
                             "DayOfWeek": 0,
                             "StartTime": "2023-01-01T22:00:00.000Z",
                             "EndTime": "2023-01-01T01:00:00.000Z",
-                            "Id":""
+                            "Id":"",
+                            "SpecialId":"0S1"
                         },
                         {
                             "DayOfWeek": 0,
                             "StartTime": "2023-01-01T05:00:00.000Z",
                             "EndTime": "close",
-                            "Id":""                            
+                            "Id":"",
+                            "SpecialId":"0S1"                  
                         },
                         {
                             "DayOfWeek": 1,
                             "StartTime": "2023-01-01T22:00:00.000Z",
                             "EndTime": "2023-01-01T01:00:00.000Z",
-                            "Id":""                            
+                            "Id":"",
+                            "SpecialId":"0S1"                  
                         },
                         {
                             "DayOfWeek": 1,
                             "StartTime": "2023-01-01T05:00:00.000Z",
                             "EndTime": "close",
-                            "Id":""
+                            "Id":"",
+                            "SpecialId":"0S1"
                         },
                         {
                             "DayOfWeek": 2,
                             "StartTime": "2023-01-01T22:00:00.000Z",
                             "EndTime": "2023-01-01T01:00:00.000Z",
-                            "Id":""
+                            "Id":"",
+                            "SpecialId":"0S1"
                         },
                         {
                             "DayOfWeek": 2,
                             "StartTime": "2023-01-01T05:00:00.000Z",
                             "EndTime": "close",
-                            "Id":""
+                            "Id":"",
+                            "SpecialId":"0S1"
                         },
                         {
                             "DayOfWeek": 3,
                             "StartTime": "2023-01-01T22:00:00.000Z",
                             "EndTime": "2023-01-01T01:00:00.000Z",
-                            "Id":""
+                            "Id":"",
+                            "SpecialId":"0S1"
                         },
                         {
                             "DayOfWeek": 3,
                             "StartTime": "2023-01-01T05:00:00.000Z",
                             "EndTime": "close",
-                            "Id":""
+                            "Id":"",
+                            "SpecialId":"0S1"
                         },
                         {
                             "DayOfWeek": 4,
                             "StartTime": "2023-01-01T22:00:00.000Z",
                             "EndTime": "2023-01-01T01:00:00.000Z",
-                            "Id":""
+                            "Id":"",
+                            "SpecialId":"0S1"
                         },
                         {
                             "DayOfWeek": 4,
                             "StartTime": "2023-01-01T05:00:00.000Z",
                             "EndTime": "close",
-                            "Id":""
+                            "Id":"",
+                            "SpecialId":"0S1"
                         },
                         {
                             "DayOfWeek": 5,
                             "StartTime": "2023-01-01T22:00:00.000Z",
                             "EndTime": "2023-01-01T01:00:00.000Z",
-                            "Id":""
+                            "Id":"",
+                            "SpecialId":"0S1"
                         },
                         {
                             "DayOfWeek": 5,
                             "StartTime": "2023-01-01T05:00:00.000Z",
                             "EndTime": "close",
-                            "Id":""
+                            "Id":"",
+                            "SpecialId":"0S1"
                         },
                         {
                             "DayOfWeek": 6,
                             "StartTime": "2023-01-01T22:00:00.000Z",
                             "EndTime": "2023-01-01T01:00:00.000Z",
-                            "Id":""
+                            "Id":"",
+                            "SpecialId":"0S1"
                         },
                         {
                             "DayOfWeek": 6,
                             "StartTime": "2023-01-01T05:00:00.000Z",
                             "EndTime": "close",
-                            "Id":""
+                            "Id":"",
+                            "SpecialId":"0S1"
                         }
                     ],
                     "Details": [
@@ -1254,7 +1270,7 @@
         {
             "Name": "Tapphoria",
             "Address": "13815 SW Pacific Hwy #40, Tigard, OR 97223",
-            "Note": "+19713713979",
+            "Phone": "+19713713979",
 			"Website": "http://www.tapphoria.com/home.html",
             "Id": "0R6",
             "Hours": [
