@@ -1,5 +1,5 @@
-
-"Days": [
+{
+    "Days": [
                         {
                             "DayOfWeek": 0,
                             "StartTime": "2023-01-01T22:00:00.000Z",
@@ -153,21 +153,21 @@
                         {
                             "DayOfWeek": 1,
                             "StartTime": "2023-01-01T03:00:00.000Z",
-                            "EndTime": "close"
+                            "EndTime": "close",
                             "Id":"0TI0000022",
                             "SpecialId":"0SP0000003"
                         },
                         {
                             "DayOfWeek": 2,
                             "StartTime": "open",
-                            "EndTime": "close"
+                            "EndTime": "close",
                             "Id":"0TI0000023",
                             "SpecialId":"0SP0000004"                        
                         },
                         {
                             "DayOfWeek": 3,
                             "StartTime": "2023-01-01T03:00:00.000Z",
-                            "EndTime": "close"
+                            "EndTime": "close",
                             "Id":"0TI0000024",
                             "SpecialId":"0SP0000005"                        
                         },
@@ -405,35 +405,35 @@
                         {
                             "DayOfWeek": 2,
                             "StartTime": "2023-01-01T00:00:00.000Z",
-                            "EndTime": "2023-01-01T03:00:00.000Z"
+                            "EndTime": "2023-01-01T03:00:00.000Z",
                             "Id":"0TI0000057",
                             "SpecialId":"0SP0000014"                        
                         },
                         {
                             "DayOfWeek": 3,
                             "StartTime": "2023-01-01T00:00:00.000Z",
-                            "EndTime": "2023-01-01T03:00:00.000Z"
+                            "EndTime": "2023-01-01T03:00:00.000Z",
                             "Id":"0TI0000058",
                             "SpecialId":"0SP0000014"                        
                         },
                         {
                             "DayOfWeek": 4,
                             "StartTime": "2023-01-01T00:00:00.000Z",
-                            "EndTime": "2023-01-01T03:00:00.000Z"
+                            "EndTime": "2023-01-01T03:00:00.000Z",
                             "Id":"0TI0000059",
                             "SpecialId":"0SP0000014"                        
                         },
                         {
                             "DayOfWeek": 5,
                             "StartTime": "2023-01-01T00:00:00.000Z",
-                            "EndTime": "2023-01-01T03:00:00.000Z"
+                            "EndTime": "2023-01-01T03:00:00.000Z",
                             "Id":"0TI0000060",
                             "SpecialId":"0SP0000014"                        
                         },
                         {
                             "DayOfWeek": 6,
                             "StartTime": "2023-01-01T00:00:00.000Z",
-                            "EndTime": "2023-01-01T03:00:00.000Z"
+                            "EndTime": "2023-01-01T03:00:00.000Z",
                             "Id":"0TI0000061",
                             "SpecialId":"0SP0000014"                        
                         },
@@ -447,28 +447,28 @@
                         {
                             "DayOfWeek": 2,
                             "StartTime": "2023-01-01T14:00:00.000Z",
-                            "EndTime": "2023-01-01T16:00:00.000Z"
+                            "EndTime": "2023-01-01T16:00:00.000Z",
                             "Id":"0TI0000063",
                             "SpecialId":"0SP0000015"                        
                         },
                         {
                             "DayOfWeek": 3,
                             "StartTime": "2023-01-01T14:00:00.000Z",
-                            "EndTime": "2023-01-01T16:00:00.000Z"
+                            "EndTime": "2023-01-01T16:00:00.000Z",
                             "Id":"0TI0000064",
                             "SpecialId":"0SP0000015"                        
                         },
                         {
                             "DayOfWeek": 4,
                             "StartTime": "2023-01-01T14:00:00.000Z",
-                            "EndTime": "2023-01-01T16:00:00.000Z"
+                            "EndTime": "2023-01-01T16:00:00.000Z",
                             "Id":"0TI0000065",
                             "SpecialId":"0SP0000015"                        
                         },
                         {
                             "DayOfWeek": 5,
                             "StartTime": "2023-01-01T14:00:00.000Z",
-                            "EndTime": "2023-01-01T16:00:00.000Z"
+                            "EndTime": "2023-01-01T16:00:00.000Z",
                             "Id":"0TI0000066",
                             "SpecialId":"0SP0000015"                        
                         },
@@ -482,49 +482,49 @@
                         {
                             "DayOfWeek": 2,
                             "StartTime": "2023-01-01T16:00:00.000Z",
-                            "EndTime": "2023-01-01T18:00:00.000Z"
+                            "EndTime": "2023-01-01T18:00:00.000Z",
                             "Id":"0TI0000068",
                             "SpecialId":"0SP0000016"                        
                         },
                         {
                             "DayOfWeek": 3,
                             "StartTime": "2023-01-01T16:00:00.000Z",
-                            "EndTime": "2023-01-01T18:00:00.000Z"
+                            "EndTime": "2023-01-01T18:00:00.000Z",
                             "Id":"0TI0000069",
                             "SpecialId":"0SP0000016"                        
                         },
                         {
                             "DayOfWeek": 4,
                             "StartTime": "2023-01-01T16:00:00.000Z",
-                            "EndTime": "2023-01-01T18:00:00.000Z"
+                            "EndTime": "2023-01-01T18:00:00.000Z",
                             "Id":"0TI0000070",
                             "SpecialId":"0SP0000016"                        
                         },
                         {
                             "DayOfWeek": 5,
                             "StartTime": "2023-01-01T16:00:00.000Z",
-                            "EndTime": "2023-01-01T18:00:00.000Z"
+                            "EndTime": "2023-01-01T18:00:00.000Z",
                             "Id":"0TI0000071",
                             "SpecialId":"0SP0000016"                        
                         },
                         {
                             "DayOfWeek": 1,
                             "StartTime": "open",
-                            "EndTime": "close"
+                            "EndTime": "close",
                             "Id":"0TI0000072",
                             "SpecialId":"0SP0000017"                        
                         },
                         {
                             "DayOfWeek": 2,
                             "StartTime": "open",
-                            "EndTime": "close"
+                            "EndTime": "close",
                             "Id":"0TI0000073",
                             "SpecialId":"0SP0000018"                        
                         },
                         {
                             "DayOfWeek": 3,
                             "StartTime": "open",
-                            "EndTime": "close"
+                            "EndTime": "close",
                             "Id":"0TI0000074",
                             "SpecialId":"0SP0000019"                       
                         },
@@ -552,166 +552,153 @@
                         {
                             "DayOfWeek": 1,
                             "StartTime": "2023-01-01T14:00:00.000Z",
-                            "EndTime": "2023-01-01T16:00:00.000Z"
+                            "EndTime": "2023-01-01T16:00:00.000Z",
                             "Id":"0TI0000078",
                             "SpecialId":"0SP0000023"                        
                         },
                         {
                             "DayOfWeek": 2,
                             "StartTime": "2023-01-01T14:00:00.000Z",
-                            "EndTime": "2023-01-01T16:00:00.000Z"
+                            "EndTime": "2023-01-01T16:00:00.000Z",
                             "Id":"0TI0000079",
                             "SpecialId":"0SP0000023"                        
                         },
                         {
                             "DayOfWeek": 3,
                             "StartTime": "2023-01-01T14:00:00.000Z",
-                            "EndTime": "2023-01-01T16:00:00.000Z"
+                            "EndTime": "2023-01-01T16:00:00.000Z",
                             "Id":"0TI0000080",
                             "SpecialId":"0SP0000023"                        
                         },
                         {
                             "DayOfWeek": 4,
                             "StartTime": "2023-01-01T14:00:00.000Z",
-                            "EndTime": "2023-01-01T16:00:00.000Z"
+                            "EndTime": "2023-01-01T16:00:00.000Z",
                             "Id":"0TI0000081",
-                            "SpecialId":"0SP0000023"                        },
+                            "SpecialId":"0SP0000023"                        
                         },
                         {
                             "DayOfWeek": 5,
                             "StartTime": "2023-01-01T14:00:00.000Z",
-                            "EndTime": "2023-01-01T16:00:00.000Z"
+                            "EndTime": "2023-01-01T16:00:00.000Z",
                             "Id":"0TI0000082",
-                            "SpecialId":"0SP0000023"                        },
-                        }
-],
-
-
-"Days": [
+                            "SpecialId":"0SP0000023"                        
+                        },
                         {
                             "DayOfWeek": 1,
                             "StartTime": "2023-01-01T14:00:00.000Z",
                             "EndTime": "2023-01-01T16:00:00.000Z",
                             "Id":"0TI0000083",
-                            "SpecialId":"0SP0000024"                        },
+                            "SpecialId":"0SP0000024"                        
+                        },
                         {
                             "DayOfWeek": 2,
                             "StartTime": "2023-01-01T14:00:00.000Z",
-                            "EndTime": "2023-01-01T16:00:00.000Z"
+                            "EndTime": "2023-01-01T16:00:00.000Z",
                             "Id":"0TI0000084",
-                            "SpecialId":"0SP0000024"                        },
+                            "SpecialId":"0SP0000024"                        
                         },
                         {
                             "DayOfWeek": 3,
                             "StartTime": "2023-01-01T14:00:00.000Z",
-                            "EndTime": "2023-01-01T16:00:00.000Z"
+                            "EndTime": "2023-01-01T16:00:00.000Z",
                             "Id":"0TI0000085",
-                            "SpecialId":"0SP0000024"                        },
+                            "SpecialId":"0SP0000024"                        
                         },
                         {
                             "DayOfWeek": 4,
                             "StartTime": "2023-01-01T14:00:00.000Z",
-                            "EndTime": "2023-01-01T16:00:00.000Z"
+                            "EndTime": "2023-01-01T16:00:00.000Z",
                             "Id":"0TI0000086",
-                            "SpecialId":"0SP0000024"                        },
+                            "SpecialId":"0SP0000024"                        
                         },
                         {
                             "DayOfWeek": 5,
                             "StartTime": "2023-01-01T14:00:00.000Z",
-                            "EndTime": "2023-01-01T16:00:00.000Z"
+                            "EndTime": "2023-01-01T16:00:00.000Z",
                             "Id":"0TI0000087",
-                            "SpecialId":"0SP0000024"                        },
-                        }
-],
-
-
-"Days": [
+                            "SpecialId":"0SP0000024"                        
+                        },
                         {
                             "DayOfWeek": 1,
                             "StartTime": "2023-01-01T14:00:00.000Z",
-                            "EndTime": "2023-01-01T16:00:00.000Z"
+                            "EndTime": "2023-01-01T16:00:00.000Z",
                             "Id":"0TI0000088",
-                            "SpecialId":"0SP0000025"                        },
+                            "SpecialId":"0SP0000025"                        
+                        },
                         {
                             "DayOfWeek": 2,
                             "StartTime": "2023-01-01T14:00:00.000Z",
-                            "EndTime": "2023-01-01T16:00:00.000Z"
+                            "EndTime": "2023-01-01T16:00:00.000Z",
                             "Id":"0TI0000050",
-                            "SpecialId":"0SP0000025"                        },
+                            "SpecialId":"0SP0000025"                        
                         },
                         {
                             "DayOfWeek": 3,
                             "StartTime": "2023-01-01T14:00:00.000Z",
-                            "EndTime": "2023-01-01T16:00:00.000Z"
+                            "EndTime": "2023-01-01T16:00:00.000Z",
                             "Id":"0TI0000089",
-                            "SpecialId":"0SP0000025"                        },
+                            "SpecialId":"0SP0000025"                        
                         },
                         {
                             "DayOfWeek": 4,
                             "StartTime": "2023-01-01T14:00:00.000Z",
-                            "EndTime": "2023-01-01T16:00:00.000Z"
+                            "EndTime": "2023-01-01T16:00:00.000Z",
                             "Id":"0TI0000090",
-                            "SpecialId":"0SP0000025"                        },
+                            "SpecialId":"0SP0000025"                        
                         },
                         {
                             "DayOfWeek": 5,
                             "StartTime": "2023-01-01T14:00:00.000Z",
-                            "EndTime": "2023-01-01T16:00:00.000Z"
+                            "EndTime": "2023-01-01T16:00:00.000Z",
                             "Id":"0TI0000091",
-                            "SpecialId":"0SP0000025"                        },
-                        }
-],
-
-
-"Days": [
-                    {
+                            "SpecialId":"0SP0000025"                        
+                        },
+                        {
                     "DayOfWeek": 1,
                     "StartTime": "2023-01-01T23:00:00.000Z",
-                    "EndTime": "2023-01-01T002:30:00.000Z"
+                    "EndTime": "2023-01-01T002:30:00.000Z",
                     "Id":"0TI0000092",
-                    "SpecialId":"0SP0000026"                },
+                    "SpecialId":"0SP0000026"                
+                },
                 {
                     "DayOfWeek": 2,
                     "StartTime": "2023-01-01T23:00:00.000Z",
-                    "EndTime": "2023-01-01T002:30:00.000Z"
+                    "EndTime": "2023-01-01T002:30:00.000Z",
                     "Id":"0TI0000093",
-                    "SpecialId":"0SP0000026"                },
+                    "SpecialId":"0SP0000026"                
+                
                 },
                 {
                     "DayOfWeek": 3,
                     "StartTime": "2023-01-01T23:00:00.000Z",
-                    "EndTime": "2023-01-01T002:30:00.000Z"
+                    "EndTime": "2023-01-01T002:30:00.000Z",
                     "Id":"0TI0000094",
-                    "SpecialId":"0SP0000026"                },
+                    "SpecialId":"0SP0000026"                
                 },
                 {
                     "DayOfWeek": 4,
                     "StartTime": "2023-01-01T23:00:00.000Z",
-                    "EndTime": "2023-01-01T002:30:00.000Z"
+                    "EndTime": "2023-01-01T002:30:00.000Z",
                     "Id":"0TI0000095",
-                    "SpecialId":"0SP0000026"                },
+                    "SpecialId":"0SP0000026"                
                 },
                 {
                     "DayOfWeek": 5,
                     "StartTime": "2023-01-01T23:00:00.000Z",
-                    "EndTime": "2023-01-01T002:30:00.000Z"
+                    "EndTime": "2023-01-01T002:30:00.000Z",
                     "Id":"0TI0000096",
-                    "SpecialId":"0SP0000026"                },
-                }
-],
-
-
-"Days": [{
+                    "SpecialId":"0SP0000026"                
+                },
+                {
 
                     "DayOfWeek": 2,
                     "StartTime": "open",
-                    "EndTime": "close"
+                    "EndTime": "close",
                     "Id":"0TI0000097",
-                    "SpecialId":"0SP0000027"}],
-
-
-"Days": [
-                    {
+                    "SpecialId":"0SP0000027"
+                },
+                {
                     "DayOfWeek": 0,
                     "StartTime": "2023-01-01T23:00:00.000Z",
                     "EndTime": "2023-01-01T02:00:00.000Z",
@@ -759,19 +746,14 @@
                     "EndTime": "2023-01-01T02:00:00.000Z",
                     "Id":"0TI0000104",
                     "SpecialId":"0SP0000028"
-}],
-
-"Days": [
+                },
                     {
                     "DayOfWeek": 0,
                     "StartTime": "2023-01-01T00:00:00.000Z",
                     "EndTime": "2023-01-01T00:00:00.000Z",
                     "Id":"0TI0000105",
                     "SpecialId":"0SP0000029"
-}],
-
-
-"Days": [
+},
                     {
                     "DayOfWeek": 0,
                     "StartTime": "2023-01-01T00:00:00.000Z",
@@ -783,45 +765,43 @@
                     "StartTime": "2023-01-01T00:00:00.000Z",
                     "EndTime": "2023-01-01T02:00:00.000Z",
                     "Id":"0TI0000107",
-                    "SpecialId":"0SP0000030"},
+                    "SpecialId":"0SP0000030"
                 },
                 {
                     "DayOfWeek": 2,
                     "StartTime": "2023-01-01T00:00:00.000Z",
                     "EndTime": "2023-01-01T02:00:00.000Z",
                     "Id":"0TI0000108",
-                    "SpecialId":"0SP0000030"},
+                    "SpecialId":"0SP0000030"
                 },
                 {
                     "DayOfWeek": 3,
                     "StartTime": "2023-01-01T00:00:00.000Z",
                     "EndTime": "2023-01-01T02:00:00.000Z",
                     "Id":"0TI0000109",
-                    "SpecialId":"0SP0000030"},
+                    "SpecialId":"0SP0000030"
                 },
                 {
                     "DayOfWeek": 4,
                     "StartTime": "2023-01-01T00:00:00.000Z",
                     "EndTime": "2023-01-01T02:00:00.000Z",
                     "Id":"0TI0000110",
-                    "SpecialId":"0SP0000030"},
+                    "SpecialId":"0SP0000030"
                 },
                 {
                     "DayOfWeek": 5,
                     "StartTime": "2023-01-01T00:00:00.000Z",
                     "EndTime": "2023-01-01T02:00:00.000Z",
                     "Id":"0TI0000111",
-                    "SpecialId":"0SP0000030"},
+                    "SpecialId":"0SP0000030"
                 },
                 {
                     "DayOfWeek": 6,
                     "StartTime": "2023-01-01T00:00:00.000Z",
                     "EndTime": "2023-01-01T02:00:00.000Z",
                     "Id":"0TI0000112",
-                    "SpecialId":"0SP0000030"},
-}],
-
-"Days": [
+                    "SpecialId":"0SP0000030"
+                },
                 {
                     "DayOfWeek": 1,
                     "StartTime": "2023-01-01T23:00:00.000Z",
@@ -856,69 +836,54 @@
                     "EndTime": "2023-01-01T02:00:00.000Z",
                     "Id":"0TI0000117",
                     "SpecialId":"0SP0000031"
-                    }],
-
-"Days": [
+                    },
                     {
                     "DayOfWeek": 1,
                     "StartTime": "open",
                     "EndTime": "close",
                     "Id":"0TI0000118",
                     "SpecialId":"0SP0000032"
-}],
-
-
-"Days": [{
+                },
+                {
                     "DayOfWeek": 2,
                     "StartTime": "open",
                     "EndTime": "close",
                     "Id":"0TI0000119",
-                    "SpecialId":"0SP0000033"}],
+                    "SpecialId":"0SP0000033"
+                    },
 
-"Days": [{
+{
                     "DayOfWeek": 3,
                     "StartTime": "open",
                     "EndTime": "close",
                     "Id":"0TI0000120",
-                    "SpecialId":"0SP0000034"}],
-
-"Days": [{
+                    "SpecialId":"0SP0000034"
+                    },
+                    {
                     "DayOfWeek": 4,
                     "StartTime": "open",
                     "EndTime": "close",
                     "Id":"0TI0000121",
                     "SpecialId":"0SP0000035"
-}],
-
-
-"Days": [{
+},{
                     "DayOfWeek": 5,
                     "StartTime": "open",
                     "EndTime": "close",
                     "Id":"0TI0000122",
                     "SpecialId":"0SP0000036"
-}],
-
-
-"Days": [{
+},{
                     "DayOfWeek": 6,
                     "StartTime": "open",
                     "EndTime": "close",
                     "Id":"0TI0000123",
                     "SpecialId":"0SP0000037"
-}],
-
-
-"Days": [{
+},{
                     "DayOfWeek": 0,
                     "StartTime": "open",
                     "EndTime": "close",
                     "Id":"0TI0000124",
                     "SpecialId":"0SP0000038"
-}],
-
-
-"Days": [
+},
                 {
                     "DayOfWeek": 0,
                     "StartTime": "2023-01-01T23:00:00.000Z",
@@ -1016,9 +981,7 @@
                     "EndTime": "close",
                     "Id":"0TI0000138",
                     "SpecialId":"0SP0000039"
-}],
-
-"Days": [
+},
     {
                     "DayOfWeek": 0,
                     "StartTime": "2023-01-01T05:00:00.000Z",
@@ -1067,10 +1030,7 @@
                     "EndTime": "close",
                     "Id":"0TI0000145",
                     "SpecialId":"0SP0000040"
-                    }],
-
-
-"Days": [
+                    },
     {
                     "DayOfWeek": 1,
                     "StartTime": "2023-01-01T23:00:00.000Z",
@@ -1105,10 +1065,7 @@
                     "EndTime": "2023-01-01T02:00:00.000Z",
                     "Id":"0TI0000150",
                     "SpecialId":"0SP0000041"
-                    }],
-
-
-"Days": [
+                    },
     {
                     "DayOfWeek": 1,
                     "StartTime": "2023-01-01T23:00:00.000Z",
@@ -1143,9 +1100,7 @@
                     "EndTime": "2023-01-01T01:00:00.000Z",
                     "Id":"0TI0000155",
                     "SpecialId":"0SP0000042"
-                    }],
-
-"Days": [
+                    },
                     {
                     "DayOfWeek": 0,
                     "StartTime": "2023-01-01T22:00:00.000Z",
@@ -1194,9 +1149,7 @@
                     "EndTime": "2023-01-01T01:00:00.000Z",
                     "Id":"0TI0000162",
                     "SpecialId":"0SP0000043"
-                    }],
-
-"Days": [
+                    },
                     {
                     "DayOfWeek": 0,
                     "StartTime": "2023-01-01T23:00:00.000Z",
@@ -1245,10 +1198,7 @@
                     "EndTime": "2023-01-01T00:02:00.000Z",
                     "Id":"0TI0000169",
                     "SpecialId":"0SP0000044"
-                    }],
-
-
-"Days": [
+                    },
     {
                     "DayOfWeek": 0,
                     "StartTime": "2023-01-01T23:00:00.000Z",
@@ -1347,9 +1297,7 @@
                     "Id":"0TI0000183",
                     "SpecialId":"0SP0000045"
                     
-                    }],
-
-"Days": [
+                    },
     {
                     "DayOfWeek": 4,
                     "StartTime": "2023-01-01T05:00:00.000Z",
@@ -1370,10 +1318,7 @@
                     "EndTime": "2023-01-01T06:00:00.000Z",
                     "Id":"0TI0000186",
                     "SpecialId":"0SP0000046"
-                    }],
-
-
-"Days": [
+                    },
                     {
                     "DayOfWeek": 1,
                     "StartTime": "2023-01-01T23:00:00.000Z",
@@ -1443,9 +1388,7 @@
                     "EndTime": "2023-01-01T08:00:00.000Z",
                     "Id":"0TI0000196",
                     "SpecialId":"0SP0000047"
-                    }],
-
-"Days": [
+                    },
     {
                     "DayOfWeek": 0,
                     "StartTime": "2023-10-01T00:00:00.000Z",
@@ -1543,80 +1486,56 @@
                     "EndTime": "close",
                     "Id":"0TI0000210",
                     "SpecialId":"0SP0000048"
-                    }],
-
-
-"Days": [
+                    },
     {
                     "DayOfWeek": 1,
                     "StartTime": "open",
                     "EndTime": "close",
                     "Id":"0TI0000211",
                     "SpecialId":"0SP0000049"
-}],
-
-
-"Days": [
+},
     {
                     "DayOfWeek": 2,
                     "StartTime": "open",
                     "EndTime": "close",
                     "Id":"0TI0000212",
                     "SpecialId":"0SP0000050"
-}],
-
-
-"Days": [
+},
     {
                     "DayOfWeek": 3,
                     "StartTime": "open",
                     "EndTime": "close",
                     "Id":"0TI0000213",
                     "SpecialId":"0SP0000051"
-}],
-
-
-"Days": [
+},
     {
                     "DayOfWeek": 4,
                     "StartTime": "open",
                     "EndTime": "close",
                     "Id":"0TI0000214",
                     "SpecialId":"0SP0000052"
-}],
-
-
-"Days": [
+},
     {
                     "DayOfWeek": 5,
                     "StartTime": "open",
                     "EndTime": "close",
                     "Id":"0TI0000215",
                     "SpecialId":"0SP0000053"
-}],
-
-
-"Days": [
+},
     {
                     "DayOfWeek": 6,
                     "StartTime": "open",
                     "EndTime": "close",
                     "Id":"0TI0000216",
                     "SpecialId":"0SP0000054"
-}],
-
-
-"Days": [
+},
     {
                     "DayOfWeek": 6,
                     "StartTime": "open",
                     "EndTime": "close",
                     "Id":"0TI0000217",
                     "SpecialId":"0SP0000055"
-}],
-
-
-"Days": [
+},
     {
                     "DayOfWeek": 1,
                     "StartTime": "2023-01-01T23:00:00.000Z",
@@ -1651,6 +1570,6 @@
                     "EndTime": "2023-01-01T02:00:00.000Z",
                     "Id":"0TI0000222",
                     "SpecialId":"0SP0000056"
-
-}],
-
+                }
+            ]
+        }
