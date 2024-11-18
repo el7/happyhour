@@ -1,63 +1,3 @@
-{
-    "Restaurants": [
-        {
-            "Name": "McMenamins: John Barleycorns",
-            "Address": "14610 SW Sequoia Pkwy, Tigard, OR 97223",
-            "Phone": "+15036842688",
-			"Website": "https://www.mcmenamins.com/john-barleycorns/home/",
-            "Id": "0VE1",
-            "Hours": [
-                {
-                    "DayOfWeek": 0,
-                    "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T08:00:00.000Z",
-                    "Id":""
-                },
-                {
-                    "DayOfWeek": 1,
-                    "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T08:00:00.000Z",
-                    "Id":""
-                },
-                {
-                    "DayOfWeek": 2,
-                    "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T08:00:00.000Z",
-                    "Id":""
-                },
-                {
-                    "DayOfWeek": 3,
-                    "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T09:00:00.000Z",
-                    "Id":""
-                },
-                {
-                    "DayOfWeek": 4,
-                    "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T09:00:00.000Z",
-                    "Id":""
-                },
-                {
-                    "DayOfWeek": 5,
-                    "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T09:00:00.000Z",
-                    "Id":""
-                },
-                {
-                    "DayOfWeek": 6,
-                    "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T09:00:00.000Z",
-                    "Id":""
-                }
-            ],
-            "Attributes": [
-                {
-                    "Name": "",
-                    "Id":"",
-                    "Note":"",
-                    "VenueId":""
-                }
-            ],
             "Specials": [
                 {
                     "Name": "Happy Hour",
@@ -305,54 +245,6 @@
                 }
             ]
         },
-        {
-            "Name": "Three Mermaids Public House",
-            "Address": "18041 SW Lower Boones Ferry Rd #1b, Tigard, OR 97224",
-            "Phone": "+15033525091",
-			"Website": "https://www.threemermaidspub.com/",
-            "Id": "0VE2",
-            "Hours": [
-                {
-                    "DayOfWeek": 0,
-                    "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T05:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 1,
-                    "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T06:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 2,
-                    "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T06:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 3,
-                    "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T06:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 4,
-                    "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T06:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 5,
-                    "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T06:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 6,
-                    "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T06:00:00.000Z"
-                }
-            ],
-            "Attributes": [
-                {
-                    "Name": ""
-                }
-            ],
             "Specials": [
                 {
                     "Name": "Happy Hour",
@@ -626,53 +518,6 @@
             ]
         },
         {
-            "Name": "Thirsty Lion Gastropub: Tigard",
-            "Phone": "+15033524030",
-            "Address": "10205 SW Washington Square Rd, Tigard, OR 97223",
-			"Website": "https://www.thirstyliongastropub.com/",
-            "Id": "0VE3",
-            "Hours": [
-                {
-                    "DayOfWeek": 0,
-                    "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T04:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 1,
-                    "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T04:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 2,
-                    "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T04:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 3,
-                    "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T04:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 4,
-                    "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T04:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 5,
-                    "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T07:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 6,
-                    "Open": "2023-01-01T19:00:00.000Z",
-                    "Close": "2023-01-01T04:00:00.000Z"
-                }
-            ],
-            "Attributes": [
-                {
-                    "Name": ""
-                }
-            ],
             "Specials": [
                 {
                     "Name": "Happy Hour",
@@ -885,54 +730,6 @@
                 }
             ]
         },
-        {
-            "Name": "The Stockpot Broiler: Lounge",
-            "Phone": "+15036435451",
-            "Address": "8200 SW Scholls Ferry Rd, Beaverton, OR 97008",
-			"Website": "https://www.stockpotbroiler.com/the-lounge",
-            "Id": "0VE4",
-            "Hours": [
-                {
-                    "DayOfWeek": 0,
-                    "Open": "2023-01-01T19:30:00.000Z",
-                    "Close": "2023-01-01T07:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 1,
-                    "Open": "2023-01-01T19:30:00.000Z",
-                    "Close": "2023-01-01T07:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 2,
-                    "Open": "2023-01-01T19:30:00.000Z",
-                    "Close": "2023-01-01T07:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 3,
-                    "Open": "2023-01-01T19:30:00.000Z",
-                    "Close": "2023-01-01T07:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 4,
-                    "Open": "2023-01-01T19:30:00.000Z",
-                    "Close": "2023-01-01T07:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 5,
-                    "Open": "2023-01-01T19:30:00.000Z",
-                    "Close": "2023-01-01T07:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 6,
-                    "Open": "2023-01-01T19:30:00.000Z",
-                    "Close": "2023-01-01T07:00:00.000Z"
-                }
-            ],
-            "Attributes": [
-                {
-                    "Name": ""
-                }
-            ],
             "Specials": [
                 {
                     "Name": "Happy Hour Food",
@@ -1155,54 +952,6 @@
                 }
             ]
         },
-        {
-            "Name": "Ringo's Bar & Grill",
-            "Address": "3655 SW Hall Blvd, Beaverton, OR 97005",
-            "Phone": "+15036447847",
-			"Website": "https://ringosbar.com/",
-            "Id": "0VE5",
-            "Hours": [
-                {
-                    "DayOfWeek": 0,
-                    "Open": "2023-01-01T18:00:00.000Z",
-                    "Close": "2023-01-01T10:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 1,
-                    "Open": "2023-01-01T18:00:00.000Z",
-                    "Close": "2023-01-01T10:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 2,
-                    "Open": "2023-01-01T18:00:00.000Z",
-                    "Close": "2023-01-01T10:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 3,
-                    "Open": "2023-01-01T18:00:00.000Z",
-                    "Close": "2023-01-01T10:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 4,
-                    "Open": "2023-01-01T18:00:00.000Z",
-                    "Close": "2023-01-01T10:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 5,
-                    "Open": "2023-01-01T18:00:00.000Z",
-                    "Close": "2023-01-01T10:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 6,
-                    "Open": "2023-01-01T18:00:00.000Z",
-                    "Close": "2023-01-01T10:00:00.000Z"
-                }
-            ],
-            "Attributes": [
-                {
-                    "Name": ""
-                }
-            ],
             "Specials": [
                 {
                     "Name": "Happy Hour",
@@ -1266,50 +1015,6 @@
                     ]
                 }
             ]
-        },
-        {
-            "Name": "Tapphoria",
-            "Address": "13815 SW Pacific Hwy #40, Tigard, OR 97223",
-            "Phone": "+19713713979",
-			"Website": "http://www.tapphoria.com/home.html",
-            "Id": "0VE6",
-            "Hours": [
-                {
-                    "DayOfWeek": 0,
-                    "Open": "2023-01-01T21:00:00.000Z",
-                    "Close": "2023-01-01T05:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 1,
-                    "Open": "2023-01-01T22:00:00.000Z",
-                    "Close": "2023-01-01T06:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 2,
-                    "Open": "2023-01-01T22:00:00.000Z",
-                    "Close": "2023-01-01T06:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 3,
-                    "Open": "2023-01-01T22:00:00.000Z",
-                    "Close": "2023-01-01T06:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 4,
-                    "Open": "2023-01-01T22:00:00.000Z",
-                    "Close": "2023-01-01T06:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 5,
-                    "Open": "2023-01-01T20:00:00.000Z",
-                    "Close": "2023-01-01T06:00:00.000Z"
-                },
-                {
-                    "DayOfWeek": 6,
-                    "Open": "2023-01-01T22:00:00.000Z",
-                    "Close": "2023-01-01T06:00:00.000Z"
-                }
-            ],
             "Specials": [
                 {
                     "Name": "Pre-Happy Hour",
@@ -1698,51 +1403,6 @@
                     ]
                 }
             ]
-        },
-        {
-            "Name": "Tigardville Station",
-            "Address": "12370 SW Main St, Tigard, OR 97223",
-			"Phone": "+15036398375",
-			"Website": "https://www.tigardvillestation.com/",
-            "Id": "0VE7",
-            "Hours":[{
-				"DayOfWeek":0,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T09:30:00.000Z"
-			},
-            {
-				"DayOfWeek":1,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T09:30:00.000Z"
-			},
-            {
-				"DayOfWeek":2,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T09:30:00.000Z"
-			},
-            {
-				"DayOfWeek":3,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T09:30:00.000Z"
-			},
-            {
-				"DayOfWeek":4,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T09:30:00.000Z"
-			},
-            {
-				"DayOfWeek": 5,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T09:30:00.000Z"
-			},
-            {
-				"DayOfWeek":6,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T09:30:00.000Z"
-			}],
-			"Attributes": [{
-				"Name": ""
-			}],
             "Specials": [{
                 "Name": "Happy Hour",
 				"Note": "",
@@ -1806,58 +1466,6 @@
                 }]
             }]
         },
-        {
-            "Name": "Big Red's",
-            "Address": "11485 SW Scholls Ferry Rd, Beaverton, OR 97008",
-			"Phone": "+15035794292",
-			"Website": "https://www.bigredspdx.com/",
-            "Id": "0VE8",
-            "Hours":[{
-				"DayOfWeek":0,
-				"Open":"2023-01-01T15:00:00.000Z",
-				"Close":"2023-01-01T09:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":1,
-				"Open":"2023-01-01T15:00:00.000Z",
-				"Close":"2023-01-01T09:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":2,
-				"Open":"2023-01-01T15:00:00.000Z",
-				"Close":"2023-01-01T09:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":3,
-				"Open":"2023-01-01T15:00:00.000Z",
-				"Close":"2023-01-01T09:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":4,
-				"Open":"2023-01-01T15:00:00.000Z",
-				"Close":"2023-01-01T09:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":5,
-				"Open":"2023-01-01T15:00:00.000Z",
-				"Close":"2023-01-01T09:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":6,
-				"Open":"2023-01-01T15:00:00.000Z",
-				"Close":"2023-01-01T09:00:00.000Z",
-				"Id":""
-			}],
-			"Attributes": [{
-				"Name": "",
-				"Id": ""
-			}],
             "Specials": [{
                 "Name": "Happy Hour",
 				"Note": "Beverage Purchase required, in the dining room. Not Available For Take Out",
@@ -1915,58 +1523,6 @@
                 }]
             }]
         },
-        {
-            "Name": "J.B. O'Brien's Irish Pub",
-            "Address": "11555 SW Durham Rd, Tigard, OR 97224",
-			"Phone": "+15039415592",
-			"Website": "https://jbobriens.com/",
-            "Id": "0VE9",
-            "Hours":[{
-				"DayOfWeek":0,
-				"Open":"2023-01-01T17:00:00.000Z",
-				"Close":"2023-01-01T09:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":1,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T09:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":2,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T09:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":3,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T09:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":4,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T09:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":5,
-				"Open":"2023-01-01T00:00:00.000Z",
-				"Close":"2023-01-01T00:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":6,
-				"Open":"2023-01-01T17:00:00.000Z",
-				"Close":"2023-01-01T09:00:00.000Z",
-				"Id":""
-			}],
-			"Attributes": [{
-				"Name": "",
-				"Id": ""
-			}],
             "Specials": [{
                 "Name": "Happy Hour",
 				"Note": "No substitude, additions or to-go orders",
@@ -2132,58 +1688,6 @@
                 }]
             }]
         },
-        {
-            "Name": "Berkeley's",
-            "Address": "6302 Meadows Rd, Lake Oswego, OR 97035",
-			"Phone": "+19712468384",
-			"Website": "https://www.berkeleysbarandgrill.com/",
-            "Id": "0VE10",
-            "Hours":[{
-				"DayOfWeek":0,
-				"Open":"2023-01-01T17:30:00.000Z",
-				"Close":"2023-01-01T06:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":1,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T07:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":2,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T07:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":3,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T07:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":4,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T07:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":5,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T07:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":6,
-				"Open":"2023-01-01T17:30:00.000Z",
-				"Close":"2023-01-01T07:00:00.000Z",
-				"Id":""
-			}],
-			"Attributes": [{
-				"Name": "",
-				"Id": ""
-			}],
             "Specials": [{
                 "Name": "Happy Hour",
 				"Note": "Not available for takeout/To Go. $2.50 drink minimum. More here: https://www.berkeleysbarandgrill.com/?pgid=lj4ql2gh-921a265d-c6b0-4af5-a440-6e3990abb3c8",
@@ -2273,58 +1777,6 @@
                 }]
             }]
 	    },
-        {
-            "Name": "Home Turf Sports Bar",
-            "Address": "13500 SW Pacific Hwy #34, Tigard, OR 97223",
-			"Phone": "+15039685778",
-			"Website": "https://www.hometurfsportsbar.com/home/",
-            "Id": "0VE11",
-            "Hours":[{
-				"DayOfWeek":0,
-				"Open":"2023-01-01T18:00:00.000Z",
-				"Close":"2023-01-01T10:30:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":1,
-				"Open":"2023-01-01T18:00:00.000Z",
-				"Close":"2023-01-01T10:30:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":2,
-				"Open":"2023-01-01T18:00:00.000Z",
-				"Close":"2023-01-01T10:30:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":3,
-				"Open":"2023-01-01T18:00:00.000Z",
-				"Close":"2023-01-01T10:30:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":4,
-				"Open":"2023-01-01T18:00:00.000Z",
-				"Close":"2023-01-01T10:30:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":5,
-				"Open":"2023-01-01T18:00:00.000Z",
-				"Close":"2023-01-01T10:30:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":6,
-				"Open":"2023-01-01T18:00:00.000Z",
-				"Close":"2023-01-01T10:30:00.000Z",
-				"Id":""
-			}],
-			"Attributes": [{
-				"Name": "",
-				"Id": ""
-			}],
             "Specials": [{
                 "Name": "Happy Hour",
 				"Note": "",
@@ -2615,58 +2067,6 @@
                 }]
             }]
 	    },
-        {
-            "Name": "The Ridge Grill",
-            "Address": "12345 SW Horizon Blvd #61, Beaverton, OR 97007",
-			"Phone": "+15037477319",
-			"Website": "https://theridgepub.com/index.html",
-			"Id": "0VE12",
-            "Hours":[{
-				"DayOfWeek":0,
-				"Open":"2023-01-01T20:00:00.000Z",
-				"Close":"2023-01-01T05:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":1,
-				"Open":"2023-01-01T22:00:00.000Z",
-				"Close":"2023-01-01T05:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":2,
-				"Open":"2023-01-01T22:00:00.000Z",
-				"Close":"2023-01-01T05:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":3,
-				"Open":"2023-01-01T22:00:00.000Z",
-				"Close":"2023-01-01T05:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":4,
-				"Open":"2023-01-01T22:00:00.000Z",
-				"Close":"2023-01-01T05:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":5,
-				"Open":"2023-01-01T20:00:00.000Z",
-				"Close":"2023-01-01T06:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":6,
-				"Open":"2023-01-01T20:00:00.000Z",
-				"Close":"2023-01-01T06:00:00.000Z",
-				"Id":""
-			}],
-			"Attributes": [{
-				"Name": "",
-				"Id": ""
-			}],
             "Specials": [{
                 "Name": "Happy Hour",
 				"Note": "Dine in only. Minimum $3.75 drink purchase.",
@@ -2894,58 +2294,6 @@
                 }]
             }]
 	    },
-        {
-            "Name": "Bull Mountain Bar & Grill",
-            "Address": "13727 SW Pacific Hwy, Tigard, OR 97223",
-			"Phone": "+15034433888",
-			"Website": "https://bull-mountain-bar-grill.business.site/",
-			"Id": "0VE13",
-            "Hours":[{
-				"DayOfWeek":0,
-				"Open":"2023-01-01T23:00:00.000Z",
-				"Close":"2023-01-01T07:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":1,
-				"Open":"2023-01-01T23:00:00.000Z",
-				"Close":"2023-01-01T08:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":2,
-				"Open":"2023-01-01T23:00:00.000Z",
-				"Close":"2023-01-01T08:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":3,
-				"Open":"2023-01-01T23:00:00.000Z",
-				"Close":"2023-01-01T08:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":4,
-				"Open":"2023-01-01T23:00:00.000Z",
-				"Close":"2023-01-01T08:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":5,
-				"Open":"2023-01-01T23:00:00.000Z",
-				"Close":"2023-01-01T09:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":6,
-				"Open":"2023-01-01T23:00:00.000Z",
-				"Close":"2023-01-01T09:00:00.000Z",
-				"Id":""
-			}],
-			"Attributes": [{
-				"Name": "",
-				"Id": ""
-			}],
             "Specials": [{
                 "Name": "Late Night Menu",
 				"Note": "",
@@ -3231,58 +2579,6 @@
                 }]
             }]
 	    },
-        {
-            "Name": "California Pizza Kitchen: Tualitin",
-            "Address": "Bridgeport Blg. R2 Sp, 7315 SW Bridgeport Rd, Portland, OR 97224",
-			"Phone": "+15039680504",
-			"Website": "https://www.cpk.com/",
-			"Id": "0VE14",
-            "Hours":[{
-				"DayOfWeek":0,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T06:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":1,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T06:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":2,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T06:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":3,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T06:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":4,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T06:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":5,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T07:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":6,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T07:00:00.000Z",
-				"Id":""
-			}],
-			"Attributes": [{
-				"Name": "",
-				"Id": ""
-			}],
             "Specials": [{
                 "Name": "Happy Hour",
 				"Note": "",
@@ -3336,58 +2632,6 @@
                 }]
             }]
 	    },
-        {
-            "Name": "Big's Chicken: Beaverton",
-            "Address": "4570 SW Watson Ave, Beaverton, OR 97005",
-			"Phone": "+15037473190",
-			"Website": "https://www.bigschicken.com/",
-			"Id": "0VE15",
-            "Hours":[{
-				"DayOfWeek":0,
-				"Open":"2023-01-01T19:30:00.000Z",
-				"Close":"2023-01-01T05:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":1,
-				"Open":"2023-01-01T19:30:00.000Z",
-				"Close":"2023-01-01T05:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":2,
-				"Open":"2023-01-01T19:30:00.000Z",
-				"Close":"2023-01-01T05:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":3,
-				"Open":"2023-01-01T19:30:00.000Z",
-				"Close":"2023-01-01T05:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":4,
-				"Open":"2023-01-01T19:30:00.000Z",
-				"Close":"2023-01-01T05:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":5,
-				"Open":"2023-01-01T19:30:00.000Z",
-				"Close":"2023-01-01T05:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":6,
-				"Open":"2023-01-01T19:30:00.000Z",
-				"Close":"2023-01-01T05:00:00.000Z",
-				"Id":""
-			}],
-			"Attributes": [{
-				"Name": "",
-				"Id": ""
-			}],
             "Specials": [{
                 "Name": "Happy Hour",
 				"Note": "",
@@ -3533,58 +2777,6 @@
                 }]
             }]
 	    },
-        {
-            "Name": "Gator's Pub and Eatery",
-            "Address": "11475 SW Pacific Hwy, Tigard, OR 97223",
-			"Phone": "+15032930356",
-			"Website": "https://gatorspub-eatery.com/",
-			"Id": "0VE16",
-            "Hours":[{
-				"DayOfWeek":0,
-				"Open":"2023-01-01T15:00:00.000Z",
-				"Close":"2023-01-01T08:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":1,
-				"Open":"2023-01-01T15:00:00.000Z",
-				"Close":"2023-01-01T08:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":2,
-				"Open":"2023-01-01T15:00:00.000Z",
-				"Close":"2023-01-01T08:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":3,
-				"Open":"2023-01-01T15:00:00.000Z",
-				"Close":"2023-01-01T08:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":4,
-				"Open":"2023-01-01T15:00:00.000Z",
-				"Close":"2023-01-01T08:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":5,
-				"Open":"2023-01-01T15:00:00.000Z",
-				"Close":"2023-01-01T08:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":6,
-				"Open":"2023-01-01T15:00:00.000Z",
-				"Close":"2023-01-01T08:00:00.000Z",
-				"Id":""
-			}],
-			"Attributes": [{
-				"Name": "",
-				"Id": ""
-			}],
             "Specials": [{
                 "Name": "Happy Hour",
 				"Note": "",
@@ -3706,58 +2898,6 @@
                 }]
             }]
 	    },
-        {
-			"Name": "Oswego Grill: Lake Oswego",
-			"Address": "7 Centerpointe Dr, Lake Oswego, OR 97035",
-			"Phone": "+15033524750",
-			"Website": "https://www.oswegogrill.com/lakeoswego",
-			"Id": "0VE17",
-			"Hours":[{
-				"DayOfWeek":0,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T06:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":1,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T06:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":2,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T06:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":3,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T06:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":4,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T06:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":5,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T07:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":6,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T07:00:00.000Z",
-				"Id":""
-			}],
-			"Attributes": [{
-				"Name": "",
-				"Id": ""
-			}],
 			"Specials": [{
 				"Name": "Happy Hour",
 				"Note": "Available In The Bar Only. Not Available For Take-Out. No Substitutions. Not All Ingredients Listed. Must Be Consumed On Premises. Minimum Beverage Purchase Of $3.79 Per Person",
@@ -3993,58 +3133,6 @@
                 }]
             }]
 	    },
-        {
-			"Name": "FlyBoy Brewing",
-			"Address": "15230 SW Sequoia Pkwy, Tigard, OR 97224",
-			"Phone": "+19713170137",
-			"Website": "http://www.flyboybrewing.com/",
-			"Id": "0VE18",
-			"Hours":[{
-				"DayOfWeek":0,
-				"Open":"2023-01-01T21:00:00.000Z",
-				"Close":"2023-01-01T04:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":1,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T05:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":2,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T05:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":3,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T05:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":4,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T05:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":5,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T06:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":6,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T05:00:00.000Z",
-				"Id":""
-			}],
-			"Attributes": [{
-				"Name": "",
-				"Id": ""
-			}],
 			"Specials": [{
 				"Name": "Late Night Bites Menu",
 				"Note": "",
@@ -4198,58 +3286,6 @@
                 }]
             }]
 	    },
-        {
-			"Name": "The Westgate Bourbon Bar & Taphouse",
-			"Address": "3800 SW Cedar Hills Blvd, Beaverton, OR 97005",
-			"Phone": "+15037467178",
-			"Website": "http://www.thewestgatepdx.com/",
-			"Id": "0VE19",
-			"Hours":[{
-				"DayOfWeek":0,
-				"Open":"2023-01-01T01:00:00.000Z",
-				"Close":"2023-01-01T05:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":1,
-				"Open":"2023-01-01T00:00:00.000Z",
-				"Close":"2023-01-01T00:00:00.000Z",
-				"Id":""
-			},            
-            {
-				"DayOfWeek":2,
-				"Open":"2023-01-01T01:00:00.000Z",
-				"Close":"2023-01-01T07:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":3,
-				"Open":"2023-01-01T01:00:00.000Z",
-				"Close":"2023-01-01T07:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":4,
-				"Open":"2023-01-01T01:00:00.000Z",
-				"Close":"2023-01-01T07:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":5,
-				"Open":"2023-01-01T01:00:00.000Z",
-				"Close":"2023-01-01T08:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":6,
-				"Open":"2023-01-01T01:00:00.000Z",
-				"Close":"2023-01-01T08:00:00.000Z",
-				"Id":""
-			}],
-			"Attributes": [{
-				"Name": "",
-				"Id": ""
-			}],
 			"Specials": [{
 				"Name": "Happy Hour",
 				"Note": "Beverage Purchase required",
@@ -4397,58 +3433,6 @@
                 }]
             }]
 	    },
-        {
-			"Name": "Malone's Ale House",
-			"Address": "1175 NW 185th Ave, Aloha, OR 97006",
-			"Phone": "+15034390630",
-			"Website": "https://malonesalehouse.com",
-			"Id": "0VE20",
-			"Hours":[{
-				"DayOfWeek":0,
-				"Open":"2023-01-01T18:00:00.000Z",
-				"Close":"2023-01-01T09:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":1,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T09:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":2,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T09:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":3,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T09:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":4,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T09:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":5,
-				"Open":"2023-01-01T19:00:00.000Z",
-				"Close":"2023-01-01T09:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":6,
-				"Open":"2023-01-01T18:00:00.000Z",
-				"Close":"2023-01-01T09:00:00.000Z",
-				"Id":""
-			}],
-			"Attributes": [{
-				"Name": "",
-				"Id": ""
-			}],
 			"Specials": [{
 				"Name": "Happy Hour",
 				"Note": "",
@@ -4776,58 +3760,6 @@
                 }]
             }]
 	    },
-        {
-			"Name": "McCormick & Schmick's: Tigard",
-			"Address": "17015 SW 72nd Ave, Tigard, OR 97224",
-			"Phone": "+15036845490",
-			"Website": "https://www.mccormickandschmicks.com/location/mccormick-schmicks-tigard-or/",
-			"Id": "0VE21",
-			"Hours":[{
-				"DayOfWeek":0,
-				"Open":"2023-01-01T19:30:00.000Z",
-				"Close":"2023-01-01T05:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":1,
-				"Open":"2023-01-01T19:30:00.000Z",
-				"Close":"2023-01-01T05:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":2,
-				"Open":"2023-01-01T19:30:00.000Z",
-				"Close":"2023-01-01T05:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":3,
-				"Open":"2023-01-01T19:30:00.000Z",
-				"Close":"2023-01-01T05:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":4,
-				"Open":"2023-01-01T19:30:00.000Z",
-				"Close":"2023-01-01T05:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":5,
-				"Open":"2023-01-01T19:30:00.000Z",
-				"Close":"2023-01-01T06:00:00.000Z",
-				"Id":""
-			},
-            {
-				"DayOfWeek":6,
-				"Open":"2023-01-01T19:30:00.000Z",
-				"Close":"2023-01-01T06:00:00.000Z",
-				"Id":""
-			}],
-			"Attributes": [{
-				"Name": "",
-				"Id": ""
-			}],
 			"Specials": [{
 				"Name": "Happy Hour",
 				"Note": "Available with minimum beverage purchase of $3.40 per person.",
