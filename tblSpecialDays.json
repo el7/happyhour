@@ -42,7 +42,7 @@
 {"DayOfWeek": 6, "StartTime": "2023-01-01T23:00:00.000Z", "EndTime": "2023-01-01T02:00:00.000Z", "Id":"0TI0000042", "SpecialId":"0SP0000011"}
 {"DayOfWeek": 5, "StartTime": "2023-01-01T05:00:00.000Z", "EndTime": "2023-01-01T07:00:00.000Z", "Id":"0TI0000043", "SpecialId":"0SP0000011"}
 {"DayOfWeek": 6, "StartTime": "2023-01-01T05:00:00.000Z", "EndTime": "2023-01-01T07:00:00.000Z", "Id":"0TI0000044", "SpecialId":"0SP0000011"}
-{"DayOfWeek": 0, "StartTime": "2023-01-01T00:00:00.000Z", "EndTime": "2023-01-01T02:00:00.000Z", "Id":"0TI0000045", "SpecialId":"0SP0000012"}
+{"DayOfWeek": 0, "StartTime": "2023-01-01T00:00:00.000Z", "EndTime": "2023-01-01T02:00:00.000Z", "Id":"0TI0000223", "SpecialId":"0SP0000012"}
 {"DayOfWeek": 1, "StartTime": "2023-01-01T23:00:00.000Z", "EndTime": "close", "Id":"0TI0000045", "SpecialId":"0SP0000012"}
 {"DayOfWeek": 2, "StartTime": "2023-01-01T00:00:00.000Z", "EndTime": "2023-01-01T02:00:00.000Z", "Id":"0TI0000046", "SpecialId":"0SP0000012"}
 {"DayOfWeek": 3, "StartTime": "2023-01-01T00:00:00.000Z", "EndTime": "2023-01-01T02:00:00.000Z", "Id":"0TI0000047", "SpecialId":"0SP0000012"}
@@ -72,8 +72,7 @@
 {"DayOfWeek": 5, "StartTime": "2023-01-01T16:00:00.000Z", "EndTime": "2023-01-01T18:00:00.000Z", "Id":"0TI0000071", "SpecialId":"0SP0000016"}
 {"DayOfWeek": 1, "StartTime": "open", "EndTime": "close", "Id":"0TI0000072", "SpecialId":"0SP0000017"}
 {"DayOfWeek": 2, "StartTime": "open", "EndTime": "close", "Id":"0TI0000073", "SpecialId":"0SP0000018"}
-{"DayOfWeek": 3, "StartTime": "open", "EndTime": "close", "Id":"0TI0000074", "SpecialId":"0SP0000019"                       
-        }
+{"DayOfWeek": 3, "StartTime": "open", "EndTime": "close", "Id":"0TI0000074", "SpecialId":"0SP0000019"}
 {"DayOfWeek": 4, "StartTime": "open", "EndTime": "close", "Id":"0TI0000075", "SpecialId":"0SP0000020"}
 {"DayOfWeek": 5, "StartTime": "open", "EndTime": "close", "Id":"0TI0000076", "SpecialId":"0SP0000021"}
 {"DayOfWeek": 0, "StartTime": "open", "EndTime": "close", "Id":"0TI0000077", "SpecialId":"0SP0000022"}
@@ -88,7 +87,7 @@
 {"DayOfWeek": 4, "StartTime": "2023-01-01T14:00:00.000Z", "EndTime": "2023-01-01T16:00:00.000Z", "Id":"0TI0000086", "SpecialId":"0SP0000024"}
 {"DayOfWeek": 5, "StartTime": "2023-01-01T14:00:00.000Z", "EndTime": "2023-01-01T16:00:00.000Z", "Id":"0TI0000087", "SpecialId":"0SP0000024"}
 {"DayOfWeek": 1, "StartTime": "2023-01-01T14:00:00.000Z", "EndTime": "2023-01-01T16:00:00.000Z", "Id":"0TI0000088", "SpecialId":"0SP0000025"}
-{"DayOfWeek": 2, "StartTime": "2023-01-01T14:00:00.000Z", "EndTime": "2023-01-01T16:00:00.000Z", "Id":"0TI0000050", "SpecialId":"0SP0000025"}
+{"DayOfWeek": 2, "StartTime": "2023-01-01T14:00:00.000Z", "EndTime": "2023-01-01T16:00:00.000Z", "Id":"0TI0000224", "SpecialId":"0SP0000025"}
 {"DayOfWeek": 3, "StartTime": "2023-01-01T14:00:00.000Z", "EndTime": "2023-01-01T16:00:00.000Z", "Id":"0TI0000089", "SpecialId":"0SP0000025"}
 {"DayOfWeek": 4, "StartTime": "2023-01-01T14:00:00.000Z", "EndTime": "2023-01-01T16:00:00.000Z", "Id":"0TI0000090", "SpecialId":"0SP0000025"}
 {"DayOfWeek": 5, "StartTime": "2023-01-01T14:00:00.000Z", "EndTime": "2023-01-01T16:00:00.000Z", "Id":"0TI0000091", "SpecialId":"0SP0000025"}
@@ -128,7 +127,7 @@
 {"DayOfWeek": 0, "StartTime": "2023-01-01T23:00:00.000Z", "EndTime": "2023-01-01T02:00:00.000Z", "Id":"0TI0000125", "SpecialId":"0SP0000039"}
 {"DayOfWeek": 0, "StartTime": "2023-01-01T04:00:00.000Z", "EndTime": "close", "Id":"0TI0000126", "SpecialId":"0SP0000039"}
 {"DayOfWeek": 1, "StartTime": "2023-01-01T23:00:00.000Z", "EndTime": "2023-01-01T02:00:00.000Z", "Id":"0TI0000127", "SpecialId":"0SP0000039"}
-{"DayOfWeek": 1, "StartTime": "2023-01-01T04:00:00.000Z", "EndTime": "close", "Id":"0TI0000128", "SpecialId":"0SP0000039"},                
+{"DayOfWeek": 1, "StartTime": "2023-01-01T04:00:00.000Z", "EndTime": "close", "Id":"0TI0000128", "SpecialId":"0SP0000039"}                
 {"DayOfWeek": 2, "StartTime": "2023-01-01T23:00:00.000Z", "EndTime": "2023-01-01T02:00:00.000Z", "Id":"0TI0000129", "SpecialId":"0SP0000039"}
 {"DayOfWeek": 2, "StartTime": "2023-01-01T04:00:00.000Z", "EndTime": "close", "Id":"0TI0000130", "SpecialId":"0SP0000039"}
 {"DayOfWeek": 3, "StartTime": "2023-01-01T23:00:00.000Z", "EndTime": "2023-01-01T02:00:00.000Z", "Id":"0TI0000131", "SpecialId":"0SP0000039"}

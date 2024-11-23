@@ -69,7 +69,7 @@
 {"Name": "Micro Draft", "DealValue": 6.00, "SpecialId": "0SP0000013", "DealModifier": "=", "Id":"0DE0000069", "DealNote": "", "DealType": "Drink"}
 {"Name": "Selected Wines", "DealValue": 8.50, "DealModifier": "=", "Id":"0DE0000070", "SpecialId": "0SP0000013", "DealNote": "", "DealType": "Drink"}
 {"Name": "Large-Sized Appetizers", "DealValue": 2, "SpecialId": "0SP0000014", "DealModifier": "-", "Id":"0DE0000071", "DealNote": "", "DealType": "Food"}
-{"Name": "Well Drinks and Draft Beers", "DealValue": 0.50, "SpecialId": "0SP0000014", "Id":"0DE0000071", "DealModifier": "-", "DealNote": "", "DealType": "Drink"}
+{"Name": "Well Drinks and Draft Beers", "DealValue": 0.50, "SpecialId": "0SP0000014", "Id":"0DE0000318", "DealModifier": "-", "DealNote": "", "DealType": "Drink"}
 {"Name": "Large Pitchers of Beer", "DealValue": 1.50, "SpecialId": "0SP0000014", "DealModifier": "-", "Id":"0DE0000072", "DealNote": "", "DealType": "Drink"}
 {"Name": "Discount on 64oz Growler Fill", "DealValue": 2, "DealModifier": "-", "SpecialId": "0SP0000015", "Id":"0DE0000073", "DealNote": "", "DealType": "Drink"}
 {"Name": "Discount on 32oz Growler Fill", "DealValue": 1, "SpecialId": "0SP0000015", "Id":"0DE0000074", "DealModifier": "-", "DealNote": "", "DealType": "Drink"}
@@ -156,7 +156,7 @@
 {"Name": "Basket Crispy Pub Fries", "DealValue": 7, "SpecialId": "0SP0000039", "Id":"0DE0000155", "DealModifier": "=", "DealNote": "", "DealType": "Food"}
 {"Name": "Black & Tan Onion Rings", "DealValue": 7, "SpecialId": "0SP0000040", "DealModifier": "=", "DealNote": "Drizzled with balsamic ale reduction", "Id":"0DE0000156", "DealType": "Food"}
 {"Name": "Fried Pickle Spears", "DealValue": 7, "DealModifier": "=", "SpecialId": "0SP0000040", "Id":"0DE0000157", "DealNote": "Ranch or Bull sauce", "DealType": "Food"}
-{"Name": "Mozzarella Sticks", "DealValue": 7, "DealModifier": "=", "Id":"0DE0000157", "SpecialId": "0SP0000040", "DealNote": "W/ Marinara or Ranch", "DealType": "Food"}
+{"Name": "Mozzarella Sticks", "DealValue": 7, "DealModifier": "=", "Id":"0DE0000319", "SpecialId": "0SP0000040", "DealNote": "W/ Marinara or Ranch", "DealType": "Food"}
 {"Name": "Chicken Wings", "DealValue": 9, "DealModifier": "=", "Id":"0DE0000158", "SpecialId": "0SP0000040", "DealNote": "Buffalo, BBQ, Honey Garlic, No-Bull Dry Rub. With Ranch or Blue Cheese", "DealType": "Food"}
 {"Name": "Mini Corn Dogs", "DealValue": 7, "Id":"0DE0000159", "SpecialId": "0SP0000040", "DealModifier": "=", "DealNote": "", "DealType": "Food"}
 {"Name": "Jalapeno Cheese Bites", "DealValue": 8, "SpecialId": "0SP0000040", "DealModifier": "=", "Id":"0DE0000160", "DealNote": "W/ Bull Sauce", "DealType": "Food"}

@@ -1,14 +1,6 @@
 /* import data */
 import data from './happyhours.json' with { type: 'json' };
 
-fetch('http://localhost:3000/api/data')
-  .then(response => response.json())
-  .then(data => {
-    console.log(data); // Here's where you handle your data
-    // Process data as needed for your application
-  })
-  .catch(error => console.error('Error:', error));
-
 /* const and variables */
 const HH_ScopeSelection = {
 	HH_All: "all",
@@ -24,11 +16,66 @@ var hhSelection = HH_ScopeSelection.HH_Now;
 
 var datetimeNow = new Date();
 //var datetimeNow = new Date("2023-09-15T22:00:00.000Z");
- 
+
+
 starterJr();
 
 function starterJr () {
+
+	const venueId = encodeURIComponent('0VE0000001');
+	const specialId = encodeURIComponent('0SP0000001');
+	const specialHoursId = encodeURIComponent('0TI0000001');	
+	const attributeId = encodeURIComponent('0AT0000001');
+	const venueHoursId = encodeURIComponent('0HO0000001');
+
+	fetch('http://localhost:3000/api/venues')
+	.then(response => response.text())
+	.then(text => console.log('venues: ', text))
+	.catch(error => console.error('Error:', error));
+
+	fetch(`http://localhost:3000/api/venues/${venueId}`)
+	.then(response => response.text())
+	.then(text => console.log('venues>id: ', text))
+	.catch(error => console.error('Error:', error));
+
+	fetch(`http://localhost:3000/api/venues/${venueId}/specials`)
+	.then(response => response.text())
+	.then(text => console.log('venues>id>specials: ', text))
+	.catch(error => console.error('Error:', error));
+
+	fetch(`http://localhost:3000/api/venues/${venueId}/specials/${specialId}/details`)
+	.then(response => response.text())
+	.then(text => console.log('venues>id>specials>id>details: ', text))
+	.catch(error => console.error('Error:', error));
+
+	fetch(`http://localhost:3000/api/venues/${venueId}/specials/${specialId}/hours`)
+	.then(response => response.text())
+	.then(text => console.log('venues>id>specials>id>hours: ', text))
+	.catch(error => console.error('Error:', error));
+
+	fetch(`http://localhost:3000/api/venues/${venueId}/hours`)
+	.then(response => response.text())
+	.then(text => console.log('venues>id>hours: ', text))
+	.catch(error => console.error('Error:', error));
+
+	fetch(`http://localhost:3000/api/venues/${venueId}/specials/${specialId}`)
+	.then(response => response.text())
+	.then(text => console.log('venues>id>specials>id: ', text))
+	.catch(error => console.error('Error:', error));
+
+	fetch(`http://localhost:3000/api/venues/${venueId}/specials/${specialId}/hours/${specialHoursId}`)
+	.then(response => response.text())
+	.then(text => console.log('venues>id>specials>id>hours>id: ', text))
+	.catch(error => console.error('Error:', error));
+
+	fetch(`http://localhost:3000/api/venues/${venueId}/hours/${venueHoursId}`)
+	.then(response => response.text())
+	.then(text => console.log('venues>id>hours>id: ', text))
+	.catch(error => console.error('Error:', error));
+
+
 	starter();
+
 }
 
 function starter () {
@@ -107,7 +154,7 @@ function addToDisplayRestaurantInfo (restaurant) {
 
 	// get restaurant info from datasource
 	try {
-		console.log(restaurant.Name);
+//		console.log(restaurant.Name);
 		var restaurantOpen = restaurant.Hours[datetimeNow.getDay()].Open;
 		var restaurantClose = restaurant.Hours[datetimeNow.getDay()].Close;
 		var datetimeRestaurantOpen = new Date(restaurantOpen);
@@ -142,10 +189,10 @@ function addToDisplayRestaurantInfo (restaurant) {
 
 	// decide if restaurant is open
 	if (isDateHoursBetween(datetimeRestaurantOpen.getHours(), datetimeRestaurantClose.getHours(), datetimeNow.getHours())) {
-		console.log("open");
+//		console.log("open");
 		strRestrauntStatus = "Open";
 	} else {
-		console.log("closed");
+//		console.log("closed");
 		strRestrauntStatus = "Closed";
 	}
 
@@ -167,7 +214,7 @@ function addToDisplayDeals (sp) {
 			dealId = "noDealId";
 		}
 
-		console.log("Deal: " + de.Name);
+//		console.log("Deal: " + de.Name);
 		divFactoryDeals(de, dealId);
 
 	}
@@ -207,7 +254,7 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 			var sp = restaurant.Specials[j];
 			//	console.log("here2");
 
-			console.log("Special Name: " + sp.Name);
+			// console.log("Special Name: " + sp.Name);
 
 			/* iterate over days/hours the special is active */
 			for (var k = 0; k < sp.Days.length; k++) {
@@ -222,17 +269,17 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 
 				switch (hhSelection) {
 					case HH_ScopeSelection.HH_Now:
-						console.log("now!");
+						// console.log("now!");
 						hhSelectionModifierUpper = 0;
 						hhSelectionModifierLower = 0;
 						break;
 					case HH_ScopeSelection.HH_WithinHour:
-						console.log("hour!");
+						// console.log("hour!");
 						hhSelectionModifierUpper = 0;
 						hhSelectionModifierLower = 1;
 						break;
 					case HH_ScopeSelection.HH_Today:
-						console.log("today!");
+						// console.log("today!");
 						// mod lower gets time between deal start and midnight
 						hhSelectionModifierLower = datetimeNow.getHours();
 						// mod upper gets time between deal end and close time
@@ -240,6 +287,7 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 						break;
 				}
 
+				/*
 				console.log("Special Start: " 				+ datetimeDealStart.getHours()
 							+ " Special End: " 				+ nighttimeAdjustment(datetimeDealEnd.getHours())
 							+ " Current Day: " 				+ datetimeNow.getDay()
@@ -249,6 +297,7 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 							+ " Deal Day: " 				+ da.DayOfWeek
 							+ " hhSelectionModifierLower: " + hhSelectionModifierLower 
 							+ " upper: " 					+ hhSelectionModifierUpper);
+				*/
 
 				/* check if this special is active */
 				if (isDateHoursBetween(datetimeDealStart.getHours()-hhSelectionModifierLower, 
@@ -259,10 +308,11 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 					specialActive = true;
 					specialActiveStart = datetimeDealStart;
 					specialActiveEnd = datetimeDealEnd;
-					console.log("special active");
+					// console.log("special active");
 	
 				} else {
 
+					/*
 					console.log("special not active");
 					console.log("Special Start: " 	+ datetimeDealStart.getHours()
 					+ " Special End: " 				+ nighttimeAdjustment(datetimeDealEnd.getHours())
@@ -271,6 +321,7 @@ function addToDisplaySpecials(restaurant, openTime, closeTime){
 					+ " Current Day: " 				+ datetimeNow.getDay()
 					+ " ModifierLower: " 			+ hhSelectionModifierLower 
 					+ " upper: " 					+ hhSelectionModifierUpper);					
+					*/
 				}
 			}
 	
@@ -383,7 +434,7 @@ function nighttimeAdjustment (lateHours) {
 function isDateHoursBetween (lowerHour, upperHour, currentHour) {
 
 	upperHour = nighttimeAdjustment(upperHour);
-	console.log("r.open " + lowerHour + " r.close: " + upperHour + "nowhour: " + currentHour);
+	// console.log("r.open " + lowerHour + " r.close: " + upperHour + "nowhour: " + currentHour);
 
 	if (currentHour >= lowerHour && currentHour < upperHour) {
 		return true;
