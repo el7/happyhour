@@ -17,8 +17,10 @@ var hhSelection = HH_ScopeSelection.HH_Now;
 var datetimeNow = new Date();
 //var datetimeNow = new Date("2023-09-15T22:00:00.000Z");
 
-
-starter();
+// load data for intial state
+document.addEventListener('DOMContentLoaded', (event) => {
+    starter();
+});
 
 function fetchTest () {
 
@@ -71,8 +73,7 @@ function fetchTest () {
 	fetch(`http://localhost:3000/api/venues/${venueId}/hours/${venueHoursId}`)
 	.then(response => response.text())
 	.then(text => console.log('venues>id>hours>id: ', text))
-	.catch(error => console.error('Error:', error));
-
+	.catch(error => console.error('Error:', error)); 
 }
 
 function displayVenuesOld(){
@@ -111,29 +112,32 @@ function starter () {
 	prepareVenues();
 }
 
-function prepareVenues(){
 
-	document.querySelectorAll('.hhMode').forEach(button => {
-		button.addEventListener('click', async () => {
+document.addEventListener('click', function(event) {
+    if (event.target.matches('.hhMode')) {
+        console.log('reLoading');
+		prepareVenues();
+    }
+});
 
-			//	document.getElementById('filterButton').addEventListener('click', async () => {
-			console.log('filterButton Clicked');
 
-			const filters = collectFilters(); // A function to gather current filter selections
-			//		const timeFilter = document.getElementById('timeFilter').value; // Or however you get the time filter
-			const timeFilter = "now";
-			const data = await fetchVenues(filters, timeFilter);
-			if (data !== null) {
-				displayVenues(data);
-			} else {
-			// Handle the case where fetchVenues returns null
-				console.log("Failed to fetch venues");
-			}
+async function prepareVenues(){
 
-		});
-	});
 
-}
+	//	document.getElementById('filterButton').addEventListener('click', async () => {
+
+	const filters = collectFilters(); // A function to gather current filter selections
+	//		const timeFilter = document.getElementById('timeFilter').value; // Or however you get the time filter
+	const timeFilter = "now";
+	const data = await fetchVenues(filters, timeFilter);
+	if (data !== null) {
+		displayVenues(data);
+	} else {
+	// Handle the case where fetchVenues returns null
+		console.log("Failed to fetch venues");
+	}
+
+	}
 
 // Function to gather filters (example)
 function collectFilters() {
@@ -159,7 +163,7 @@ async function fetchVenues(filters, timeFilter) {
 	} else if (timeFilter === "today") {
 	  params.append('time', 'today');
 	}
-  
+
 	// Attribute Filters
 	if (filters && Object.keys(filters).length > 0) {
 		for (let [key, value] of Object.entries(filters)) {
@@ -171,7 +175,7 @@ async function fetchVenues(filters, timeFilter) {
 		}
 	}
 	
-		url.search = params;
+	url.search = params;
   
 	try {
 	  const response = await fetch(url.toString(), {
@@ -187,8 +191,12 @@ async function fetchVenues(filters, timeFilter) {
 		throw new Error(`HTTP error! status: ${response.status}`);
 	  }
 
-	  
-	  return await response.json();
+	  let allVenues = await response.json();
+
+	  allVenues = filterAttributeSelections(allVenues);
+
+	  return allVenues;
+
 	} catch (error) {
 	  console.error('Fetch error:', error);
 	  return null;
@@ -219,6 +227,18 @@ async function fetchVenues(filters, timeFilter) {
 	  venueList.appendChild(venueDiv);
 	});
   }
+
+
+  function filterAttributeSelections(venues){
+
+	venues = venues.filter(venue => venue.txtVenueID == "0VE0000003");
+
+	return venues;
+  };
+
+
+
+
 
 
 
