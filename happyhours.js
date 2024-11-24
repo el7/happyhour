@@ -18,9 +18,9 @@ var datetimeNow = new Date();
 //var datetimeNow = new Date("2023-09-15T22:00:00.000Z");
 
 
-starterJr();
+starter();
 
-function starterJr () {
+function fetchTest () {
 
 	const venueId = encodeURIComponent('0VE0000001');
 	const specialId = encodeURIComponent('0SP0000001');
@@ -73,15 +73,9 @@ function starterJr () {
 	.then(text => console.log('venues>id>hours>id: ', text))
 	.catch(error => console.error('Error:', error));
 
-
-	starter();
-
 }
 
-function starter () {
-
-	clearPage();
-	addHhScopeSelector();
+function displayVenuesOld(){
 
 	// add div to display current hh selection
 	var divHhMode = document.createElement("div");
@@ -105,11 +99,126 @@ function starter () {
 	addToDisplaySpecials(re, openTime, closeTime);
 
 	}
+
 }
 
-function hhModeRadioSelectionFunc () {
-	console.log("rb clicked");
+function starter () {
+
+	// fetchTest();
+	clearPage();
+	addHhScopeSelector();
+	// displayVenuesOld();
+	prepareVenues();
 }
+
+function prepareVenues(){
+
+	document.querySelectorAll('.hhMode').forEach(button => {
+		button.addEventListener('click', async () => {
+
+			//	document.getElementById('filterButton').addEventListener('click', async () => {
+			console.log('filterButton Clicked');
+
+			const filters = collectFilters(); // A function to gather current filter selections
+			//		const timeFilter = document.getElementById('timeFilter').value; // Or however you get the time filter
+			const timeFilter = "now";
+			const data = await fetchVenues(filters, timeFilter);
+			if (data !== null) {
+				displayVenues(data);
+			} else {
+			// Handle the case where fetchVenues returns null
+				console.log("Failed to fetch venues");
+			}
+
+		});
+	});
+
+}
+
+// Function to gather filters (example)
+function collectFilters() {
+	let filters = {};
+	// Collect filter data from DOM elements
+	// Example:
+	// filters.foodType = document.getElementById('foodTypeSelect').value;
+	// ... more filters ...
+	return filters;
+
+}
+
+async function fetchVenues(filters, timeFilter) {
+
+	let url = new URL('http://localhost:3000/api/venues');
+	let params = new URLSearchParams();
+  
+	// Time Filter
+	if (timeFilter === "now") {
+	  params.append('time', 'now');
+	} else if (timeFilter === "withinOneHour") {
+	  params.append('time', 'withinOneHour');
+	} else if (timeFilter === "today") {
+	  params.append('time', 'today');
+	}
+  
+	// Attribute Filters
+	if (filters && Object.keys(filters).length > 0) {
+		for (let [key, value] of Object.entries(filters)) {
+		if (Array.isArray(value)) {
+			value.forEach((v) => params.append(key, v));
+		} else {
+			params.append(key, value);
+		}
+		}
+	}
+	
+		url.search = params;
+  
+	try {
+	  const response = await fetch(url.toString(), {
+		method: 'GET',
+		headers: {
+		  'Content-Type': 'application/json'
+		},
+	  });
+	  
+	  if (!response) throw new Error("No response received");
+
+	  if (!response.ok) {
+		throw new Error(`HTTP error! status: ${response.status}`);
+	  }
+
+	  
+	  return await response.json();
+	} catch (error) {
+	  console.error('Fetch error:', error);
+	  return null;
+	}
+
+}
+
+  function displayVenues(venues) {
+	// Clear previous content
+
+
+	const venueListDiv = document.createElement('div');
+	venueListDiv.id = 'venueList';
+	document.body.appendChild(venueListDiv);
+
+	let venueList = document.getElementById('venueList');
+	venueList.innerHTML = '';
+  
+	// Add new venues
+	venues.forEach(venue => {
+	  let venueDiv = document.createElement('div');
+	  venueDiv.innerHTML = `
+		<h3>${venue.txtVenueName}</h3>
+		<h6>${venue.txtVenueWebsite} <br>${venue.txtVenueAddress1} <br>${venue.txtVenuePhoneNumber}</h6>
+		<p>Happy Hour:</p>
+		<!-- More info like address, etc -->
+	  `;
+	  venueList.appendChild(venueDiv);
+	});
+  }
 
 
 
@@ -124,10 +233,11 @@ function addHhScopeSelector() {
 	var labelNow = '<label for="radioNow">NOW</label>';
 	var labelHour = '<label for="radioHour">HOUR</label>';
 	var labelToday = '<label for="radioToday">TODAY</label>';
+	var labelButton = '<label for="venueButton">Click!</label>';
 
-	var radioModeNowHTML = '<input type="radio" id="hhModeNowRadio" class="radio hhMode" value="now" onclick="hhModeRadioSelectionFunc()" name="' + name + '"';
-	var radioModeHourHTML = '<input type="radio" id="hhModeHourRadio" class="radio hhMode" value="hour" onclick="hhModeRadioSelectionFunc()" name="' + name + '"';
-	var radioModeTodayHTML = '<input type="radio" id="hhModeTodayRadio" class="radio hhMode" value="today" onclick="hhModeRadioSelectionFunc()" name="' + name + '"';
+	var radioModeNowHTML = '<input type="radio" id="hhModeNowRadio" class="radio hhMode" value="now" name="' + name + '"';
+	var radioModeHourHTML = '<input type="radio" id="hhModeHourRadio" class="radio hhMode" value="hour" name="' + name + '"';
+	var radioModeTodayHTML = '<input type="radio" id="hhModeTodayRadio" class="radio hhMode" value="today" name="' + name + '"';
 	var radioHtml = "";
 
 	if ( checked ) {
@@ -146,6 +256,11 @@ function addHhScopeSelector() {
 	document.body.appendChild(radioFragment);
 	
 }
+
+function hhModeRadioSelectionFunc () {
+	console.log("rb clicked");
+}
+
 
 
 function addToDisplayRestaurantInfo (restaurant) {
