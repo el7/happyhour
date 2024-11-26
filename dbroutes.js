@@ -113,6 +113,34 @@ app.get('/api/venues/:id/specials/:id/hours', async (req, res) => {
   }
 });
 
+app.get('/api/specials', async (req, res) => {
+
+  const query = `SELECT * FROM "tblSpecials"`;
+  console.log('q: ', query);
+
+  try {
+    const { rows } = await db.query(query);
+    res.json(rows);
+  } catch (err) {
+    console.error(err.stack);
+    res.status(500).send('Error fetching data');
+  }
+});
+
+app.get('/api/specialHours', async (req, res) => {
+
+  const query = `SELECT * FROM "tblSpecialHours"`;
+  console.log('q: ', query);
+
+  try {
+    const { rows } = await db.query(query);
+    res.json(rows);
+  } catch (err) {
+    console.error(err.stack);
+    res.status(500).send('Error fetching data');
+  }
+});
+
 app.get('/api/venues/:id/specials/:myspecialid/hours/:myhoursid', async (req, res) => {
 
 // SELECT * FROM "tblSpecialHours" WHERE "txtSpecialID" = '0SP0000001' AND "txtSpecialHourID" = '0TI0000001'
