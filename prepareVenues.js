@@ -19,8 +19,8 @@ function collectFilters() {
 	let filters = {};
 	// Collect filter data from DOM elements
 	// Example:
-	filters.beer = document.getElementById('checkboxFilterBeer').value;
-	filters.liqueur = document.getElementById('checkboxFilterLiqueur').value;    
+	filters.beer = document.getElementById('checkboxFilterBeer').checked;
+	filters.liqueur = document.getElementById('checkboxFilterLiqueur').checked;    
 
     console.log("filter beer: ", filters.beer);
     console.log("filter liqueur: ", filters.liqueur);
