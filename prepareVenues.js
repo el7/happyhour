@@ -1,3 +1,5 @@
+import { displayDataController } from './displayData.js';
+import { isEmpty } from "./utils/utils.js";
 
 export async function prepareVenues () {
 
@@ -5,14 +7,21 @@ export async function prepareVenues () {
 	const filters = collectFilters();
 	const timeFilter = document.querySelector('input[name="hhModeRadio"]:checked');
 
-    const allVenues = await fetchVenues(filters, timeFilter.value);
+    const filteredVenues = await fetchVenues(filters, timeFilter.value);
     const filteredSpecialHours = await fetchSpecialHours(timeFilter.value);
     const filteredSpecials = await fetchSpecials(filteredSpecialHours);
 
-    console.log('allVenues size: ', allVenues.length)
+    console.log('filteredVenues size: ', filteredVenues.length)
 
-	if (allVenues !== null) {
-		displayVenues(allVenues, filterSpecialHours, filteredSpecials);
+	if (filteredVenues !== null) {
+
+        console.log("================="); // true
+        console.log(isEmpty(filteredVenues)); // true  
+        console.log(isEmpty(filterSpecialHours)); // true
+        console.log(isEmpty(filteredSpecials)); // true
+        console.log("================="); // true
+
+		displayDataController(filteredVenues, filterSpecialHours, filteredSpecials);
 	} else {
 		// Handle the case where fetchVenues returns null
 		console.log("Failed to fetch venues");
@@ -145,44 +154,6 @@ async function fetchSpecials(filteredSpecialHours) {
 }
 
 
-function displayVenues(venues, specialHours, specials) {
-	// Clear previous content
-
-    console.log('Your JavaScript engine is: ' + navigator.userAgent);
-    console.log(typeof venues, Array.isArray(specialHours));
-    console.log(typeof specialHours, Array.isArray(specialHours));
-    console.log(typeof specials, Array.isArray(specialHours));
-
-    /*
-    // Step 1: Normalize data
-    const venuesMap = Object.fromEntries(venues.map(venue => [venue.id, venue]));
-    const specialHoursMap = Object.fromEntries(specialHours.map(hour => [hour.venueId, hour]));
-    const specialsMap = Object.fromEntries(specials.map(special => [special.venueId, special]));
-    console.log(combinedData);
-    */
-
-
-	const venueListDiv = document.createElement('div');
-	venueListDiv.id = 'venueList';
-	document.body.appendChild(venueListDiv);
-
-	let venueList = document.getElementById('venueList');
-	venueList.innerHTML = '';
-
-
-	// Add new venues
-	venues.forEach(venue => {
-
-		let venueDiv = document.createElement('div');
-		venueDiv.innerHTML = `
-		<h3>${venue.txtVenueName}</h3>
-		<h6><a href='${venue.txtVenueWebsite}'>${venue.txtVenueWebsite}</a> <br>${venue.txtVenueAddress1}' <br>${venue.txtVenuePhoneNumber}</h6>
-		<p>Happy Hour: START: END: ID: NAME: ${specials[0].txtSpecialName}</p>
-	  `;
-		venueList.appendChild(venueDiv);
-	});
-}
-
 function filterSpecialHours(allSpecialHours) {
 
 	// collect current time, compare against the start/end range for each special, return limited version
@@ -228,19 +199,19 @@ function filterSpecialHours(allSpecialHours) {
         // const SPS2 = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate(), ...timePartSpecialStart2String.split(':').map(Number));
         // const SPE2 = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate(), ...timePartSpecialEnd2String.split(':').map(Number));
         
-        console.log(
-            "hoursID", specialHour.txtSpecialHourID,
-            "Current Time: ", currentTime, 
-            " Special Start 1: ", startTime1,
-            " Special End 1: ", endTime1,
-            " Special Start 2: ", startTime2,
-            " Special End 2: ", endTime2,
-            " testString: ", testString, 
-            " testTime: " , testTime,
-            " SPS1: ", SPS1,
-            " SPE1: ", SPE1,
-            " Current Time: ", currentTime, 
-        )
+        // console.log(
+        //     "hoursID", specialHour.txtSpecialHourID,
+        //     "Current Time: ", currentTime, 
+        //     " Special Start 1: ", startTime1,
+        //     " Special End 1: ", endTime1,
+        //     " Special Start 2: ", startTime2,
+        //     " Special End 2: ", endTime2,
+        //     " testString: ", testString, 
+        //     " testTime: " , testTime,
+        //     " SPS1: ", SPS1,
+        //     " SPE1: ", SPE1,
+        //     " Current Time: ", currentTime, 
+        // )
 
  
 		if ((currentTime >= SPS1 && currentTime <= SPE1) ||

@@ -2,6 +2,7 @@
 import { fetchTest } from './fetchTest.js';
 import { displayVenuesOld } from './legacyDisplay.js';
 import { prepareVenues } from './prepareVenues.js';
+import { isEmpty } from "./utils/utils.js";
 
 /* const and variables */
 const HH_ScopeSelection = {
@@ -57,12 +58,13 @@ function addHhScopeSelector() {
 	var labelNow = '<label for="radioNow">NOW</label>';
 	var labelHour = '<label for="radioHour">HOUR</label>';
 	var labelToday = '<label for="radioToday">TODAY</label>';
-	var labelButton = '<label for="venueButton">Click!</label>';
+	var labelOff = '<label for="radioOff">OFF</label>';
 
 	var radioModeNowHTML = '<input type="radio" id="hhModeNowRadio" class="radio hhMode" value="now" name="' + name + '"';
 	var radioModeHourHTML = '<input type="radio" id="hhModeHourRadio" class="radio hhMode" value="hour" name="' + name + '"';
 	var radioModeTodayHTML = '<input type="radio" id="hhModeTodayRadio" class="radio hhMode" value="today" name="' + name + '"';
-	var radioHtml = "";
+	var radioModeOffHTML = '<input type="radio" id="hhModeOffRadio" class="radio hhMode" value="off" name="' + name + '"';
+    var radioHtml = "";
 
 	if (checked) {
 		radioModeNowHTML += ' checked="checked"';
@@ -71,8 +73,13 @@ function addHhScopeSelector() {
 	radioModeNowHTML += '/>';
 	radioModeHourHTML += '/>';
 	radioModeTodayHTML += '/>';
+	radioModeOffHTML += '/>';
 
-	radioHtml += radioModeNowHTML + labelNow + radioModeHourHTML + labelHour + radioModeTodayHTML + labelToday;
+	radioHtml += 
+    radioModeNowHTML + labelNow + 
+    radioModeHourHTML + labelHour + 
+    radioModeTodayHTML + labelToday + 
+    radioModeOffHTML + labelOff;
 
 	var radioFragment = document.createElement('div');
 	radioFragment.innerHTML = radioHtml;
