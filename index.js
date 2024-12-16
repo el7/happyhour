@@ -1,6 +1,6 @@
 /* import data */
-import { fetchTest } from './fetchTest.js';
-import { displayVenuesOld } from './legacyDisplay.js';
+import { fetchTest } from './utils/fetchTest.js';
+import { displayVenuesOld } from './spare_files/legacyDisplay.js';
 import { prepareVenues } from './prepareVenues.js';
 import { isEmpty } from "./utils/utils.js";
 import {addHhScopeSelector} from "./components/addHhScopeSelector.js";
@@ -24,6 +24,7 @@ var datetimeNow = new Date();
 
 // load intial state
 document.addEventListener('DOMContentLoaded', (event) => {
+	console.log("here");
 	starter();
 });
 
