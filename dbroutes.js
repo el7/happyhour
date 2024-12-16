@@ -300,7 +300,7 @@ app.get('/api/venues', async (req, res) => {
 
 app.get('/api/getSpecialsNow', async (req, res) => {
 
-  const query = `SELECT DISTINCT v."txtVenueID", v."txtVenueName", s."txtSpecialID", s."txtSpecialName", s."txtSpecialNote", h."txtSpecialStart1", h."txtSpecialEnd1" FROM "tblVenue" v JOIN "tblSpecials" s ON v."txtVenueID" = s."txtVenueID" JOIN "tblSpecialHours" h ON s."txtSpecialID" = h."txtSpecialID" WHERE h."intDayOfWeek" = EXTRACT(DOW FROM CURRENT_DATE) AND (h."txtSpecialStart1"::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles')::TIME     <= CURRENT_TIME AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles' AND (h."txtSpecialEnd1"::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles')::TIME     >= CURRENT_TIME AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles';  `;
+  const query = `SELECT DISTINCT v."txtVenueID", v."txtVenueName", s."txtSpecialID", s."txtSpecialName", s."txtSpecialNote", h."txtSpecialStart1", h."txtSpecialEnd1" FROM "tblVenue" v JOIN "tblSpecials" s ON v."txtVenueID" = s."txtVenueID" JOIN "tblSpecialHours" h ON s."txtSpecialID" = h."txtSpecialID" WHERE h."intDayOfWeek" = EXTRACT(DOW FROM CURRENT_DATE) AND (h."txtSpecialStart1"::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles')::TIME     <= CURRENT_TIME AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles' AND (h."txtSpecialEnd1"::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles')::TIME     >= CURRENT_TIME AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles';`;
   console.log("q: ", query);
 
   try {

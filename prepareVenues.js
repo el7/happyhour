@@ -9,6 +9,8 @@ export async function prepareVenues () {
 
 	const filteredVenues2 = await fetchVenues2(filters, timeFilter.value);
 
+
+	/*
 	console.log("here4");
 
     const filteredVenues = await fetchVenues(filters, timeFilter.value);
@@ -33,6 +35,7 @@ export async function prepareVenues () {
 		// Handle the case where fetchVenues returns null
 		console.log("Failed to fetch venues");
 	}
+*/
 }
 
 // Function to gather filters (example)
@@ -402,7 +405,14 @@ function displayNew(allVenues){
 		let venueDiv = document.createElement('div');
 		venueDiv.innerHTML = `
 		<h3>${venue.txtVenueName}</h3>
-		<h6>Venue ID: ${venue.txtVenueID} <br> Special ID: ${venue.txtSpecialID} <br> Special Name: ${venue.txtSpecialName} <br> Special Note: ${venue.txtSpecialNote} <br> Special Start 1: ${venue.txtSpecialStart1} <br> Special End 1: ${venue.txtSpecialEnd1}</h6>
+		<h6>
+		Special Name: ${venue.txtSpecialName} <br> 
+		Special Note: ${venue.txtSpecialNote} <br> 
+		Special Start 1: ${venue.txtSpecialStart1} <br> 
+		Special End 1: ${venue.txtSpecialEnd1} <br>
+		Venue ID: ${venue.txtVenueID} <br> 
+		Special ID: ${venue.txtSpecialID} <br> 
+		</h6>
 	  `;
 		venueListDiv.appendChild(venueDiv);
 
