@@ -244,7 +244,7 @@ app.get('/api/data', async (req, res) => {
 
 app.get('/api/auth/login', async (req, res) => {
   try {
-    const { rows } = db.query('SELECT * FROM "tblVenue"');
+    const { rows } = await db.query('SELECT * FROM "tblVenue"');
     res.json(rows);
   } catch (err) {
     console.error(err.stack);
@@ -254,7 +254,7 @@ app.get('/api/auth/login', async (req, res) => {
 
 app.get('/api/auth/logout', async (req, res) => {
   try {
-    const { rows } = db.query('SELECT * FROM "tblVenue"');
+    const { rows } = await db.query('SELECT * FROM "tblVenue"');
     res.json(rows);
   } catch (err) {
     console.error(err.stack);
@@ -264,7 +264,7 @@ app.get('/api/auth/logout', async (req, res) => {
 
 app.get('/api/users', async (req, res) => {
   try {
-    const { rows } = db.query('SELECT * FROM "tblVenue"');
+    const { rows } = await db.query('SELECT * FROM "tblVenue"');
     res.json(rows);
   } catch (err) {
     console.error(err.stack);
@@ -274,7 +274,7 @@ app.get('/api/users', async (req, res) => {
 
 app.get('/api/users/:id', async (req, res) => {
   try {
-    const { rows } = db.query('SELECT * FROM "tblVenue"');
+    const { rows } = await db.query('SELECT * FROM "tblVenue"');
     res.json(rows);
   } catch (err) {
     console.error(err.stack);
@@ -304,7 +304,7 @@ app.get('/api/getSpecialsNow', async (req, res) => {
   console.log("q: ", query);
 
   try {
-    const { rows } = db.query(query);
+    const { rows } = await db.query(query);
     res.json(rows);
   } catch (err) {
     console.error(err.stack);
@@ -319,7 +319,7 @@ app.get('/api/getSpecialsHour', async (req, res) => {
   console.log("q: ", query);
 
   try {
-    const { rows } = db.query(query);
+    const { rows } = await db.query(query);
     res.json(rows);
   } catch (err) {
     console.error(err.stack);
@@ -333,7 +333,7 @@ app.get('/api/getSpecialsToday', async (req, res) => {
   console.log("q: ", query);
 
   try { 
-    const { rows } = db.query(query);
+    const { rows } = await db.query(query);
     res.json(rows);
   } catch (err) {
     console.error(err.stack);

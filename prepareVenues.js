@@ -330,9 +330,6 @@ async function fetchVenues2 (filters, timeFilter) {
 		urlVenues = new URL('http://localhost:3000/api/getSpecialsNow');
 	}				
 
-	console.log("tf: ", timeFilter);
-	console.log("url: ", urlVenues);
-
 
 	// Attribute Filters
 	if (filters && Object.keys(filters).length > 0) {
@@ -348,19 +345,37 @@ async function fetchVenues2 (filters, timeFilter) {
 	urlVenues.search = params;
 
 	try {
-		const responseVenues = await fetch(urlVenues.toString(), {
+		const responseVenues = await fetch(urlVenues, {
 			method: 'GET',
 			headers: {
-				'Content-Type': 'application/json'
+				'Accept': 'application/json'
 			},
 		});
 
 		if (!responseVenues) throw new Error("No response received");
 		if (!responseVenues.ok) throw new Error(`HTTP error! status: ${responseVenues.status}`);
 
-		let allVenues = await responseVenues.json();
+		// Check if the response has any content before parsing as JSON
+		const text = await responseVenues.text();
+		if (text.length === 0) {
+			console.warn('Received an empty response from the server');
+			return [];
+		}
 
-        console.log("filteredVenues: ", filterVenues.length )
+        // Try to parse the JSON. If it fails, throw a more descriptive error
+        try {
+//			displayNew(text);		
+			console.log("parse: ", JSON.parse(text));
+			displayNew(JSON.parse(text));
+			return JSON.parse(text);
+        } catch (jsonError) {
+            console.error('Failed to parse JSON:', jsonError);
+            console.log('Received text:', text);
+            throw new Error('Response was not valid JSON');
+        }
+//        console.log("filteredVenues: ", filterVenues.length )
+
+
 		return allVenues;
 
 	} catch (error) {
@@ -371,6 +386,28 @@ async function fetchVenues2 (filters, timeFilter) {
 
 }
 
+
+
+function displayNew(allVenues){
+
+	const venueListDiv = document.createElement('div');
+	venueListDiv.id = 'venueList';
+	venueListDiv.innerHTML = '';
+	document.body.appendChild(venueListDiv);
+
+	allVenues.forEach(venue => {
+
+		console.log("V: ", venue);
+
+		let venueDiv = document.createElement('div');
+		venueDiv.innerHTML = `
+		<h3>${venue.txtVenueName}</h3>
+		<h6>Venue ID: ${venue.txtVenueID} <br> Special ID: ${venue.txtSpecialID} <br> Special Name: ${venue.txtSpecialName} <br> Special Note: ${venue.txtSpecialNote} <br> Special Start 1: ${venue.txtSpecialStart1} <br> Special End 1: ${venue.txtSpecialEnd1}</h6>
+	  `;
+		venueListDiv.appendChild(venueDiv);
+
+	});
+}
 
 
 

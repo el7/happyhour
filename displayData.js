@@ -16,9 +16,9 @@ export function displayDataController(venues, specialHours, specials) {
     */
 
 
-	displayVenues(venues, specials);
+	// displayVenues(venues, specials);
 	// displaySpecialHours(specialHours);
-	displaySpecials(specials);
+	// displaySpecials(specials);
 
 }
 
@@ -67,7 +67,7 @@ function displaySpecials(specials){
 	// Add new venues
 	specials.forEach(special => {
 
-		console.log("special: ", special.txtSpecialName);
+//		console.log("special: ", special.txtSpecialName);
 		let specialDiv = document.createElement('div');
 		specialDiv.innerHTML = `
 		<p>Happy Hour: ${special.txtSpecialName}</p>		
