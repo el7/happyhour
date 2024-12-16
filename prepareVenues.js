@@ -7,9 +7,16 @@ export async function prepareVenues () {
 	const filters = collectFilters();
 	const timeFilter = document.querySelector('input[name="hhModeRadio"]:checked');
 
+//	const filteredVenues2 = await fetchVenues2(filters, timeFilter.value);
+
+	console.log("here4");
+
     const filteredVenues = await fetchVenues(filters, timeFilter.value);
+	console.log("here5");
     const filteredSpecialHours = await fetchSpecialHours(timeFilter.value);
+	console.log("here6");
     const filteredSpecials = await fetchSpecials(filteredSpecialHours);
+	console.log("here7");
 
     console.log('filteredVenues size: ', filteredVenues.length)
 
@@ -47,6 +54,8 @@ async function fetchVenues(filters, timeFilter) {
 	let urlVenues = new URL('http://localhost:3000/api/venues');
 	let params = new URLSearchParams();
 
+	console.log("here 10");
+
 	// Attribute Filters
 	if (filters && Object.keys(filters).length > 0) {
 		for (let [key, value] of Object.entries(filters)) {
@@ -58,9 +67,11 @@ async function fetchVenues(filters, timeFilter) {
 		}
 	}
 
+	console.log("here 11");
 	urlVenues.search = params;
 
 	try {
+		console.log("here 12");
 		const responseVenues = await fetch(urlVenues.toString(), {
 			method: 'GET',
 			headers: {
@@ -68,15 +79,18 @@ async function fetchVenues(filters, timeFilter) {
 			},
 		});
 
+		console.log("here 13");
 		if (!responseVenues) throw new Error("No response received");
 		if (!responseVenues.ok) throw new Error(`HTTP error! status: ${responseVenues.status}`);
 
 		let allVenues = await responseVenues.json();
 
+		console.log("here 14");
         console.log("filteredVenues: ", filterVenues.length )
 		return allVenues;
 
 	} catch (error) {
+		console.log("err:", error);
 		console.error('Fetch error:', error);
 		return null;
 	}
@@ -230,8 +244,6 @@ function filterSpecialHours(allSpecialHours) {
 		}
 	})
 
-	console.log("fsh.l: ", filteredSpecialHours.length);
-	console.log("fosh.l: ", filteredOut.length);    
 	return filteredSpecialHours;
 //	return filteredOut;	
 }
@@ -296,3 +308,64 @@ function filterSpecials(allSpecials, filteredSpecialHours) {
 //	return filteredOutSpecials;
 
 }
+
+
+
+async function fetchVenues2 (filters, timeFilter) {
+
+	let urlVenues = '';
+	let params = new URLSearchParams();
+
+	switch(timeFilter) {
+	case "Now":
+		urlVenues = new URL('http://localhost:3000/api/getSpecialsNow');
+/*
+	case "Hour":
+		urlVenues = new URL('http://localhost:3000/api/getSpecialsHour');
+	case "Today":
+		urlVenues = new URL('http://localhost:3000/api/getSpecialsToday');
+*/
+	default:
+		urlVenues = new URL('http://localhost:3000/api/getSpecialsNow');
+	}				
+
+	// Attribute Filters
+	if (filters && Object.keys(filters).length > 0) {
+		for (let [key, value] of Object.entries(filters)) {
+			if (Array.isArray(value)) {
+				value.forEach((v) => params.append(key, v));
+			} else {
+				params.append(key, value);
+			}
+		}
+	}
+
+	urlVenues.search = params;
+
+	try {
+		const responseVenues = await fetch(urlVenues.toString(), {
+			method: 'GET',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+		});
+
+		if (!responseVenues) throw new Error("No response received");
+		if (!responseVenues.ok) throw new Error(`HTTP error! status: ${responseVenues.status}`);
+
+		let allVenues = await responseVenues.json();
+
+        console.log("filteredVenues: ", filterVenues.length )
+		return allVenues;
+
+	} catch (error) {
+		console.error('Fetch error:', error);
+		return null;
+	}
+
+
+}
+
+
+
+

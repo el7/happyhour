@@ -15,14 +15,15 @@ export function displayDataController(venues, specialHours, specials) {
     console.log(combinedData);
     */
 
-	displayVenues(venues);
+
+	displayVenues(venues, specials);
 	// displaySpecialHours(specialHours);
 	displaySpecials(specials);
 
 }
 
 
-function displayVenues(venues){
+function displayVenues(venues, specials){
 
 	const venueListDiv = document.createElement('div');
 	venueListDiv.id = 'venueList';
