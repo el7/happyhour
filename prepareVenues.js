@@ -7,7 +7,7 @@ export async function prepareVenues () {
 	const filters = collectFilters();
 	const timeFilter = document.querySelector('input[name="hhModeRadio"]:checked');
 
-//	const filteredVenues2 = await fetchVenues2(filters, timeFilter.value);
+	const filteredVenues2 = await fetchVenues2(filters, timeFilter.value);
 
 	console.log("here4");
 
@@ -317,17 +317,22 @@ async function fetchVenues2 (filters, timeFilter) {
 	let params = new URLSearchParams();
 
 	switch(timeFilter) {
-	case "Now":
+	case 'now':
 		urlVenues = new URL('http://localhost:3000/api/getSpecialsNow');
-/*
-	case "Hour":
+		break;
+	case 'hour':
 		urlVenues = new URL('http://localhost:3000/api/getSpecialsHour');
-	case "Today":
+		break;
+	case 'today':
 		urlVenues = new URL('http://localhost:3000/api/getSpecialsToday');
-*/
+		break;
 	default:
 		urlVenues = new URL('http://localhost:3000/api/getSpecialsNow');
 	}				
+
+	console.log("tf: ", timeFilter);
+	console.log("url: ", urlVenues);
+
 
 	// Attribute Filters
 	if (filters && Object.keys(filters).length > 0) {

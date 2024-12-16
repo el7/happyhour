@@ -283,9 +283,28 @@ app.get('/api/users/:id', async (req, res) => {
 });
 
 
-app.get('/api/getSpecialsNow', async (req, res) => {
+app.get('/api/venues', async (req, res) => {
+
+  const query = `SELECT * FROM "tblVenue"`;
+  console.log('q: ', query);
+
   try {
-    const { rows } = db.query(`SELECT DISTINCT v."txtVenueID", v."txtVenueName", s."txtSpecialID", s."txtSpecialName", s."txtSpecialNote", h."txtSpecialStart1", h."txtSpecialEnd1" FROM "tblVenue" v JOIN "tblSpecials" s ON v."txtVenueID" = s."txtVenueID" JOIN "tblSpecialHours" h ON s."txtSpecialID" = h."txtSpecialID" WHERE h."intDayOfWeek" = EXTRACT(DOW FROM CURRENT_DATE) AND (h."txtSpecialStart1"::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles') <= (CURRENT_TIME + INTERVAL '0 hour')::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles' + TIME '02:30:00' AND (h."txtSpecialEnd1"::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles')::TIME >= CURRENT_TIME AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles';`);
+    const { rows } = await db.query(query);
+    res.json(rows);
+  } catch (err) {
+    console.error('Error in /api/venues:', err.stack); // Make sure you see this in your logs
+    res.status(500).json({ error: 'Failed to fetch venues', message: err.message });
+  }
+});
+
+
+app.get('/api/getSpecialsNow', async (req, res) => {
+
+  const query = `SELECT DISTINCT v."txtVenueID", v."txtVenueName", s."txtSpecialID", s."txtSpecialName", s."txtSpecialNote", h."txtSpecialStart1", h."txtSpecialEnd1" FROM "tblVenue" v JOIN "tblSpecials" s ON v."txtVenueID" = s."txtVenueID" JOIN "tblSpecialHours" h ON s."txtSpecialID" = h."txtSpecialID" WHERE h."intDayOfWeek" = EXTRACT(DOW FROM CURRENT_DATE) AND (h."txtSpecialStart1"::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles')::TIME     <= CURRENT_TIME AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles' AND (h."txtSpecialEnd1"::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles')::TIME     >= CURRENT_TIME AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles';  `;
+  console.log("q: ", query);
+
+  try {
+    const { rows } = db.query(query);
     res.json(rows);
   } catch (err) {
     console.error(err.stack);
@@ -293,10 +312,14 @@ app.get('/api/getSpecialsNow', async (req, res) => {
   }
 });
 
-/*
+
 app.get('/api/getSpecialsHour', async (req, res) => {
+
+  const query = `SELECT DISTINCT v."txtVenueID", v."txtVenueName", s."txtSpecialID", s."txtSpecialName", s."txtSpecialNote", h."txtSpecialStart1", h."txtSpecialEnd1" FROM "tblVenue" v JOIN "tblSpecials" s ON v."txtVenueID" = s."txtVenueID" JOIN "tblSpecialHours" h ON s."txtSpecialID" = h."txtSpecialID" WHERE h."intDayOfWeek" = EXTRACT(DOW FROM CURRENT_DATE) AND (h."txtSpecialStart1"::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles')::TIME     <= (CURRENT_TIME AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles' + INTERVAL '1 hour')::TIME AND (h."txtSpecialEnd1"::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles')::TIME     >= CURRENT_TIME AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles';`;
+  console.log("q: ", query);
+
   try {
-    const { rows } = db.query(`SELECT DISTINCT v."txtVenueID", v."txtVenueName", s."txtSpecialID", s."txtSpecialName", s."txtSpecialNote", h."txtSpecialStart1", h."txtSpecialEnd1" FROM "tblVenue" v JOIN "tblSpecials" s ON v."txtVenueID" = s."txtVenueID" JOIN "tblSpecialHours" h ON s."txtSpecialID" = h."txtSpecialID" WHERE h."intDayOfWeek" = EXTRACT(DOW FROM CURRENT_DATE) AND (h."txtSpecialStart1"::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles') <= (CURRENT_TIME + INTERVAL '1 hour')::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles' + TIME '02:30:00' AND (h."txtSpecialEnd1"::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles')::TIME >= CURRENT_TIME AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles';`);
+    const { rows } = db.query(query);
     res.json(rows);
   } catch (err) {
     console.error(err.stack);
@@ -305,15 +328,18 @@ app.get('/api/getSpecialsHour', async (req, res) => {
 });
 
 app.get('/api/getSpecialsToday', async (req, res) => {
-  let offset = `'02:30:00'`;
+
+  const query = `SELECT DISTINCT v."txtVenueID", v."txtVenueName", s."txtSpecialID", s."txtSpecialName", s."txtSpecialNote", h."txtSpecialStart1", h."txtSpecialEnd1" FROM "tblVenue" v JOIN "tblSpecials" s ON v."txtVenueID" = s."txtVenueID" JOIN "tblSpecialHours" h ON s."txtSpecialID" = h."txtSpecialID" WHERE h."intDayOfWeek" = EXTRACT(DOW FROM CURRENT_DATE) AND (h."txtSpecialStart1"::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles')     <= (CURRENT_DATE + INTERVAL '1 day')::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles' + TIME '02:30:00'::TIME AND (h."txtSpecialEnd1"::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles')::TIME     >= CURRENT_TIME AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles';`;
+  console.log("q: ", query);
+
   try { 
-    const { rows } = db.query(`SELECT DISTINCT v."txtVenueID",v."txtVenueName",s."txtSpecialID",s."txtSpecialName",s."txtSpecialNote",    h."txtSpecialStart1",h."txtSpecialEnd1"FROM "tblVenue" vJOIN "tblSpecials" s ON v."txtVenueID" = s."txtVenueID"JOIN "tblSpecialHours" h ON s."txtSpecialID" = h."txtSpecialID"WHERE h."intDayOfWeek" = EXTRACT(DOW FROM CURRENT_DATE) AND (h."txtSpecialStart1"::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles') <= (CURRENT_DATE + INTERVAL '1 day')::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles' + TIME ${offset} AND (h."txtSpecialEnd1"::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles')::TIME >= CURRENT_TIME AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles';`);
+    const { rows } = db.query(query);
     res.json(rows);
   } catch (err) {
     console.error(err.stack);
     res.status(500).send('Error fetching data');
   }
 });
-*/
+
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));

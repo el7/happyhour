@@ -8,6 +8,7 @@ SELECT DISTINCT
     v."txtVenueName",
     s."txtSpecialID",
     s."txtSpecialName",
+    s."txtSpecialNote",    
     h."txtSpecialStart1",
     h."txtSpecialEnd1"
 FROM 
@@ -44,7 +45,7 @@ WHERE
     h."intDayOfWeek" = EXTRACT(DOW FROM CURRENT_DATE)
     AND 
     (h."txtSpecialStart1"::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles') 
-        <= (CURRENT_TIME + INTERVAL '1 hour')::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles' + TIME '02:30:00'
+        <= (CURRENT_TIME + INTERVAL '1 hour')::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles' + INTERVAL '1 hour'
     AND 
     (h."txtSpecialEnd1"::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles')::TIME 
         >= CURRENT_TIME AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles';
@@ -57,6 +58,7 @@ SELECT DISTINCT
     v."txtVenueName",
     s."txtSpecialID",
     s."txtSpecialName",
+    s."txtNote",
     h."txtSpecialStart1",
     h."txtSpecialEnd1"
 FROM 
@@ -69,7 +71,7 @@ WHERE
     h."intDayOfWeek" = EXTRACT(DOW FROM CURRENT_DATE)
     AND 
     (h."txtSpecialStart1"::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles') 
-        <= (CURRENT_TIME + INTERVAL '0 hour')::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles' + TIME '02:30:00'
+        <= (CURRENT_TIME + INTERVAL '0 hour')::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles' + INTERVAL '0 hour'
     AND 
     (h."txtSpecialEnd1"::TIMESTAMP AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles')::TIME 
         >= CURRENT_TIME AT TIME ZONE 'UTC' AT TIME ZONE 'America/Los_Angeles';
