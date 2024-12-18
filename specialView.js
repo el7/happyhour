@@ -1,57 +1,100 @@
 /* import data */
-import { fetchTest } from './utils/fetchTest.js';
-import { displayVenuesOld } from './spare_files/legacyDisplay.js';
-import { prepareVenues } from './prepareVenues.js';
-import { isEmpty } from "./utils/utils.js";
-import {addHhScopeSelector} from "./components/addHhScopeSelector.js";
-import { addHhFilterSelector } from "./components/addHhFilterSelector.js";
-
-/* const and variables */
-const HH_ScopeSelection = {
-	HH_All: "all",
-	HH_Today: "today",
-	HH_WithinHour: "hour",
-	HH_Now: "now"
-}
-
-var specialActive = false;
-var hhSelection = HH_ScopeSelection.HH_Now;
-// hhSelection = HH_ScopeSelection.HH_Today;
-// hhSelection = HH_ScopeSelection.HH_WithinHour;
-
-var datetimeNow = new Date();
-//var datetimeNow = new Date("2023-09-15T22:00:00.000Z");
 
 // load intial state
 document.addEventListener('DOMContentLoaded', (event) => {
-	console.log("here");
 	starter();
 });
 
-
 function starter() {
 
-	// fetchTest(); // test festching data
-	clearPage();
-	addHhScopeSelector();
-	addHhFilterSelector();
-	//displayVenuesOld(); // old method of showing data
-	prepareVenues();
+    let venueId = '';
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const specialId = urlParams.get('id');
+    
+    console.log(specialId); // This would log "123" to the console if the link was clicked
+
+    getSpecialData(specialId);
+
 }
 
-// handle time and filter selections
-document.addEventListener('click', function (event) {
-	if (event.target.matches('.hhMode')) {
-		console.log('Radio reLoading');
-		
-		prepareVenues();
-	} else if (event.target.matches('.hhAttr')) {
-		console.log('Checkbox reLoading');
-		prepareVenues();
-	}
-});
+
+async function getSpecialData(specialId){
+
+    // 0SP0000002
+    // ${specialId}
+    let urlVenues = new URL(`/api/specials/${specialId}`, window.location.origin);
+    console.log("url: ", urlVenues);
+
+    try {
+        const responseVenues = await fetch(urlVenues, {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json'
+            },
+        });
+
+        if (!responseVenues) throw new Error("No response received");
+        if (!responseVenues.ok) throw new Error(`HTTP error! status: ${responseVenues.status}`);
+
+        // Check if the response has any content before parsing as JSON
+        const text = await responseVenues.text();
+        if (text.length === 0) {
+            console.warn('Received an empty response from the server');
+            return [];
+        }
+
+        // Try to parse the JSON. If it fails, throw a more descriptive error
+        try {
+//			displayNew(text);		
+            console.log("parse: ", JSON.parse(text));
+            displaySpecial(specialId);
+
+            return '';
+        } catch (jsonError) {
+            console.error('Failed to parse JSON:', jsonError);
+            console.log('Received text:', text);
+            throw new Error('Response was not valid JSON');
+        }
+//        console.log("filteredVenues: ", filterVenues.length )
 
 
-function clearPage() {
-	document.body.innerHTML = "";
+        return allVenues;
+
+    } catch (error) {
+        console.error('Fetch error:', error);
+        
+        return null;
+    }
+    
+
 }
+
+function displaySpecial(specialId) {
+
+	const specialListDiv = document.createElement('div');
+	specialListDiv.id = 'venueList';
+	specialListDiv.innerHTML = '';
+	document.body.appendChild(specialListDiv);
+
+    // run query given specialId
+
+    // display data
+
+	let specialDiv = document.createElement('div');
+    specialDiv.innerHTML = `
+
+    <h3></h3>
+    <h6>
+    Special Name: <a href='./specialView.html'></a><br> 
+    Special Note: <br> 
+    Special Start 1: <br> 
+    Special End 1: <br>
+    Venue ID: <br> 
+    Special ID: <br> 
+    </h6>
+    `;
+    specialListDiv.appendChild(specialDiv);
+
+}
+

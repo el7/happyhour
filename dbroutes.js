@@ -12,6 +12,25 @@ app.use(cors({
   origin: 'http://localhost:8080'
 }));
 
+app.get('/api/specials/:myspecialid', async (req, res) => {
+
+  console.log('pre-q');
+
+  const specialId = req.params.myspecialid;  
+  const query = `SELECT * FROM "tblSpecials" WHERE "txtSpecialID" = $1`;
+  const values = [specialId];
+  console.log('q: ', query);
+  
+  try {
+    const { rows } = await db.query(query, values);
+    res.json(rows);
+  } catch (err) {
+    console.error(err.stack);
+    res.status(500).send('Error fetching data');
+  }
+});
+
+
 app.get('/api/venues/:id', async (req, res) => {
 
   const venueId = req.params.id;
@@ -340,6 +359,7 @@ app.get('/api/getSpecialsToday', async (req, res) => {
     res.status(500).send('Error fetching data');
   }
 });
+
 
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));

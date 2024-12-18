@@ -390,7 +390,6 @@ async function fetchVenues2 (filters, timeFilter) {
 }
 
 
-
 function displayNew(allVenues){
 
 	const venueListDiv = document.createElement('div');
@@ -406,7 +405,7 @@ function displayNew(allVenues){
 		venueDiv.innerHTML = `
 		<h3>${venue.txtVenueName}</h3>
 		<h6>
-		Special Name: ${venue.txtSpecialName} <br> 
+		Special Name: <a href='./specialView.html?id=${venue.txtSpecialID}'>${venue.txtSpecialName}</a><br> 
 		Special Note: ${venue.txtSpecialNote} <br> 
 		Special Start 1: ${venue.txtSpecialStart1} <br> 
 		Special End 1: ${venue.txtSpecialEnd1} <br>
