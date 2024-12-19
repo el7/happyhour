@@ -9,16 +9,28 @@ const port = process.env.PORT || 3000;
 
 // Or enable CORS for a specific origin
 app.use(cors({
-  origin: 'http://localhost:8080'
+  origin: function (origin, callback) {
+    // For development, allow all origins. In production, you'd whitelist or check against a list.
+    if (!origin) return callback(null, true);
+    if (origin.includes('localhost:')) {
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  },
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
 }));
 
-app.get('/api/specials/:myspecialid', async (req, res) => {
+app.options('*', cors()); // enable pre-flight requests for all routes
+
+// get data on a specific special
+app.get('/api/specials/:specialId', async (req, res) => {
 
   console.log('pre-q');
 
-  const specialId = req.params.myspecialid;  
+  const mySpecialId = req.params.specialId;  
   const query = `SELECT * FROM "tblSpecials" WHERE "txtSpecialID" = $1`;
-  const values = [specialId];
+  const values = [mySpecialId];
   console.log('q: ', query);
   
   try {
