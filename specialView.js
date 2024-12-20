@@ -16,6 +16,7 @@ function starter() {
 
     getSpecialData(specialId);
 
+
 }
 
 
@@ -55,9 +56,9 @@ async function getSpecialData(specialId){
 //			displayNew(text);		
 
             console.log("parsed: ", parsedData);
-            displaySpecial(parsedData);
+            getSpecialDetails(parsedData);
+//            return parsedData;
 
-            return '';
         } catch (jsonError) {
             console.error('Failed to parse JSON:', jsonError);
             console.log('Received text:', text);
@@ -73,14 +74,70 @@ async function getSpecialData(specialId){
 
 }
 
-function displaySpecial(specialId) {
+async function getSpecialDetails(specials){
+
+    // 0SP0000002
+    // ${specialId}
+    let urlDetails = new URL(`http://localhost:3000/api/details/${specials}`);
+    console.log("url: ", urlDetails);
+    
+    try {
+        const responseSpecialDetails = await fetch(urlDetails, {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json'
+            },
+        });
+
+        console.log("Response status:", responseSpecialDetails.status);
+        console.log("Response status text:", responseSpecialDetails.statusText);
+        console.log("Response headers:", responseSpecialDetails.headers);
+
+        if (!responseSpecialDetails) throw new Error("No response received");
+        if (!responseSpecialDetails.ok) throw new Error(`HTTP error! status: ${responseSpecialDetails.status}`);
+
+        // Check if the response has any content before parsing as JSON
+        const text = await responseSpecialDetails.text();
+        console.log("T, ", text);
+        const parsedData = JSON.parse(text);
+
+        if (text.length === 0) {
+            console.warn('Received an empty response from the server');
+            return [];
+        }
+
+        // Try to parse the JSON. If it fails, throw a more descriptive error
+        try {
+//			displayNew(text);		
+
+            console.log("parsed2: ", parsedData);
+            displaySpecial(specials, parsedData);
+//            return parsedData;
+
+        } catch (jsonError) {
+            console.error('Failed to parse JSON:', jsonError);
+            console.log('Received text:', text);
+            throw new Error('Response was not valid JSON');
+        }
+
+    } catch (error) {
+        console.error('Fetch error:', error);
+        
+        return null;
+    }
+
+
+}
+
+
+function displaySpecial(specials, details) {
 
 	const specialListDiv = document.createElement('div');
 	specialListDiv.id = 'venueList';
 	specialListDiv.innerHTML = '';
 	document.body.appendChild(specialListDiv);
 
-    console.log("test: ", specialId.txtVenueID);
+    console.log("test: ", specials.txtVenueID);
 
 
 	let specialDiv = document.createElement('div');
@@ -88,12 +145,12 @@ function displaySpecial(specialId) {
 
     <h3></h3>
     <h6>
-    Special Name: ${specialId.txtSpecialName}<br> 
-    Special Note: ${specialId.txtSpecialNote}<br> 
+    Special Name: ${specials.txtSpecialName}<br> 
+    Special Note: ${specials.txtSpecialNote}<br> 
     Special Start 1: <br> 
     Special End 1: <br>
-    Venue ID: ${specialId.txtVenueID}<br> 
-    Special ID: ${specialId.txtSpecialID}<br> 
+    Venue ID: ${specials.txtVenueID}<br> 
+    Special ID: ${specials.txtSpecialID}<br> 
     </h6>
     `;
     specialListDiv.appendChild(specialDiv);

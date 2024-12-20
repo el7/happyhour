@@ -26,8 +26,6 @@ app.options('*', cors()); // enable pre-flight requests for all routes
 // get data on a specific special
 app.get('/api/specials/:specialId', async (req, res) => {
 
-  console.log('pre-q');
-
   const mySpecialId = req.params.specialId;  
   const query = `SELECT * FROM "tblSpecials" WHERE "txtSpecialID" = $1`;
   const values = [mySpecialId];
@@ -41,6 +39,26 @@ app.get('/api/specials/:specialId', async (req, res) => {
     res.status(500).send('Error fetching data');
   }
 });
+
+// get data on a specific special's details
+app.get('/api/details/:newSpecialId', async (req, res) => {
+
+  console.log('pre-q');
+
+  const mySpecialId = req.params.newSpecialId;
+  const query = `SELECT * FROM "tblSpecialDetails" WHERE "txtSpecialID" = $1`;
+  const values = [mySpecialId];
+  console.log('q: ', query);
+  
+  try {
+    const { rows } = await db.query(query, values);
+    res.json(rows);
+  } catch (err) {
+    console.error(err.stack);
+    res.status(500).send('Error fetching data');
+  }
+});
+
 
 
 app.get('/api/venues/:id', async (req, res) => {
