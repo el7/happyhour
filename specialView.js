@@ -78,8 +78,8 @@ async function getSpecialDetails(specials){
 
     // 0SP0000002
     // ${specialId}
-    let urlDetails = new URL(`http://localhost:3000/api/details/${specials}`);
-    console.log("url: ", urlDetails);
+    let urlDetails = new URL(`http://localhost:3000/api/details/${specials.txtSpecialID}`);
+    console.log("url: ", urlDetails, "specials param: ", specials);
     
     try {
         const responseSpecialDetails = await fetch(urlDetails, {
@@ -97,6 +97,7 @@ async function getSpecialDetails(specials){
         if (!responseSpecialDetails.ok) throw new Error(`HTTP error! status: ${responseSpecialDetails.status}`);
 
         // Check if the response has any content before parsing as JSON
+        console.log("rSD, ",responseSpecialDetails);
         const text = await responseSpecialDetails.text();
         console.log("T, ", text);
         const parsedData = JSON.parse(text);
@@ -137,12 +138,12 @@ function displaySpecial(specials, details) {
 	specialListDiv.innerHTML = '';
 	document.body.appendChild(specialListDiv);
 
-    console.log("test: ", specials.txtVenueID);
+    console.log("testSpecials: ", specials.txtVenueID);
+    console.log("testDetails: ", details[0].txtSpecialDetailName);
 
 
 	let specialDiv = document.createElement('div');
     specialDiv.innerHTML = `
-
     <h3></h3>
     <h6>
     Special Name: ${specials.txtSpecialName}<br> 
@@ -154,6 +155,19 @@ function displaySpecial(specials, details) {
     </h6>
     `;
     specialListDiv.appendChild(specialDiv);
+
+    details.forEach(detail => {
+ 
+        let detailDiv = document.createElement('div');
+        detailDiv.innerHTML = `
+        <h6>
+        (${detail.txtSpecialDetailsID}) [${detail.txtDealType}] ${detail.txtDealModifier}${detail.intDealValue} ${detail.txtSpecialDetailName}: ${detail.txtDealNote}  
+        </h6>
+        `;
+        specialListDiv.appendChild(detailDiv);
+
+    });
+
 
 }
 

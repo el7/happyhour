@@ -29,7 +29,7 @@ app.get('/api/specials/:specialId', async (req, res) => {
   const mySpecialId = req.params.specialId;  
   const query = `SELECT * FROM "tblSpecials" WHERE "txtSpecialID" = $1`;
   const values = [mySpecialId];
-  console.log('q: ', query);
+  console.log('q: ', query, "parameter: ", req.params.specialId);
   
   try {
     const { rows } = await db.query(query, values);
@@ -48,7 +48,7 @@ app.get('/api/details/:newSpecialId', async (req, res) => {
   const mySpecialId = req.params.newSpecialId;
   const query = `SELECT * FROM "tblSpecialDetails" WHERE "txtSpecialID" = $1`;
   const values = [mySpecialId];
-  console.log('q: ', query);
+  console.log('q: ', query, "id: ", req.params.newSpecialId);
   
   try {
     const { rows } = await db.query(query, values);
