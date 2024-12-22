@@ -1,6 +1,45 @@
 
 
 
+h3, h5 {
+    margin: 0px;
+}
+
+
+.specialListDiv {
+
+
+}
+
+.specialDiv {
+    
+}
+
+
+.detailDiv {
+
+    background-color: lightpink;    
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #3B8EA5;
+    
+}
+
+
+
+.venueDiv {
+    background-color: lightpink;    
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #3B8EA5;
+}
+
+
+.venueListDiv {
+
+}
+
+
 .restaurant {
 
     border-left: 5px solid #AB3428;

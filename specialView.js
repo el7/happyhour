@@ -134,6 +134,7 @@ async function getSpecialDetails(specials){
 function displaySpecial(specials, details) {
 
 	const specialListDiv = document.createElement('div');
+    specialListDiv.classList.add('specialListDiv');
 	specialListDiv.id = 'venueList';
 	specialListDiv.innerHTML = '';
 	document.body.appendChild(specialListDiv);
@@ -143,6 +144,7 @@ function displaySpecial(specials, details) {
 
 
 	let specialDiv = document.createElement('div');
+    specialDiv.classList.add('specialDiv');    
     specialDiv.innerHTML = `
     <h3></h3>
     <h6>
@@ -159,6 +161,7 @@ function displaySpecial(specials, details) {
     details.forEach(detail => {
  
         let detailDiv = document.createElement('div');
+		detailDiv.classList.add('detailDiv');        
         detailDiv.innerHTML = `
         <h6>
         [${detail.txtDealType}] ${detail.txtDealModifier}${detail.intDealValue} ${detail.txtSpecialDetailName}: ${detail.txtDealNote}  

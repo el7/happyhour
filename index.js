@@ -43,11 +43,14 @@ function starter() {
 document.addEventListener('click', function (event) {
 	if (event.target.matches('.hhMode')) {
 		console.log('Radio reLoading');
+		// starter();
 		
-		prepareVenues();
+		 prepareVenues();
 	} else if (event.target.matches('.hhAttr')) {
 		console.log('Checkbox reLoading');
-		prepareVenues();
+		// starter();
+
+		 prepareVenues();
 	}
 });
 
