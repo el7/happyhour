@@ -1,5 +1,3 @@
-import { displayDataController } from './displayData.js';
-import { isEmpty } from "./utils/utils.js";
 
 export function prepareVenues () {
 
@@ -8,17 +6,14 @@ export function prepareVenues () {
 	fetchVenues2(filters);
 }
 
-	// Collect filter data from DOM elements
+// Collect filter data from DOM elements
 function collectFilters() {
 
 	let filters = {};
+
 	filters.beer = document.getElementById('checkboxFilterBeer').checked;
 	filters.liqueur = document.getElementById('checkboxFilterLiqueur').checked;    
 	filters.timeFilter = document.querySelector('input[name="hhModeRadio"]:checked').value;
-
-    console.log("filter beer: ", filters.beer);
-    console.log("filter liqueur: ", filters.liqueur);
-    console.log("filter liqueur: ", filters.timeFilter);
 
 	return filters;
 }
@@ -54,7 +49,7 @@ async function fetchVenues2 (filters) {
 	}
 	urlVenues.search = params;
 
-	// collect from api, specials 
+	// collect from api: venues with specials given timefilter
 	try {
 		const responseVenues = await fetch(urlVenues, {
 			method: 'GET',
@@ -84,10 +79,7 @@ async function fetchVenues2 (filters) {
             console.log('Received text:', responseVenuesText);
             throw new Error('Response was not valid JSON');
         }
-//        console.log("filteredVenues: ", filterVenues.length )
 
-
-		return allVenues;
 
 	} catch (error) {
 		console.error('Fetch error:', error);
@@ -97,18 +89,17 @@ async function fetchVenues2 (filters) {
 
 }
 
-
+// adds html content for venue/special, adds link to special detail view
 function displayNew(allVenues){
 
 	const venueListDiv = document.createElement('div');
 	venueListDiv.id = 'venueList';
 	venueListDiv.classList.add('venueListDiv');
 	venueListDiv.innerHTML = '';
-	document.body.appendChild(venueListDiv);
+	document.getElementById('contentArea').appendChild(venueListDiv);
+
 
 	allVenues.forEach(venue => {
-
-		console.log("V: ", venue);
 
 		const dateSpecialStart1 = new Date(venue.txtSpecialStart1);
 		const dateSpecialEnd1 = new Date(venue.txtSpecialEnd1);
