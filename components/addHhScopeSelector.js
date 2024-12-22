@@ -31,6 +31,5 @@ export function addHhScopeSelector() {
 	var radioFragment = document.createElement('div');
 	radioFragment.innerHTML = radioHtml;
 
-	document.body.appendChild(radioFragment);
-
+    document.getElementById('filters').appendChild(radioFragment);
 }
