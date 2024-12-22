@@ -161,7 +161,7 @@ function displaySpecial(specials, details) {
         let detailDiv = document.createElement('div');
         detailDiv.innerHTML = `
         <h6>
-        (${detail.txtSpecialDetailsID}) [${detail.txtDealType}] ${detail.txtDealModifier}${detail.intDealValue} ${detail.txtSpecialDetailName}: ${detail.txtDealNote}  
+        [${detail.txtDealType}] ${detail.txtDealModifier}${detail.intDealValue} ${detail.txtSpecialDetailName}: ${detail.txtDealNote}  
         </h6>
         `;
         specialListDiv.appendChild(detailDiv);
