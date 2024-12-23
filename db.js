@@ -1,7 +1,7 @@
 const { Pool } = require('pg');
 
 require('dotenv').config();
-console.log('DB_USER:', process.env.DB_USER, 'db_pass: ', process.env.DB_PASSWORD);
+console.log('DB_USER:', process.env.DB_USER);
 
 const pool = new Pool({
   user: process.env.DB_USER,
@@ -9,11 +9,15 @@ const pool = new Pool({
   database: process.env.DB_DATABASE,
   password: process.env.DB_PASSWORD,
   port: process.env.DB_PORT,
+  connectionTimeoutMillis: process.env.DB_TIMEOUT,
+  ssl: {
+    rejectUnauthorized: false // If you're using AWS RDS default certificate
+  }  
 });
 
 pool.connect((err, client, done) => {
   if (err) {
-      console.error('Error acquiring client', err.stack);
+      console.error('Error acquiring client:', err.stack);
   } else {
       console.log('Connected to database');
       done();
