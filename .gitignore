@@ -1,0 +1,7 @@
+/home/dgzl/projects/happy_hour_web/.env
+.env
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
