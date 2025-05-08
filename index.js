@@ -6,52 +6,49 @@ import { isEmpty } from "./utils/utils.js";
 import {addHhScopeSelector} from "./components/addHhScopeSelector.js";
 import { addHhFilterSelector } from "./components/addHhFilterSelector.js";
 
-/* const and variables */
-const HH_ScopeSelection = {
-	HH_All: "all",
-	HH_Today: "today",
-	HH_WithinHour: "hour",
-	HH_Now: "now"
-}
-
-var specialActive = false;
-var hhSelection = HH_ScopeSelection.HH_Now;
-// hhSelection = HH_ScopeSelection.HH_Today;
-// hhSelection = HH_ScopeSelection.HH_WithinHour;
-
-var datetimeNow = new Date();
-//var datetimeNow = new Date("2023-09-15T22:00:00.000Z");
+let hhModeState; // Store the state of the radio buttons
+let hhAttrState = {}; // Store the state of the checkboxes
 
 // load intial state
 document.addEventListener('DOMContentLoaded', (event) => {
-	console.log("here");
 	starter();
+});
+
+// handle time and filter selections
+document.addEventListener('click', function (event) {
+    if (event.target.matches('.hhMode') || event.target.matches('.hhAttr')) {
+        // Save state after the click has processed the change
+        saveState();
+        refreshContent();
+    }
 });
 
 
 function starter() {
-
-	// fetchTest(); // test festching data
-	clearPage();
-	addHhScopeSelector();
-	addHhFilterSelector();
-	//displayVenuesOld(); // old method of showing data
-	prepareVenues();
+    // Assuming you have a container for filters and another for content
+    addHhScopeSelector();
+    addHhFilterSelector();
+    saveState(); // Initial state saves after selectors are added
+    refreshContent();
 }
 
-// handle time and filter selections
-document.addEventListener('click', function (event) {
-	if (event.target.matches('.hhMode')) {
-		console.log('Radio reLoading');
-		
-		prepareVenues();
-	} else if (event.target.matches('.hhAttr')) {
-		console.log('Checkbox reLoading');
-		prepareVenues();
+function refreshContent() {
+    // Here, instead of clearing the entire page, clear only the content area
+    let contentArea = document.getElementById('contentArea'); // Make sure you have this element in your HTML
+    if (contentArea) {
+        contentArea.innerHTML = "";
+        prepareVenues();
+    } else {
+		console.log("lol");
 	}
-});
+}
 
+// Function to save the state of selectors
+function saveState() {
+    let mode = document.querySelector('input[name="hhMode"]:checked');
+    hhModeState = mode ? mode.value : null;
 
-function clearPage() {
-	document.body.innerHTML = "";
+    document.querySelectorAll('.hhAttr').forEach(checkbox => {
+        hhAttrState[checkbox.value] = checkbox.checked;
+    });
 }
